@@ -39,22 +39,22 @@ export function BioSection() {
                 Tricia Geiger is a veteran UAW member and organizer who has spent the last 20 years fighting for the dignity of labor. Her roots in the union aren't just professional—they're personal. Tricia's grandfather was a migrant farmworker who found stability and a middle-class life as a member of <strong>GM Fisher Body Local 598</strong>. That legacy of transformation through collective action drives her every day.
               </p>
               <p>
-                For over a decade, Tricia served as an <strong>International Servicing Representative for Region 2B</strong>. She has stood on the front lines of multi-sector fights, managing complex grievances, negotiating high-stakes contracts, and organizing strategic strikes that delivered real wins for <strong>members</strong>.
+                For nearly a decade, Tricia served as an <strong>International Servicing Representative for Region 2B</strong>. She has stood on the front lines of multi-sector fights, managing complex grievances, negotiating high-stakes contracts, and organizing strategic strikes that delivered real wins for <strong>members</strong>.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
               <div className="flex gap-4 p-4 rounded-xl bg-campaign-tan/5 border border-campaign-tan/10 hover:bg-campaign-tan/10 transition-colors duration-300">
-                <div className="text-campaign-gold"><Award size={28} /></div>
+                <div className="text-campaign-gold shrink-0"><Award size={28} /></div>
                 <div>
                   <h4 className="font-bold text-campaign-black">20 Years of Service</h4>
-                  <p className="text-sm text-muted-foreground">Dedicated UAW member with shop floor experience.</p>
+                  <p className="text-sm text-muted-foreground">Dedicated UAW member with proven shop floor experience.</p>
                 </div>
               </div>
               <div className="flex gap-4 p-4 rounded-xl bg-campaign-tan/5 border border-campaign-tan/10 hover:bg-campaign-tan/10 transition-colors duration-300">
-                <div className="text-campaign-gold"><GraduationCap size={28} /></div>
+                <div className="text-campaign-gold shrink-0"><GraduationCap size={28} /></div>
                 <div>
-                  <h4 className="font-bold text-campaign-black">Highly Qualified</h4>
-                  <p className="text-sm text-muted-foreground">Cornell Union Leadership degree & Strategic Research Cert.</p>
+                  <h4 className="font-bold text-campaign-black">Academic Excellence</h4>
+                  <p className="text-sm text-muted-foreground leading-snug">Union Leadership & Administration (National Labor College) & Strategic Corporate Research (Cornell).</p>
                 </div>
               </div>
             </div>

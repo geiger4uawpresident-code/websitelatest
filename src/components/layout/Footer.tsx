@@ -85,14 +85,14 @@ export function Footer() {
             <a
               href="#"
               onClick={(e) => handleLegalClick(e, 'Privacy Policy')}
-              className="hover:text-campaign-gold transition-colors"
+              className="hover:text-campaign-gold transition-colors hover:cursor-pointer"
             >
               Privacy Policy
             </a>
             <a
               href="#"
               onClick={(e) => handleLegalClick(e, 'Terms of Use')}
-              className="hover:text-campaign-gold transition-colors"
+              className="hover:text-campaign-gold transition-colors hover:cursor-pointer"
             >
               Terms of Use
             </a>
