@@ -13,77 +13,83 @@ import {
   History as HistoryIcon
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 const pillars = [
   {
     id: "01",
     title: "Clean Governance",
     icon: <Shield className="w-6 h-6" />,
-    problem: "Decades of 20th-century bureaucracy have allowed a 'club culture' to erode the fundamental trust between leadership and the shop floor. Top-down decisions and opaque financial reporting have left members feeling like spectators in their own union rather than the owners of it.",
+    problem: "The Promise Was Reform. For decades, a 'club culture' at the top of the UAW allowed bureaucracy and opaque financial reporting to erode the fundamental trust between leadership and the shop floor. Members were treated as spectators rather than owners. To build a powerful union, we must first get our own house under control.",
     commitments: [
       "Implement real-time forensic auditing of all international and regional expenditures accessible via a secure member portal.",
       "Establish an independent Member Oversight Committee with the constitutional power to subpoena financial records.",
       "Mandatory 'Constitutional Town Halls' held 30 days prior to any major Executive Board vote on policy changes.",
       "Strict 'No-Gift' policy for all elected officials with immediate removal for violations."
     ],
-    memberMessage: "This is your union. You pay the dues; you deserve to see exactly where they go."
+    memberMessage: "Members voted for reform because they wanted their union back. We will deliver that transparency on day one."
   },
   {
     id: "02",
     title: "Strategic Bargaining",
     icon: <Handshake className="w-6 h-6" />,
-    problem: "The 'Crisis of Tiers' was born from a lack of strategic preparation and transparency. Corporations have used complex contracts to hide concessions, while members are often the last to know the details of the deals that define their lives.",
+    problem: "The 'Crisis of Tiers' was born from a lack of strategic preparation and transparency. For too long, corporations used complex contracts to hide concessions, while members were the last to know the details of the deals that define their lives. We need a bargaining strategy that uses our full economic power.",
     commitments: [
       "Adopt 'Open Bargaining' protocols: Daily digital updates to the membership throughout the negotiation process.",
       "Establish a Pre-Strike 'Economic War Room' staffed by world-class labor economists to counter corporate misinformation.",
       "A binding commitment to eliminate ALL tiered wage and benefit systems in the first year of any new contract.",
       "Full contract language must be released to the membership 7 days before any ratification vote."
     ],
-    memberMessage: "We don't just ask for a fair share; we prepare to take what we've earned."
+    memberMessage: "We don't just ask for a fair share; we prepare to take what we've earned through strength and strategy."
   },
   {
     id: "03",
     title: "Staff Development",
     icon: <Users className="w-6 h-6" />,
-    problem: "Our representatives are often outmatched not by talent, but by the modern digital tools and legal resources deployed by multi-national corporations. A lack of standardized training for stewards and servicing reps leads to inconsistent enforcement of our hard-won rights.",
+    problem: "Our representatives are often outmatched not by talent, but by the modern digital tools and legal resources deployed by multi-national corporations. A lack of standardized training for stewards and servicing reps leads to inconsistent enforcement of our hard-won rights across different locals.",
     commitments: [
       "Launch the 'UAW Leadership Institute'—a mandatory certification program for all servicing reps and local stewards.",
       "Implement a Universal Digital Grievance Tracking System allowing members to see the status of their case in real-time.",
       "Expand specialized legal and safety support staff to provide 24/7 assistance for complex industrial hazards.",
       "Recruitment initiatives focused on reflecting the full multi-sector breadth of our modern membership."
     ],
-    memberMessage: "A professional, highly-trained staff is our first line of defense against corporate greed."
+    memberMessage: "A professional, highly-trained staff is our first line of defense against corporate greed and contract violations."
   },
   {
     id: "04",
     title: "Political Action (CAP)",
     icon: <Landmark className="w-6 h-6" />,
-    problem: "Labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on worker protections. We have been too quick to endorse and too slow to hold elected officials accountable to our specific legislative agenda.",
+    problem: "Labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on worker protections. We have been too quick to endorse and too slow to hold elected officials accountable to our specific legislative agenda and the needs of our families.",
     commitments: [
       "Tie all V-CAP endorsements strictly to a 'Labor-First' scorecard focused on anti-tier and anti-scab legislation.",
       "Grant local councils Veto Power over regional endorsements that conflict with local member priorities.",
       "Aggressive lobbying for the 'Worker Freedom Act' to end forced captive audience meetings nationwide.",
       "Direct member-led development of the biennial UAW National Legislative Agenda."
     ],
-    memberMessage: "Politicians work for us, or they don't get our support. Period."
+    memberMessage: "Politicians work for us, or they don't get our support. We are ending the era of blank-check politics."
   },
   {
     id: "05",
     title: "Healthcare Security",
     icon: <Heart className="w-6 h-6" />,
-    problem: "Healthcare is a fundamental human right, yet it is being used by corporations as a tool of coercion. Rising premiums and shrinking networks are effectively rolling back the wage increases we fight so hard to win.",
+    problem: "Healthcare is a fundamental human right, yet it is being used by corporations as a tool of coercion during negotiations. Rising premiums and shrinking networks are effectively rolling back the wage increases we fight so hard to win, leaving families vulnerable when they are most in need.",
     commitments: [
       "Create a National UAW Healthcare Trust Defense Fund to aggressively fight off network reductions and cost-shifts.",
       "Contractual guarantees for Healthcare Cost-Caps: No member's take-home pay should ever decrease due to premium hikes.",
       "Mandatory mental health and substance abuse support parity in every multi-sector agreement.",
       "Establish a Retiree Healthcare Advocacy Board to protect VEBA and traditional plans from inflation."
     ],
-    memberMessage: "Your health is not a bargaining chip. We will protect your care as fiercely as your paycheck."
+    memberMessage: "Your health is not a bargaining chip. We will protect your care as fiercely as we protect your paycheck."
   },
   {
     id: "06",
     title: "Campaign Finance",
     icon: <PieChart className="w-6 h-6" />,
-    problem: "The 'Dues Dollar' is too often lost in administrative overhead. We need to shift our financial power from the mahogany offices of the International to the picket lines and organizing drives where it actually builds power for the members.",
+    problem: "The 'Dues Dollar' is too often lost in administrative overhead and non-essential spending. We need to shift our financial power from the mahogany offices of the International to the picket lines and organizing drives where it actually builds power for the members on the ground.",
     commitments: [
       "Restructure the Strike Fund to ensure benefit payments match 100% of a member's base take-home pay.",
       "Commitment to a 30% reduction in non-essential administrative overhead at Solidarity House within 24 months.",
@@ -96,27 +102,27 @@ const pillars = [
     id: "07",
     title: "Retiree Dignity",
     icon: <HistoryIcon className="w-6 h-6" />,
-    problem: "The giants whose shoulders we stand on are being left behind in a changing economy. Solidarity is a lifelong bond, yet our retirees often feel disconnected from the active leadership and vulnerable to pension erosion.",
+    problem: "The giants whose shoulders we stand on are being left behind in a changing economy. Solidarity is a lifelong bond, yet our retirees often feel disconnected from the active leadership and vulnerable to pension erosion. We must honor the promises made to those who built this union.",
     commitments: [
       "Negotiate Automatic COLA (Cost of Living Adjustments) for all retiree pensions in every future contract.",
       "Create a permanent, voting seat on the International Executive Board for a Retiree Council Representative.",
       "Launch a National Retiree Mentorship program to connect veteran experience with new-hire organizing.",
       "Protect and expand surviving spouse benefits to ensure no UAW family is left in poverty."
     ],
-    memberMessage: "Solidarity doesn't end at retirement. We will honor those who built this union."
+    memberMessage: "Solidarity doesn't end at retirement. We will honor and protect those who built the foundation of our strength."
   },
   {
     id: "08",
     title: "Aggressive Organizing",
     icon: <Network className="w-6 h-6" />,
-    problem: "Falling union density is the single greatest threat to our collective bargaining power. If we don't organize the new industries—especially the EV and battery sectors—we will lose the leverage required to protect existing standards.",
+    problem: "Falling union density is the single greatest threat to our collective bargaining power. If we don't organize the new industries—especially the EV and battery sectors—we will lose the leverage required to protect existing standards and the future of our trades.",
     commitments: [
       "Authorize a $100 Million Strategic Organizing Fund specifically targeted at the non-union South and EV sector.",
       "Deploy 'Tiger Teams'—elite, rapid-response organizing units of rank-and-file members—for new plant drives.",
       "Implement a 'Sector-Wide Solidarity' model to organize the entire supply chain, not just the assembly lines.",
       "Leverage digital-first organizing tools to reach workers in tech-manufacturing and new industrial hubs."
     ],
-    memberMessage: "To protect our standards, we must grow our movement. We will organize the unorganized."
+    memberMessage: "To protect our standards, we must grow our movement. We will organize the unorganized and lead the transition."
   }
 ];
 const brandPillars = [
@@ -169,7 +175,7 @@ export function PlatformSection() {
                 {bp.desc}
               </p>
               <div className="pt-6 border-t border-gray-100 mt-auto shrink-0">
-                <p className="text-campaign-red font-black italic text-lg">"{bp.quote}"</p>
+                <p className="text-campaign-gold font-black italic text-lg">"{bp.quote}"</p>
               </div>
             </motion.div>
           ))}
@@ -205,24 +211,30 @@ export function PlatformSection() {
                   </div>
                   <CardContent className="lg:w-2/3 px-6 py-10 md:p-12 space-y-10 flex flex-col justify-center">
                     <div className="problem-block-refined">
-                      <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-red/90 mb-2">The Problem</p>
+                      <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold mb-2">The Challenge</p>
                       <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
                         {p.problem}
                       </p>
                     </div>
-                    <div className="space-y-6">
-                      <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">Strategic Commitments</p>
-                      <ul className="grid sm:grid-cols-1 gap-4 items-stretch platform-commitment-list">
-                        {p.commitments.map((c, i) => (
-                          <li key={i} className="flex gap-4 text-base md:text-lg leading-relaxed text-gray-800 items-start group">
-                            <div className="mt-1.5 bg-campaign-gold/10 p-1 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
-                              <ChevronRight size={16} strokeWidth={3} />
-                            </div>
-                            <span>{c}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    <Accordion type="single" collapsible className="w-full">
+                      <AccordionItem value="commitments" className="border-none">
+                        <AccordionTrigger className="hover:no-underline py-4">
+                          <span className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">View Strategic Commitments</span>
+                        </AccordionTrigger>
+                        <AccordionContent className="pt-4">
+                          <ul className="space-y-6">
+                            {p.commitments.map((c, i) => (
+                              <li key={i} className="flex gap-4 text-base md:text-lg leading-relaxed text-gray-800 items-start group">
+                                <div className="mt-1.5 bg-campaign-gold/10 p-1 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
+                                  <ChevronRight size={16} strokeWidth={3} />
+                                </div>
+                                <span>{c}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
                   </CardContent>
                 </div>
               </Card>

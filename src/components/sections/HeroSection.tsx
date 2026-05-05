@@ -38,14 +38,14 @@ export function HeroSection() {
       >
         <motion.div variants={itemVariants} className="space-y-4">
           <span className="inline-block px-6 py-2 rounded-full bg-campaign-gold text-white text-xs font-bold uppercase tracking-[0.2em] shadow-lg shadow-campaign-gold/20">
-            Prepared. Democratic. <span className="border-b-2 border-campaign-red pb-0.5 ml-1">Accountable</span>.
+            Prepared. Democratic. Accountable.
           </span>
           <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-black text-white leading-[1.1] uppercase tracking-tight">
             Tricia Geiger <br />
             <span className="text-campaign-gold italic">for UAW President</span>
           </h1>
           <p className="text-lg md:text-2xl text-campaign-tan max-w-3xl mx-auto font-medium drop-shadow-sm leading-relaxed px-4 opacity-90">
-            One Union. One Movement. Building a transparent and accountable future for every member.
+            One Union. One Movement. Building a transparent and <span className="border-b border-campaign-red pb-0.5">accountable</span> future for every member.
           </p>
         </motion.div>
         <motion.div
