@@ -9,38 +9,41 @@ import { ResourcesSection } from '@/components/sections/ResourcesSection';
 import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/sonner';
 /**
- * HomePage: The central orchestration component for the single-page campaign site.
- * This component structures the user journey to build trust and momentum before the call to action.
+ * HomePage: The central orchestration component for the Tricia Geiger 2026 UAW Campaign site.
+ * 
+ * Flow Strategy:
+ * 1. Hero: Immediate impact and core message.
+ * 2. Bio: Establishing the candidate's history and trustworthiness.
+ * 3. Platform: Detailed policy and brand pillar communication.
+ * 4. Involve: Clear, dual-funnel calls to action.
+ * 5. Endorsements: Validating momentum through peer voices.
+ * 6. Resources: Empowering members to organize locally.
  */
 export function HomePage() {
   return (
-    <div className="min-h-screen bg-white selection:bg-campaign-gold/30 selection:text-campaign-black">
-      {/* Accessibility: Skip to main content link for keyboard users */}
+    <div className="min-h-screen bg-white">
+      {/* Accessibility: Priority keyboard navigation skip-link */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 z-[100] bg-campaign-gold text-white px-4 py-2 rounded-md font-bold shadow-lg ring-2 ring-white"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-[100] bg-campaign-gold text-white px-6 py-3 rounded-lg font-bold shadow-2xl ring-4 ring-white transition-all"
       >
-        Skip to content
+        Skip to main campaign content
       </a>
       {/* Navigation Layer */}
       <Navbar />
       <main id="main-content" role="main" tabIndex={-1} className="outline-none">
-        {/* Phase 1: The Hook - High impact video and core value proposition */}
+        {/* Core Narrative Sections */}
         <HeroSection />
-        {/* Phase 2: The Candidate - establishing union roots and personal history */}
         <BioSection />
-        {/* Phase 3: The Plan - Detailed policy pillars and verbatim brand values */}
         <PlatformSection />
-        {/* Phase 4: The Call to Action - Dual-funnel involvement tracks */}
+        {/* Action and Social Proof Sections */}
         <InvolveSection />
-        {/* Phase 5: Social Proof - Member testimonials and floor voices */}
         <Endorsements />
-        {/* Phase 6: Empowerment - Downloadable materials for local organizing */}
         <ResourcesSection />
       </main>
-      {/* Persistent Footer and Legal Information */}
+      {/* Persistent Footer and Legal Attribution */}
       <Footer />
-      {/* Global Toast notifications for interaction feedback */}
+      {/* Feedback layer positioned to avoid mobile nav conflicts */}
       <Toaster richColors closeButton position="bottom-right" />
     </div>
   );

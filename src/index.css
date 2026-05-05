@@ -48,15 +48,24 @@
   }
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 80px; /* Offset for fixed navbar */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   body {
     @apply bg-background text-foreground;
-    selection:bg-[#C5A059] !important;
-    selection:text-white !important;
   }
+  /* High-contrast brand selection colors with smooth transition */
+  ::selection {
+    background-color: #C5A059;
+    color: #FFFFFF;
+    transition: background-color 0.2s ease;
+  }
+  ::-moz-selection {
+    background-color: #C5A059;
+    color: #FFFFFF;
+  }
+  /* Custom scrollbar for campaign design system */
   ::-webkit-scrollbar {
     width: 10px;
   }
@@ -73,25 +82,10 @@
   }
 }
 @layer components {
-  /* Platform Typography & Blocks */
-  .problem-block-refined {
-    @apply border-l-4 border-campaign-gold bg-campaign-gold/5 p-6 md:p-8 rounded-r-xl transition-colors duration-300 box-border w-full h-auto;
-  }
-  .platform-commitment-list li {
-    @apply transition-all duration-200;
-  }
-  .text-display {
-    @apply text-3xl sm:text-5xl md:text-6xl font-display font-black uppercase tracking-tight leading-none;
-  }
-  .text-shadow-campaign {
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  /* Campaign Button System */
-  .btn-campaign-gold {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-bold text-white transition-all duration-200 bg-[#C5A059] hover:opacity-95 active:scale-95 shadow-lg shadow-campaign-gold/10;
-  }
-  /* Layout Utilities */
   .section-container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+  .text-display {
+    @apply font-display font-black uppercase tracking-tight leading-none;
   }
 }
