@@ -133,10 +133,16 @@ export function PlatformSection() {
     <section id="platform" className="py-24 bg-campaign-tan/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20 space-y-4">
-          <h2 className="text-3xl md:text-6xl font-display font-black text-campaign-black uppercase tracking-tight">The 2026 Platform</h2>
-          <p className="text-muted-foreground text-xl max-w-3xl mx-auto">
-            A comprehensive blueprint to revitalize the UAW and return power to the hands that do the work.
-          </p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-3xl md:text-6xl font-display font-black text-campaign-black uppercase tracking-tight">The 2026 Platform</h2>
+            <p className="text-muted-foreground text-xl max-w-3xl mx-auto mt-6">
+              A comprehensive blueprint to revitalize the UAW and return power to the hands that do the work.
+            </p>
+          </motion.div>
         </div>
         {/* Brand Pillars */}
         <div className="grid md:grid-cols-3 gap-8 mb-24">
@@ -145,63 +151,68 @@ export function PlatformSection() {
               key={bp.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              className="bg-white p-8 rounded-2xl border-t-4 border-campaign-gold shadow-xl shadow-campaign-gold/5"
+              transition={{ delay: i * 0.1, duration: 0.5 }}
+              viewport={{ once: true }}
+              className="bg-white p-8 rounded-2xl border-t-4 border-campaign-gold shadow-xl shadow-campaign-gold/5 flex flex-col h-full"
             >
-              <h3 className="text-2xl font-black text-campaign-black mb-4 uppercase">{bp.title}</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">{bp.desc}</p>
-              <div className="pt-4 border-t border-gray-100">
-                <p className="text-campaign-gold font-bold italic">"{bp.quote}"</p>
+              <h3 className="text-2xl font-black text-campaign-black mb-4 uppercase tracking-tighter">{bp.title}</h3>
+              <p className="text-muted-foreground mb-8 leading-relaxed flex-grow">{bp.desc}</p>
+              <div className="pt-6 border-t border-gray-100 mt-auto">
+                <p className="text-campaign-gold font-black italic">"{bp.quote}"</p>
               </div>
             </motion.div>
           ))}
         </div>
         {/* Unifying Statement */}
         <div className="mb-24 relative">
-          <div className="absolute inset-0 bg-campaign-black rounded-3xl -rotate-1 scale-[1.02]" />
-          <div className="relative bg-campaign-gold p-12 md:p-20 rounded-3xl text-white text-center overflow-hidden">
-            <Quote className="absolute -top-10 -left-10 text-white/10 w-64 h-64" />
-            <h3 className="text-2xl md:text-4xl font-black leading-tight max-w-4xl mx-auto relative z-10">
-              "We aren't just fighting for a contract; we are fighting for the very soul of the labor movement. Our unity is our greatest weapon, and our preparation is our greatest shield."
+          <div className="absolute inset-0 bg-campaign-black rounded-3xl -rotate-1 scale-[1.01]" />
+          <div className="relative bg-campaign-gold p-10 md:p-20 rounded-3xl text-white text-center shadow-2xl overflow-hidden">
+            <Quote className="absolute -top-12 -left-12 text-white/10 w-64 h-64 select-none pointer-events-none" />
+            <h3 className="text-2xl md:text-4xl font-black leading-tight max-w-4xl mx-auto relative z-10 italic">
+              "We aren't just fighting for a contract; we are fighting for the very soul of the labor movement."
             </h3>
           </div>
         </div>
-        {/* Policy Pillars */}
-        <div className="grid lg:grid-cols-2 gap-6">
+        {/* Policy Pillars Grid */}
+        <div className="grid lg:grid-cols-2 gap-8">
           {pillars.map((p, idx) => (
             <motion.div
               key={p.id}
-              initial={{ opacity: 0, x: idx % 2 === 0 ? -20 : 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: (idx % 2) * 0.1, duration: 0.5 }}
+              viewport={{ once: true, margin: "-50px" }}
             >
-              <Card className="h-full border-none shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
-                <CardHeader className="bg-campaign-black text-white p-6">
-                  <div className="flex items-center justify-between">
-                    <span className="text-campaign-gold font-black text-4xl opacity-50 group-hover:opacity-100 transition-opacity">{p.id}</span>
-                    <div className="bg-campaign-gold/20 p-3 rounded-xl text-campaign-gold group-hover:scale-110 transition-transform">
+              <Card className="h-full border-none shadow-xl hover:shadow-2xl transition-all duration-300 group overflow-hidden bg-white">
+                <CardHeader className="bg-campaign-black text-white p-8">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-campaign-gold/30 font-black text-5xl group-hover:text-campaign-gold/100 transition-colors duration-500">{p.id}</span>
+                    <div className="bg-campaign-gold/20 p-4 rounded-2xl text-campaign-gold group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                       {p.icon}
                     </div>
                   </div>
-                  <CardTitle className="text-2xl font-black uppercase mt-4">{p.title}</CardTitle>
+                  <CardTitle className="text-2xl md:text-3xl font-black uppercase tracking-tight leading-none">{p.title}</CardTitle>
                 </CardHeader>
-                <CardContent className="p-8 space-y-6">
-                  <div className="space-y-2">
-                    <p className="text-xs font-bold uppercase tracking-widest text-campaign-gold">The Problem</p>
-                    <p className="text-muted-foreground italic">"{p.problem}"</p>
+                <CardContent className="p-8 space-y-8">
+                  <div className="space-y-3">
+                    <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">The Challenge</p>
+                    <p className="text-muted-foreground italic text-lg leading-relaxed">"{p.problem}"</p>
                   </div>
-                  <div className="space-y-4">
-                    <p className="text-xs font-bold uppercase tracking-widest text-campaign-black">Our Commitment</p>
-                    <ul className="space-y-3">
+                  <div className="space-y-5">
+                    <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">Strategic Commitments</p>
+                    <ul className="space-y-4">
                       {p.commitments.map((c, i) => (
-                        <li key={i} className="flex gap-3 text-sm leading-relaxed text-gray-700">
-                          <ChevronRight className="w-4 h-4 text-campaign-gold shrink-0 mt-0.5" />
+                        <li key={i} className="flex gap-4 text-sm md:text-base leading-relaxed text-gray-700 items-start">
+                          <div className="mt-1 bg-campaign-gold/10 p-1 rounded-full text-campaign-gold">
+                            <ChevronRight size={14} />
+                          </div>
                           {c}
                         </li>
                       ))}
                     </ul>
                   </div>
-                  <div className="pt-6 border-t border-gray-100">
-                    <p className="text-center font-black text-campaign-black tracking-tight">{p.memberMessage}</p>
+                  <div className="pt-8 border-t border-gray-100">
+                    <p className="text-center font-black text-campaign-black text-lg tracking-tight uppercase italic">{p.memberMessage}</p>
                   </div>
                 </CardContent>
               </Card>
