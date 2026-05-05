@@ -25,8 +25,8 @@ export function InvolveSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-3xl md:text-5xl font-display font-black text-campaign-black uppercase">Get Involved</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            This movement belongs to the members. Choose how you want to participate in rebuilding our union and ensuring every voice is heard.
+          <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+            This movement belongs to the members. Join Tricia in building a <span className="text-campaign-black font-bold">Prepared, Democratic, and Accountable</span> UAW. Choose how you want to participate in rebuilding our union and ensuring every voice is heard.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
