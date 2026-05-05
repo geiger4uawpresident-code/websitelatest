@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Facebook, Youtube, Instagram, Mail } from 'lucide-react';
 import { toast } from 'sonner';
 const TikTokIcon = ({ className }: { className?: string }) => (
@@ -12,18 +12,18 @@ const TikTokIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 export function Footer() {
+  const socialLinks = useMemo(() => [
+    { name: "Facebook", icon: Facebook, href: "https://www.facebook.com/profile.php?id=61588992516309" },
+    { name: "Youtube", icon: Youtube, href: "https://www.youtube.com/@TriciaGeiger4UAWPresident2026" },
+    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/geiger_triciageiger4uaw/" },
+    { name: "TikTok", icon: TikTokIcon, href: "https://www.tiktok.com/@geiger4uaw" },
+  ], []);
   const handleLegalClick = (e: React.MouseEvent, type: string) => {
     e.preventDefault();
     toast.info(`${type} Coming Soon`, {
       description: "Our legal documents are currently being finalized for the 2026 campaign cycle."
     });
   };
-  const socialLinks = [
-    { name: "Facebook", icon: <Facebook className="w-6 h-6" />, href: "https://www.facebook.com/profile.php?id=61588992516309" },
-    { name: "Youtube", icon: <Youtube className="w-6 h-6" />, href: "https://www.youtube.com/@TriciaGeiger4UAWPresident2026" },
-    { name: "Instagram", icon: <Instagram className="w-6 h-6" />, href: "https://www.instagram.com/geiger_triciageiger4uaw/" },
-    { name: "TikTok", icon: <TikTokIcon className="w-6 h-6" />, href: "https://www.tiktok.com/@geiger4uaw" },
-  ];
   const DONATE_URL = "https://gofund.me/5e6d6b33f";
   return (
     <footer className="bg-campaign-black text-white pt-20 pb-10 border-t border-white/5">
@@ -38,18 +38,21 @@ export function Footer() {
               A member-first movement dedicated to restoring the power, dignity, and future of every UAW member.
             </p>
             <div className="flex gap-4">
-              {socialLinks.map((social, idx) => (
-                <a
-                  key={idx}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-campaign-tan/50 hover:text-campaign-gold transition-all duration-200 hover:scale-110 active:scale-95"
-                  aria-label={`Visit our ${social.name}`}
-                >
-                  {social.icon}
-                </a>
-              ))}
+              {socialLinks.map((social, idx) => {
+                const Icon = social.icon;
+                return (
+                  <a
+                    key={idx}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-campaign-tan/50 hover:text-campaign-gold transition-all duration-200 hover:scale-110 active:scale-95"
+                    aria-label={`Visit our ${social.name}`}
+                  >
+                    <Icon className="w-6 h-6" />
+                  </a>
+                );
+              })}
             </div>
           </div>
           <div className="space-y-6">
