@@ -16,8 +16,8 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
           className="space-y-4"
         >
-          <span className="inline-block px-4 py-1.5 rounded-full bg-campaign-gold text-white text-xs font-bold uppercase tracking-widest">
-            A New Vision for UAW
+          <span className="inline-block px-6 py-2 rounded-full bg-campaign-gold text-white text-xs font-bold uppercase tracking-[0.2em] shadow-lg shadow-campaign-gold/20">
+            Prepared. Democratic. Accountable.
           </span>
           <h1 className="text-4xl md:text-7xl font-display font-black text-white leading-tight uppercase">
             Tricia Geiger <br />
@@ -44,7 +44,7 @@ export function HeroSection() {
           transition={{ delay: 1, duration: 1 }}
           className="flex flex-col items-center gap-4"
         >
-          <div className="flex gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="bg-campaign-gold hover:bg-campaign-gold/90 text-white font-bold h-12 px-8">
               <a href="#involve">Join the Movement</a>
             </Button>
