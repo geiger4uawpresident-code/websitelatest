@@ -47,11 +47,11 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <div className="flex items-center gap-3 group/logo">
-          <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-campaign-black font-black text-xl shadow-lg shadow-campaign-gold/20 transform group-hover/logo:rotate-12 transition-all cursor-default select-none border-none">
+          <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-campaign-black font-black text-xl shadow-lg shadow-campaign-gold/20 transform group-hover/logo:rotate-12 transition-all cursor-default select-none">
             TG
           </div>
           <span className={cn(
-            "font-display font-black text-lg tracking-tight uppercase transition-colors duration-300 text-shadow-campaign",
+            "font-display font-black text-lg tracking-tight uppercase transition-colors duration-300",
             isNavActive ? "text-campaign-black" : "text-white"
           )}>
             Tricia Geiger <span className="text-campaign-gold">2026</span>
@@ -97,7 +97,7 @@ export function Navbar() {
         )}
         aria-hidden={!isMobileMenuOpen}
       >
-        <div className="flex flex-col p-6 space-y-1 overflow-y-auto">
+        <div className="flex flex-col p-6 space-y-1">
           {navLinks.map((link, idx) => (
             <a
               key={link.name}

@@ -161,7 +161,6 @@ export function PlatformSection() {
             </p>
           </motion.div>
         </div>
-        {/* Brand Pillars Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-24 items-stretch">
           {brandPillars.map((bp, i) => (
             <motion.div
@@ -183,7 +182,6 @@ export function PlatformSection() {
             </motion.div>
           ))}
         </div>
-        {/* Strategic Pillars List - Full Verbatim Content */}
         <div className="space-y-16 lg:space-y-24">
           {pillars.map((p) => {
             const Icon = p.icon;
@@ -197,7 +195,6 @@ export function PlatformSection() {
               >
                 <Card className="border-none shadow-2xl hover:shadow-campaign-gold/10 transition-all duration-500 overflow-hidden bg-white">
                   <div className="flex flex-col lg:flex-row min-h-[500px]">
-                    {/* Left Column: Title & Member Message */}
                     <div className="lg:w-1/3 bg-campaign-black text-white px-6 py-10 md:p-12 flex flex-col justify-between">
                       <div>
                         <div className="flex items-center justify-between mb-8">
@@ -217,11 +214,10 @@ export function PlatformSection() {
                         </p>
                       </div>
                     </div>
-                    {/* Right Column: Challenge & Commitments */}
                     <CardContent className="lg:w-2/3 px-6 py-10 md:p-12 space-y-12 flex flex-col justify-center">
                       <div className="space-y-4">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">The Challenge</h4>
-                        <div className="problem-block-refined">
+                        <div className="border-l-4 border-campaign-gold bg-campaign-gold/5 p-6 md:p-8 rounded-r-xl">
                           <p className="text-muted-foreground text-lg leading-relaxed">
                             {p.problem}
                           </p>
@@ -247,7 +243,6 @@ export function PlatformSection() {
             );
           })}
         </div>
-        {/* Closing Call to Action */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
