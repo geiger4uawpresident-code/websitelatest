@@ -1,10 +1,10 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { VideoPlayer } from '@/components/ui/VideoPlayer';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
 export function HeroSection() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -14,12 +14,15 @@ export function HeroSection() {
       }
     }
   };
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" }
+      transition: { 
+        duration: 0.8, 
+        ease: "easeOut" as const 
+      }
     }
   };
   return (
@@ -27,7 +30,7 @@ export function HeroSection() {
       {/* Background elements */}
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541888941255-2574b1752175?auto=format&fit=crop&q=80')] opacity-20 bg-cover bg-center" />
       <div className="absolute inset-0 bg-gradient-to-b from-campaign-black/90 via-campaign-black/60 to-campaign-black" />
-      <motion.div 
+      <motion.div
         className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8"
         variants={containerVariants}
         initial="hidden"
