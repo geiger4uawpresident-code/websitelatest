@@ -34,7 +34,7 @@ export function Footer() {
               <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-campaign-black font-black text-xl">TG</div>
               <span className="font-display font-black text-lg tracking-tight uppercase">Tricia Geiger <span className="text-campaign-gold">2026</span></span>
             </div>
-            <p className="text-campaign-tan/60 leading-relaxed max-w-xs">
+            <p className="text-campaign-tan/70 leading-relaxed max-w-xs">
               A member-first movement dedicated to restoring the power, dignity, and future of every UAW member.
             </p>
             <div className="flex gap-4">
@@ -44,7 +44,7 @@ export function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-campaign-tan/40 hover:text-campaign-gold transition-all duration-200 hover:scale-110 active:scale-95"
+                  className="text-campaign-tan/50 hover:text-campaign-red transition-all duration-200 hover:scale-110 active:scale-95"
                   aria-label={`Visit our ${social.name}`}
                 >
                   {social.icon}
@@ -55,15 +55,15 @@ export function Footer() {
           <div className="space-y-6">
             <h4 className="font-bold uppercase tracking-widest text-campaign-gold">Navigation</h4>
             <ul className="space-y-3">
-              <li><a href="#home" className="text-campaign-tan/60 hover:text-white transition-colors">Home</a></li>
-              <li><a href="#about" className="text-campaign-tan/60 hover:text-white transition-colors">Meet Tricia</a></li>
-              <li><a href="#platform" className="text-campaign-tan/60 hover:text-white transition-colors">The Platform</a></li>
-              <li><a href="#involve" className="text-campaign-tan/60 hover:text-white transition-colors">Get Involved</a></li>
+              <li><a href="#home" className="text-campaign-tan/70 hover:text-white transition-colors">Home</a></li>
+              <li><a href="#about" className="text-campaign-tan/70 hover:text-white transition-colors">Meet Tricia</a></li>
+              <li><a href="#platform" className="text-campaign-tan/70 hover:text-white transition-colors">The Platform</a></li>
+              <li><a href="#involve" className="text-campaign-tan/70 hover:text-white transition-colors">Get Involved</a></li>
             </ul>
           </div>
           <div className="space-y-6">
             <h4 className="font-bold uppercase tracking-widest text-campaign-gold">Contact & Support</h4>
-            <a href="mailto:info@geiger2026.com" className="flex items-center gap-3 text-campaign-tan/60 hover:text-white transition-colors group">
+            <a href="mailto:info@geiger2026.com" className="flex items-center gap-3 text-campaign-tan/70 hover:text-white transition-colors group">
               <Mail className="group-hover:text-campaign-gold transition-colors" />
               info@geiger2026.com
             </a>
@@ -72,15 +72,15 @@ export function Footer() {
                 href={DONATE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full bg-campaign-gold hover:bg-campaign-gold/90 text-white text-center font-bold py-3 rounded-lg transition-all shadow-lg active:scale-95 shadow-campaign-gold/10"
+                className="block w-full bg-campaign-gold hover:bg-campaign-gold/90 text-white text-center font-bold py-4 rounded-lg transition-all shadow-lg active:scale-95 shadow-campaign-gold/10"
               >
                 Donate via GoFundMe
               </a>
             </div>
           </div>
         </div>
-        <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-xs uppercase tracking-widest text-campaign-tan/60">
-          <p>© 2024-2026 Paid for by Tricia Geiger for UAW President 2026</p>
+        <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-[10px] sm:text-xs uppercase tracking-widest text-campaign-tan/60">
+          <p className="text-center md:text-left">© 2024-2026 Paid for by Tricia Geiger for UAW President 2026</p>
           <div className="flex gap-8">
             <a
               href="#"

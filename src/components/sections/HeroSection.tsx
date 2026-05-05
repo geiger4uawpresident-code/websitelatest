@@ -55,7 +55,7 @@ export function HeroSection() {
           <VideoPlayer
             url="https://www.youtube.com/embed/zh5ejvM71qU"
             title="Tricia Geiger Campaign Launch Speech"
-            className="shadow-campaign-red/10 border-campaign-red/20"
+            className="shadow-2xl shadow-campaign-red/10 border-campaign-red/20"
           />
         </motion.div>
         <motion.div
@@ -63,17 +63,17 @@ export function HeroSection() {
           className="flex flex-col items-center gap-4"
         >
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <Button asChild size="lg" className="bg-gradient-campaign hover:opacity-90 text-white font-bold h-12 px-8 transition-all active:scale-95 shadow-xl shadow-campaign-red/20">
+            <Button asChild size="lg" className="bg-gradient-campaign hover:opacity-90 text-white font-bold h-14 px-10 transition-all active:scale-95 shadow-xl shadow-campaign-red/30">
               <a href="#involve">Join the Movement</a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-campaign-tan text-campaign-tan hover:bg-campaign-red/10 hover:text-white h-12 px-8 transition-all active:scale-95">
+            <Button asChild variant="outline" size="lg" className="border-campaign-tan text-campaign-tan hover:bg-campaign-red/10 hover:border-campaign-red/40 hover:text-white h-14 px-10 transition-all active:scale-95">
               <a href="#platform">Read the Platform</a>
             </Button>
           </div>
           <motion.a
             href="#about"
             className="transition-all mt-8 hover:scale-110 active:scale-90 hidden sm:block"
-            animate={{ 
+            animate={{
               y: [0, 8, 0],
               color: ["rgba(212, 196, 168, 0.7)", "rgba(220, 38, 38, 0.6)", "rgba(212, 196, 168, 0.7)"]
             }}
