@@ -35,16 +35,16 @@ export function Footer() {
               <span className="font-display font-bold text-lg tracking-tight uppercase">Tricia Geiger <span className="text-campaign-gold">2026</span></span>
             </div>
             <p className="text-campaign-tan/60 leading-relaxed max-w-xs">
-              A member-first movement dedicated to restoring the power, dignity, and future of every UAW worker.
+              A member-first movement dedicated to restoring the power, dignity, and future of every UAW member.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social, idx) => (
-                <a 
-                  key={idx} 
-                  href={social.href} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-campaign-tan/40 hover:text-campaign-gold transition-all duration-200 hover:scale-110"
+                <a
+                  key={idx}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-campaign-tan/40 hover:text-campaign-gold transition-all duration-200 hover:scale-110 active:scale-95"
                   aria-label={`Visit our ${social.name}`}
                 >
                   {social.icon}
@@ -68,11 +68,11 @@ export function Footer() {
               info@geiger2026.com
             </a>
             <div className="pt-4">
-              <a 
-                href={DONATE_URL} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="block w-full bg-campaign-gold hover:bg-campaign-gold/90 text-white text-center font-bold py-3 rounded-lg transition-all shadow-lg active:scale-95"
+              <a
+                href={DONATE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full bg-campaign-gold hover:bg-campaign-gold/90 text-white text-center font-bold py-3 rounded-lg transition-all shadow-lg active:scale-95 shadow-campaign-gold/10"
               >
                 Donate via GoFundMe
               </a>
@@ -80,17 +80,17 @@ export function Footer() {
           </div>
         </div>
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-xs uppercase tracking-widest text-campaign-tan/30">
-          <p>© 2024 Paid for by Tricia Geiger for UAW President 2026</p>
+          <p>© 2024-2026 Paid for by Tricia Geiger for UAW President 2026</p>
           <div className="flex gap-8">
-            <a 
-              href="#" 
+            <a
+              href="#"
               onClick={(e) => handleLegalClick(e, 'Privacy Policy')}
               className="hover:text-campaign-gold transition-colors"
             >
               Privacy Policy
             </a>
-            <a 
-              href="#" 
+            <a
+              href="#"
               onClick={(e) => handleLegalClick(e, 'Terms of Use')}
               className="hover:text-campaign-gold transition-colors"
             >

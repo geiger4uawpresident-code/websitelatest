@@ -28,14 +28,15 @@ export function HeroSection() {
           </p>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
+          initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="max-w-4xl mx-auto"
+          className="max-w-4xl mx-auto w-full px-2"
         >
           <VideoPlayer
             url="https://www.youtube.com/embed/zh5ejvM71qU"
             title="Tricia Geiger Campaign Launch Speech"
+            className="shadow-campaign-gold/5"
           />
         </motion.div>
         <motion.div
@@ -52,8 +53,8 @@ export function HeroSection() {
               <a href="#platform">Read the Platform</a>
             </Button>
           </div>
-          <a 
-            href="#about" 
+          <a
+            href="#about"
             className="text-campaign-tan/60 hover:text-campaign-gold transition-all mt-8 animate-bounce hover:scale-110 active:scale-90"
             aria-label="Scroll to about section"
           >

@@ -39,7 +39,7 @@ export function BioSection() {
                 Tricia Geiger is a veteran UAW member and organizer who has spent the last 20 years fighting for the dignity of labor. Her roots in the union aren't just professional—they're personal. Tricia's grandfather was a migrant farmworker who found stability and a middle-class life as a member of <strong>GM Fisher Body Local 598</strong>. That legacy of transformation through collective action drives her every day.
               </p>
               <p>
-                For over a decade, Tricia served as an <strong>International Servicing Representative for Region 2B</strong>. She has stood on the front lines of multi-sector fights, managing complex grievances, negotiating high-stakes contracts, and organizing strategic strikes that delivered real wins for workers.
+                For over a decade, Tricia served as an <strong>International Servicing Representative for Region 2B</strong>. She has stood on the front lines of multi-sector fights, managing complex grievances, negotiating high-stakes contracts, and organizing strategic strikes that delivered real wins for <strong>members</strong>.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
