@@ -114,18 +114,18 @@ const pillars = [
 const brandPillars = [
   {
     title: "Prepared",
-    desc: "Preparation is not a strategy — it is a standard. Our members have lived through the consequences of a lack of preparedness. They deserve someone who did the work before they showed up.",
+    desc: "Preparation is not a strategy — it is a standard. It is how you earn respect in rooms that weren't built for you. It is how you walk into a bargaining session, an organizing campaign, or a difficult conversation with the confidence to make the right call instead of the easy one. Every commitment in this platform — trained bargainers, developed leaders, data-driven organizing, researched positions — flows from the same belief: that the people counting on you deserve someone who did the work before they showed up.",
     quote: "Preparation is the foundation of power."
   },
   {
     title: "Democratic",
-    desc: "Member democracy is not a slogan. It is the only way forward. The UAW belongs to the floor, not the executive board. Every decision this leadership makes will reflect that.",
-    quote: "The floor is the highest authority."
+    desc: "Member democracy is not a slogan in this campaign — it is a governing principle with specific, structural commitments behind it. Bargaining agendas set by members, not presidents. Strike authorizations that require member votes, not press releases. CAP resources that respect local autonomy. Retirees with formal voice at the table. Election integrity that gives every candidate a fair shot. This union belongs to its members. Every decision this leadership makes will reflect that.",
+    quote: "Your power. Your choice. Your union."
   },
   {
     title: "Accountable",
-    desc: "Accountability starts with being present and being honest. The International shouldn't be a black box. It’s time for a leadership that answers for its decisions — every one of them.",
-    quote: "Leadership must answer to the floor."
+    desc: "Accountability starts with the person asking for your trust. It means holding yourself to the highest standard first — not because it is easy, but because credibility cannot be claimed. It can only be built through transparency, follow-through, and the integrity to acknowledge failure and fix it. The members of this union have been lied to, let down, and asked to accept less than they deserve. That ends with leadership that answers for its decisions — every one of them.",
+    quote: "No excuses. Not for yourself. Not for this union."
   }
 ];
 export function PlatformSection() {
@@ -153,13 +153,13 @@ export function PlatformSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-white p-8 rounded-2xl border-t-4 border-campaign-gold shadow-xl shadow-campaign-gold/5 flex flex-col min-h-[360px]"
+              className="bg-white p-8 rounded-2xl border-t-4 border-campaign-gold shadow-xl shadow-campaign-gold/5 flex flex-col h-full"
             >
-              <h3 className="text-2xl font-black text-campaign-black mb-4 uppercase tracking-tighter">{bp.title}</h3>
+              <h3 className="text-2xl font-black text-campaign-black mb-4 uppercase tracking-tighter shrink-0">{bp.title}</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed flex-grow text-sm md:text-base">
                 {bp.desc}
               </p>
-              <div className="pt-6 border-t border-gray-100 mt-auto">
+              <div className="pt-6 border-t border-gray-100 mt-auto shrink-0">
                 <p className="text-campaign-gold font-black italic text-lg">"{bp.quote}"</p>
               </div>
             </motion.div>
@@ -183,8 +183,8 @@ export function PlatformSection() {
               transition={{ delay: (idx % 2) * 0.1, duration: 0.5 }}
               viewport={{ once: true, margin: "-50px" }}
             >
-              <Card className="h-full border-none shadow-xl hover:shadow-2xl transition-all duration-300 group overflow-hidden bg-white">
-                <CardHeader className="bg-campaign-black text-white p-8">
+              <Card className="h-full border-none shadow-xl hover:shadow-2xl transition-all duration-300 group overflow-hidden bg-white flex flex-col">
+                <CardHeader className="bg-campaign-black text-white p-8 shrink-0">
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-campaign-gold/30 font-black text-5xl group-hover:text-campaign-gold/100 transition-colors duration-500">{p.id}</span>
                     <div className="bg-campaign-gold/20 p-4 rounded-2xl text-campaign-gold group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
@@ -193,7 +193,7 @@ export function PlatformSection() {
                   </div>
                   <CardTitle className="text-2xl md:text-3xl font-black uppercase tracking-tight leading-none">{p.title}</CardTitle>
                 </CardHeader>
-                <CardContent className="p-8 space-y-8">
+                <CardContent className="p-8 space-y-8 flex-grow">
                   <div className="space-y-3">
                     <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">The Challenge</p>
                     <p className="text-muted-foreground italic text-lg leading-relaxed">"{p.problem}"</p>
@@ -203,15 +203,15 @@ export function PlatformSection() {
                     <ul className="space-y-4">
                       {p.commitments.map((c, i) => (
                         <li key={i} className="flex gap-4 text-sm md:text-base leading-relaxed text-gray-700 items-start">
-                          <div className="mt-1 bg-campaign-gold/10 p-1 rounded-full text-campaign-gold">
+                          <div className="mt-1 bg-campaign-gold/10 p-1 rounded-full text-campaign-gold shrink-0">
                             <ChevronRight size={14} />
                           </div>
-                          {c}
+                          <span>{c}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
-                  <div className="pt-8 border-t border-gray-100">
+                  <div className="pt-8 border-t border-gray-100 mt-auto">
                     <p className="text-center font-black text-campaign-black text-lg tracking-tight uppercase italic">{p.memberMessage}</p>
                   </div>
                 </CardContent>
