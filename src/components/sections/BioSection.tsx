@@ -58,13 +58,17 @@ export function BioSection() {
                 </div>
               </div>
             </div>
-            <div className="relative p-8 bg-campaign-black rounded-2xl text-white shadow-xl">
-              <Quote className="absolute top-4 right-4 text-campaign-gold/20" size={48} />
-              <p className="text-xl italic font-medium relative z-10">
-                "Preparation wins fights. When we are organized, transparent, and democratic, there is no limit to what we can achieve. Let’s write solidarity’s next chapter, together."
+            <blockquote className="relative p-8 bg-campaign-black rounded-2xl text-white shadow-xl">
+              <Quote className="absolute top-4 right-4 text-campaign-gold/20" size={48} aria-hidden="true" />
+              <p className="text-xl italic font-medium relative z-10 leading-relaxed">
+                "We are one Union. One movement with many groups of workers. Prepared. Democratic. Accountable. That's the promise. That's the standard. That's the union we are going to build for all."
               </p>
-              <p className="mt-4 text-campaign-gold font-bold uppercase tracking-widest text-sm">— Tricia Geiger</p>
-            </div>
+              <footer className="mt-6 relative z-10">
+                <cite className="text-campaign-gold font-bold uppercase tracking-widest text-sm not-italic">
+                  — Tricia Geiger, UAW President Candidate
+                </cite>
+              </footer>
+            </blockquote>
           </div>
         </div>
       </div>

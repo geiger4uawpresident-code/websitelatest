@@ -23,8 +23,8 @@ export function HeroSection() {
             Tricia Geiger <br />
             <span className="text-campaign-gold italic">for UAW President</span>
           </h1>
-          <p className="text-xl md:text-2xl text-campaign-tan max-w-2xl mx-auto font-medium drop-shadow-sm">
-            Building a stronger, more transparent, and united future for our members.
+          <p className="text-xl md:text-2xl text-campaign-tan max-w-3xl mx-auto font-medium drop-shadow-sm leading-relaxed">
+            One Union. One Movement. Building a transparent and accountable future for every member.
           </p>
         </motion.div>
         <motion.div
