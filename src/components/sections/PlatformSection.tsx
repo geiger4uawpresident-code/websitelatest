@@ -1,16 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import {
-  Shield, 
-  Users, 
+  Shield,
+  Users,
   Handshake,
-  Heart, 
-  PieChart, 
-  Landmark, 
+  Heart,
+  PieChart,
+  Landmark,
   Network,
-  ChevronRight, 
+  ChevronRight,
   Quote,
-  History
+  History as HistoryIcon
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const pillars = [
@@ -89,7 +89,7 @@ const pillars = [
   {
     id: "07",
     title: "Retiree Dignity",
-    icon: <History className="w-6 h-6" />,
+    icon: <HistoryIcon className="w-6 h-6" />,
     problem: "The giants whose shoulders we stand on are being left behind.",
     commitments: [
       "Automatic COLA for retiree pensions in all future negotiations.",
@@ -178,7 +178,9 @@ export function PlatformSection() {
                 <CardHeader className="bg-campaign-black text-white p-6">
                   <div className="flex items-center justify-between">
                     <span className="text-campaign-gold font-black text-4xl opacity-50 group-hover:opacity-100 transition-opacity">{p.id}</span>
-                    <div className="bg-campaign-gold/20 p-3 rounded-xl text-campaign-gold group-hover:scale-110 transition-transform">{p.icon}</div>
+                    <div className="bg-campaign-gold/20 p-3 rounded-xl text-campaign-gold group-hover:scale-110 transition-transform">
+                      {p.icon}
+                    </div>
                   </div>
                   <CardTitle className="text-2xl font-black uppercase mt-4">{p.title}</CardTitle>
                 </CardHeader>
