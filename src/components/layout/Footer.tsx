@@ -19,9 +19,9 @@ export function Footer() {
     });
   };
   const socialLinks = [
-    { name: "Facebook", icon: <Facebook />, href: "https://www.facebook.com/profile.php?id=61588992516309" },
-    { name: "Youtube", icon: <Youtube />, href: "https://www.youtube.com/@TriciaGeiger4UAWPresident2026" },
-    { name: "Instagram", icon: <Instagram />, href: "https://www.instagram.com/geiger_triciageiger4uaw/" },
+    { name: "Facebook", icon: <Facebook className="w-6 h-6" />, href: "https://www.facebook.com/profile.php?id=61588992516309" },
+    { name: "Youtube", icon: <Youtube className="w-6 h-6" />, href: "https://www.youtube.com/@TriciaGeiger4UAWPresident2026" },
+    { name: "Instagram", icon: <Instagram className="w-6 h-6" />, href: "https://www.instagram.com/geiger_triciageiger4uaw/" },
     { name: "TikTok", icon: <TikTokIcon className="w-6 h-6" />, href: "https://www.tiktok.com/@geiger4uaw" },
   ];
   const DONATE_URL = "https://gofund.me/5e6d6b33f";
@@ -31,8 +31,8 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-16">
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-white font-bold text-xl">TG</div>
-              <span className="font-display font-bold text-lg tracking-tight uppercase">Tricia Geiger <span className="text-campaign-gold">2026</span></span>
+              <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-white font-black text-xl">TG</div>
+              <span className="font-display font-black text-lg tracking-tight uppercase">Tricia Geiger <span className="text-campaign-gold">2026</span></span>
             </div>
             <p className="text-campaign-tan/60 leading-relaxed max-w-xs">
               A member-first movement dedicated to restoring the power, dignity, and future of every UAW member.
