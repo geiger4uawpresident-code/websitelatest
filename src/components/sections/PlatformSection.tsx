@@ -144,7 +144,7 @@ export function PlatformSection() {
             </p>
           </motion.div>
         </div>
-        {/* Brand Pillars Grid with Enhanced Interaction */}
+        {/* Brand Pillars Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-24 items-stretch">
           {brandPillars.map((bp, i) => (
             <motion.div
@@ -166,16 +166,22 @@ export function PlatformSection() {
             </motion.div>
           ))}
         </div>
+        {/* Central Directive Quote Block */}
         <div className="mb-24 relative">
           <div className="absolute inset-0 bg-campaign-black rounded-3xl -rotate-1 scale-[1.01]" />
           <div className="relative bg-campaign-gold p-10 md:p-20 rounded-3xl text-white text-center shadow-2xl overflow-hidden">
             <Quote className="absolute -top-12 -left-12 text-white/10 w-64 h-64 select-none pointer-events-none" />
-            <h3 className="text-2xl md:text-4xl font-black leading-tight max-w-4xl mx-auto relative z-10 italic">
-              "We aren't just fighting for a contract; we are fighting for the very soul of the labor movement."
-            </h3>
+            <div className="relative z-10 space-y-6">
+              <h3 className="text-2xl md:text-4xl font-black leading-tight max-w-4xl mx-auto italic">
+                "It is never about dollars and cents. It is always about people and the quality of their lives."
+              </h3>
+              <p className="text-lg md:text-xl font-bold uppercase tracking-widest text-campaign-black/80">
+                — Tricia Geiger
+              </p>
+            </div>
           </div>
         </div>
-        {/* Strategic Pillars Grid with Optimized Spacing */}
+        {/* Strategic Pillars Grid */}
         <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-10">
           {pillars.map((p, idx) => (
             <motion.div
