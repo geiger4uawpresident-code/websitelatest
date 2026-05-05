@@ -40,7 +40,7 @@
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
     --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent-foreground: 0 0% 10.2%;
     --input: 0 0% 14.9%;
   }
   * {
@@ -48,11 +48,29 @@
   }
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   body {
     @apply bg-background text-foreground;
+    selection:bg-[#C5A059]/30;
+    selection:text-black;
+  }
+  /* Premium scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C5A059;
+    border-radius: 5px;
+    border: 2px solid hsl(var(--muted));
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a8884c;
   }
 }
 @layer components {

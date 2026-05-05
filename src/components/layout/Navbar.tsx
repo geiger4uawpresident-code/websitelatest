@@ -7,7 +7,6 @@ export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      // Small threshold for scroll state change to avoid jitter
       setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -23,22 +22,22 @@ export function Navbar() {
   const DONATE_URL = "https://gofund.me/5e6d6b33f";
   const isNavActive = isScrolled || isMobileMenuOpen;
   return (
-    <nav 
+    <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out",
-        isNavActive 
-          ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100 py-3" 
+        isNavActive
+          ? "bg-white/95 backdrop-blur-lg shadow-lg border-b border-gray-100 py-3"
           : "bg-transparent py-6"
       )}
       aria-label="Main Navigation"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-white font-black text-xl shadow-lg shadow-campaign-gold/20 transform hover:rotate-12 transition-transform">
+          <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-white font-black text-xl shadow-lg shadow-campaign-gold/20 transform hover:rotate-12 hover:shadow-campaign-gold/40 transition-all cursor-default">
             TG
           </div>
           <span className={cn(
-            "font-display font-black text-lg tracking-tight uppercase transition-colors duration-300",
+            "font-display font-black text-lg tracking-tight uppercase transition-colors duration-500",
             isNavActive ? "text-campaign-black" : "text-white drop-shadow-md"
           )}>
             Tricia Geiger <span className="text-campaign-gold">2026</span>
@@ -77,13 +76,13 @@ export function Navbar() {
         </button>
       </div>
       {/* Mobile Menu Overlay */}
-      <div 
+      <div
         className={cn(
-          "md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-2xl overflow-hidden transition-all duration-300 ease-in-out",
+          "md:hidden absolute top-full left-0 right-0 bg-white/98 backdrop-blur-xl border-b border-gray-100 shadow-2xl overflow-hidden transition-all duration-300 ease-in-out",
           isMobileMenuOpen ? "max-h-[500px] opacity-100 py-6" : "max-h-0 opacity-0 py-0"
         )}
       >
-        <div className="flex flex-col px-6 gap-2">
+        <div className="flex flex-col px-6 gap-1">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -94,7 +93,7 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
-          <Button asChild size="lg" className="bg-campaign-gold hover:bg-campaign-gold/90 text-white font-black w-full mt-6 h-14 shadow-lg">
+          <Button asChild size="lg" className="bg-campaign-gold hover:bg-campaign-gold/90 text-white font-black w-full mt-6 h-14 shadow-lg active:scale-[0.98] transition-all">
             <a href={DONATE_URL} target="_blank" rel="noopener noreferrer">Donate to the Campaign</a>
           </Button>
         </div>
