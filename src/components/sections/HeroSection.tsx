@@ -24,7 +24,7 @@ export function HeroSection() {
             <span className="text-campaign-gold italic">for UAW President</span>
           </h1>
           <p className="text-xl md:text-2xl text-campaign-tan max-w-2xl mx-auto font-medium">
-            Building a stronger, more transparent, and united future for every worker.
+            Building a stronger, more transparent, and united future for our members.
           </p>
         </motion.div>
         <motion.div

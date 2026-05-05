@@ -26,7 +26,7 @@ export function InvolveSection() {
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-3xl md:text-5xl font-display font-black text-campaign-black uppercase">Get Involved</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            This movement belongs to the workers. Choose how you want to participate in rebuilding our union and ensuring every voice is heard.
+            This movement belongs to the members. Choose how you want to participate in rebuilding our union and ensuring every voice is heard.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">

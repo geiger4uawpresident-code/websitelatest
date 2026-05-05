@@ -26,11 +26,11 @@ export function Endorsements() {
           <Quote size={200} />
         </div>
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-display font-black uppercase">Voices from the Floor</h2>
+          <h2 className="text-3xl md:text-5xl font-display font-black uppercase tracking-tight">Voices from the Floor</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((t, idx) => (
-            <Card key={idx} className="bg-white/5 border-white/10 text-white backdrop-blur-sm">
+            <Card key={idx} className="bg-white/5 border-white/10 text-white backdrop-blur-sm hover:scale-[1.02] transition-transform duration-300">
               <CardContent className="pt-8 flex flex-col justify-between h-full">
                 <div>
                   <Quote className="text-campaign-gold mb-4" size={32} />
