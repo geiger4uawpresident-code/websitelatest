@@ -1,29 +1,29 @@
 import React from 'react';
-import { FileDown, Printer, Share2 } from 'lucide-react';
+import { FileDown, Printer, FileText, Package } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
 export function ResourcesSection() {
   const handleDownload = (title: string) => {
     toast.info(`${title} is coming soon!`, {
-      description: "We are currently finalizing these materials for distribution to all locals."
+      description: "We are currently finalizing these materials for distribution to all locals. Stay ready!"
     });
   };
   const handlePrintShop = () => {
     toast.info("Print Shop Integration Coming Soon", {
-      description: "Direct ordering of official campaign fliers and banners will be available shortly."
+      description: "Direct ordering of official campaign fliers and banners will be available shortly to help you organize your local."
     });
   };
   const materials = [
     { title: "Campaign Flyer", type: "PDF", size: "1.2 MB", icon: <FileDown /> },
-    { title: "Platform Summary", type: "PDF", size: "2.4 MB", icon: <FileDown /> },
-    { title: "Meeting Toolkit", type: "ZIP", size: "5.8 MB", icon: <Share2 /> }
+    { title: "Platform Summary", type: "PDF", size: "2.4 MB", icon: <FileText /> },
+    { title: "Meeting Toolkit", type: "ZIP", size: "5.8 MB", icon: <Package /> }
   ];
   return (
     <section id="resources" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-3xl md:text-5xl font-display font-black text-campaign-black uppercase">Campaign Resources</h2>
-          <p className="text-muted-foreground text-lg">Download and share materials to help organize your local and community.</p>
+          <p className="text-muted-foreground text-lg">Download and share materials to help organize your local and mobilize your community.</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {materials.map((m, idx) => (

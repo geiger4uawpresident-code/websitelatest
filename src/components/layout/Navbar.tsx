@@ -18,7 +18,6 @@ export function Navbar() {
     { name: 'Resources', href: '#resources' },
   ];
   const DONATE_URL = "https://gofund.me/5e6d6b33f";
-  // Navigation active state (scrolled or menu open)
   const isNavActive = isScrolled || isMobileMenuOpen;
   return (
     <nav className={cn(
@@ -27,7 +26,7 @@ export function Navbar() {
     )}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-white font-bold text-xl">TG</div>
+          <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-campaign-gold/20">TG</div>
           <span className={cn(
             "font-display font-bold text-lg tracking-tight uppercase transition-colors duration-300",
             isNavActive ? "text-campaign-black" : "text-white"
@@ -42,14 +41,14 @@ export function Navbar() {
               key={link.name}
               href={link.href}
               className={cn(
-                "text-sm font-medium hover:text-campaign-gold transition-colors",
+                "text-sm font-bold uppercase tracking-wider hover:text-campaign-gold transition-colors",
                 isNavActive ? "text-campaign-black" : "text-white"
               )}
             >
               {link.name}
             </a>
           ))}
-          <Button asChild className="bg-campaign-gold hover:bg-campaign-gold/90 text-white font-bold transition-all active:scale-95">
+          <Button asChild className="bg-campaign-gold hover:bg-campaign-gold/90 text-white font-bold transition-all active:scale-95 shadow-lg shadow-campaign-gold/20">
             <a href={DONATE_URL} target="_blank" rel="noopener noreferrer">Donate Now</a>
           </Button>
         </div>
@@ -76,7 +75,7 @@ export function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-lg font-medium text-campaign-black py-3 px-4 rounded-lg active:bg-gray-50 transition-colors"
+              className="text-lg font-bold text-campaign-black py-3 px-4 rounded-lg active:bg-gray-50 transition-colors uppercase tracking-tight"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.name}

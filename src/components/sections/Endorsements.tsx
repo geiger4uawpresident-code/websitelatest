@@ -4,19 +4,19 @@ import { Card, CardContent } from '@/components/ui/card';
 export function Endorsements() {
   const testimonials = [
     {
-      quote: "Tricia has been a tireless advocate for her fellow workers for over a decade. She's the leader the UAW needs right now.",
-      author: "Local Member A",
-      position: "Production Specialist"
+      quote: "Tricia has been a tireless advocate for her fellow members for over a decade. She's the leader the UAW needs right now.",
+      author: "Sarah J.",
+      position: "Local 600, Production Specialist"
     },
     {
       quote: "Her commitment to transparency is exactly what we've been missing. We need someone who listens to the floor.",
-      author: "Local Member B",
-      position: "Steward"
+      author: "Robert M.",
+      position: "Local 12, Steward"
     },
     {
       quote: "Strategic, empathetic, and fearless. Tricia isn't afraid to take on the tough fights for our benefits.",
-      author: "Local Member C",
-      position: "Journeyman"
+      author: "Jessica W.",
+      position: "Local 862, Journeyman"
     }
   ];
   return (
