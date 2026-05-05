@@ -21,10 +21,9 @@ export function BioSection() {
                 className="w-full h-full transition-all duration-700 object-cover object-[center_20%]"
                 loading="lazy"
               />
-              {/* Decorative gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-campaign-black/40 via-transparent to-transparent pointer-events-none" />
             </motion.div>
-            <div className="absolute -bottom-6 -right-6 bg-campaign-gold text-white p-6 md:p-8 rounded-xl shadow-xl hidden md:block z-20 max-w-xs shadow-campaign-gold/10">
+            <div className="absolute -bottom-6 -right-6 bg-campaign-gold text-white p-6 md:p-8 rounded-xl shadow-xl hidden md:block z-20 max-w-xs shadow-campaign-gold/20">
               <p className="text-lg md:text-xl font-black italic leading-tight">
                 "Let's write solidarity's next chapter together"
               </p>

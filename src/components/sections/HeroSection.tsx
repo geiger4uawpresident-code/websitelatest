@@ -38,13 +38,13 @@ export function HeroSection() {
       >
         <motion.div variants={itemVariants} className="space-y-4">
           <span className="inline-block px-6 py-2 rounded-full bg-campaign-gold text-white text-xs font-bold uppercase tracking-[0.2em] shadow-lg shadow-campaign-gold/20">
-            Prepared. Democratic. <span className="border-b-2 border-campaign-red pb-0.5">Accountable</span>.
+            Prepared. Democratic. <span className="border-b-2 border-campaign-red pb-0.5 ml-1">Accountable</span>.
           </span>
-          <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-black text-white leading-tight uppercase tracking-tight">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-black text-white leading-[1.1] uppercase tracking-tight">
             Tricia Geiger <br />
             <span className="text-campaign-gold italic">for UAW President</span>
           </h1>
-          <p className="text-lg md:text-2xl text-campaign-tan max-w-3xl mx-auto font-medium drop-shadow-sm leading-relaxed px-4">
+          <p className="text-lg md:text-2xl text-campaign-tan max-w-3xl mx-auto font-medium drop-shadow-sm leading-relaxed px-4 opacity-90">
             One Union. One Movement. Building a transparent and accountable future for every member.
           </p>
         </motion.div>
@@ -63,7 +63,7 @@ export function HeroSection() {
           className="flex flex-col items-center gap-4"
         >
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <Button asChild size="lg" className="bg-campaign-gold hover:opacity-90 text-white font-bold h-14 px-10 transition-all active:scale-95 shadow-xl shadow-campaign-gold/20">
+            <Button asChild size="lg" className="bg-campaign-gold hover:opacity-95 text-white font-bold h-14 px-10 transition-all active:scale-95 shadow-xl shadow-campaign-gold/20">
               <a href="#involve">Join the Movement</a>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-campaign-tan text-campaign-tan hover:bg-white/10 hover:border-campaign-gold hover:text-white h-14 px-10 transition-all active:scale-95 backdrop-blur-sm">
@@ -75,7 +75,7 @@ export function HeroSection() {
             className="transition-all mt-8 hover:scale-110 active:scale-90 hidden sm:block"
             animate={{
               y: [0, 8, 0],
-              color: ["rgba(212, 196, 168, 0.7)", "rgba(197, 160, 89, 0.9)", "rgba(212, 196, 168, 0.7)"]
+              color: ["#D4C4A8", "#C5A059", "#D4C4A8"]
             }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             aria-label="Scroll to about section"

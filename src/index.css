@@ -88,11 +88,7 @@
   }
   /* Campaign Button System */
   .btn-campaign-gold {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-bold text-white transition-all duration-200 bg-[#C5A059] hover:opacity-90 active:scale-95 shadow-lg shadow-campaign-gold/10;
-  }
-  /* Campaign Gradient System */
-  .bg-gradient-campaign {
-    @apply bg-gradient-to-r from-campaign-gold to-campaign-tan;
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-bold text-white transition-all duration-200 bg-[#C5A059] hover:opacity-95 active:scale-95 shadow-lg shadow-campaign-gold/10;
   }
   /* Layout Utilities */
   .section-container {

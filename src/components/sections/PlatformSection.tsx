@@ -162,7 +162,7 @@ export function PlatformSection() {
               transition={{ delay: i * 0.1, duration: 0.5 }}
               whileHover={{ y: -8 }}
               viewport={{ once: true }}
-              className="bg-white p-8 rounded-2xl border-t-4 border-campaign-gold shadow-xl shadow-campaign-red/5 flex flex-col h-full transition-shadow hover:shadow-2xl hover:shadow-campaign-red/10"
+              className="bg-white p-8 rounded-2xl border-t-4 border-campaign-gold shadow-xl shadow-campaign-gold/5 flex flex-col h-full transition-all hover:shadow-2xl hover:shadow-campaign-gold/10"
             >
               <h3 className="text-2xl font-black text-campaign-black mb-4 uppercase tracking-tighter shrink-0">{bp.title}</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed flex-grow text-sm md:text-base">
@@ -184,13 +184,13 @@ export function PlatformSection() {
               transition={{ duration: 0.5 }}
               viewport={{ once: true, margin: "-100px" }}
             >
-              <Card className="border-none shadow-2xl hover:shadow-campaign-red/10 transition-all duration-500 overflow-hidden bg-white">
+              <Card className="border-none shadow-2xl hover:shadow-campaign-gold/10 transition-all duration-500 overflow-hidden bg-white">
                 <div className="flex flex-col lg:flex-row">
                   <div className="lg:w-1/3 bg-campaign-black text-white px-6 py-10 md:p-12 flex flex-col justify-between">
                     <div>
                       <div className="flex items-center justify-between mb-8">
                         <span className="text-campaign-gold/20 font-black text-6xl md:text-8xl">{p.id}</span>
-                        <div className="bg-campaign-red/20 p-4 rounded-2xl text-campaign-gold">
+                        <div className="bg-campaign-gold/20 p-4 rounded-2xl text-campaign-gold">
                           {p.icon}
                         </div>
                       </div>
@@ -215,7 +215,7 @@ export function PlatformSection() {
                       <ul className="grid sm:grid-cols-1 gap-4 items-stretch platform-commitment-list">
                         {p.commitments.map((c, i) => (
                           <li key={i} className="flex gap-4 text-base md:text-lg leading-relaxed text-gray-800 items-start group">
-                            <div className="mt-1.5 bg-campaign-gold/10 p-1 rounded-full text-campaign-gold group-hover:bg-campaign-red group-hover:text-white transition-all shrink-0">
+                            <div className="mt-1.5 bg-campaign-gold/10 p-1 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
                               <ChevronRight size={16} strokeWidth={3} />
                             </div>
                             <span>{c}</span>
