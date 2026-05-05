@@ -15,14 +15,16 @@ export function BioSection() {
               className="relative z-10 rounded-2xl overflow-hidden shadow-2xl shadow-campaign-gold/10 border-8 border-white bg-gray-100"
             >
               <img
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80"
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
                 alt="Tricia Geiger, UAW Presidential Candidate"
                 className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700 object-cover aspect-[4/5]"
                 loading="lazy"
               />
             </motion.div>
-            <div className="absolute -bottom-6 -right-6 bg-campaign-gold text-white p-8 rounded-xl shadow-xl hidden md:block z-20">
-              <p className="text-2xl font-black italic">"Member Power First."</p>
+            <div className="absolute -bottom-6 -right-6 bg-campaign-gold text-white p-8 rounded-xl shadow-xl hidden md:block z-20 max-w-xs">
+              <p className="text-xl font-black italic leading-tight">
+                "Let's write solidarity's next chapter together"
+              </p>
             </div>
           </div>
           <div className="lg:w-1/2 space-y-8">
