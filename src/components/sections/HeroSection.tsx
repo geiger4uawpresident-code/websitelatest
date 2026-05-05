@@ -37,7 +37,7 @@ export function HeroSection() {
         animate="visible"
       >
         <motion.div variants={itemVariants} className="space-y-4">
-          <span className="inline-block px-6 py-2 rounded-full bg-campaign-gold text-white text-xs font-bold uppercase tracking-[0.2em] shadow-lg shadow-campaign-red/20">
+          <span className="inline-block px-6 py-2 rounded-full bg-campaign-gold text-white text-xs font-bold uppercase tracking-[0.2em] shadow-lg shadow-campaign-red/40">
             Prepared. Democratic. Accountable.
           </span>
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-black text-white leading-tight uppercase tracking-tight">
@@ -55,7 +55,7 @@ export function HeroSection() {
           <VideoPlayer
             url="https://www.youtube.com/embed/zh5ejvM71qU"
             title="Tricia Geiger Campaign Launch Speech"
-            className="shadow-2xl shadow-campaign-red/10 border-campaign-red/20"
+            className="shadow-2xl shadow-campaign-red/20 border-campaign-red/20"
           />
         </motion.div>
         <motion.div
@@ -63,10 +63,10 @@ export function HeroSection() {
           className="flex flex-col items-center gap-4"
         >
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <Button asChild size="lg" className="bg-gradient-campaign hover:opacity-90 text-white font-bold h-14 px-10 transition-all active:scale-95 shadow-xl shadow-campaign-red/30">
+            <Button asChild size="lg" className="bg-gradient-campaign hover:opacity-90 text-white font-bold h-14 px-10 transition-all active:scale-95 shadow-2xl shadow-campaign-red/40">
               <a href="#involve">Join the Movement</a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-campaign-tan text-campaign-tan hover:bg-campaign-red/10 hover:border-campaign-red/40 hover:text-white h-14 px-10 transition-all active:scale-95">
+            <Button asChild variant="outline" size="lg" className="border-campaign-tan text-campaign-tan hover:bg-campaign-red/10 hover:border-campaign-red/40 hover:text-white h-14 px-10 transition-all active:scale-95 backdrop-blur-sm">
               <a href="#platform">Read the Platform</a>
             </Button>
           </div>

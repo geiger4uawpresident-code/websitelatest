@@ -48,7 +48,7 @@
   }
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 100px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -57,7 +57,6 @@
     selection:bg-[#C5A059]/30;
     selection:text-black;
   }
-  /* Premium scrollbar styling */
   ::-webkit-scrollbar {
     width: 10px;
   }
@@ -74,6 +73,16 @@
   }
 }
 @layer components {
+  /* Platform Typography & Blocks */
+  .problem-block {
+    @apply border-l-4 border-campaign-red bg-campaign-red/5 p-6 md:p-8 rounded-r-xl transition-colors duration-300;
+  }
+  .platform-commitment-list li {
+    @apply transition-all duration-200;
+  }
+  .text-display {
+    @apply text-3xl sm:text-5xl md:text-6xl font-display font-black uppercase tracking-tight leading-none;
+  }
   /* Campaign Button System */
   .btn-campaign-gold {
     @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-bold text-white transition-all duration-200 bg-[#C5A059] hover:bg-[#a8884c] active:scale-95 shadow-lg shadow-campaign-red/10;
@@ -89,14 +98,8 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .text-glow-red {
-    text-shadow: 0 0 10px rgba(220, 38, 38, 0.4);
-  }
   /* Layout Utilities */
   .section-container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
-  }
-  .text-display {
-    @apply text-4xl sm:text-5xl md:text-6xl font-display font-black uppercase tracking-tight;
   }
 }

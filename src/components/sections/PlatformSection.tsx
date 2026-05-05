@@ -18,119 +18,127 @@ const pillars = [
     id: "01",
     title: "Clean Governance",
     icon: <Shield className="w-6 h-6" />,
-    problem: "Trust has been eroded by top-down decision making and lack of transparency.",
+    problem: "Decades of 20th-century bureaucracy have allowed a 'club culture' to erode the fundamental trust between leadership and the shop floor. Top-down decisions and opaque financial reporting have left members feeling like spectators in their own union rather than the owners of it.",
     commitments: [
-      "Implement real-time digital auditing of international expenditures.",
-      "Mandatory town halls before major executive board votes.",
-      "Strengthen Ethics Officer independence with member-led oversight."
+      "Implement real-time forensic auditing of all international and regional expenditures accessible via a secure member portal.",
+      "Establish an independent Member Oversight Committee with the constitutional power to subpoena financial records.",
+      "Mandatory 'Constitutional Town Halls' held 30 days prior to any major Executive Board vote on policy changes.",
+      "Strict 'No-Gift' policy for all elected officials with immediate removal for violations."
     ],
-    memberMessage: "Your dues, your union, your right to know."
+    memberMessage: "This is your union. You pay the dues; you deserve to see exactly where they go."
   },
   {
     id: "02",
     title: "Strategic Bargaining",
     icon: <Handshake className="w-6 h-6" />,
-    problem: "Contracts are becoming more complex while members feel less informed.",
+    problem: "The 'Crisis of Tiers' was born from a lack of strategic preparation and transparency. Corporations have used complex contracts to hide concessions, while members are often the last to know the details of the deals that define their lives.",
     commitments: [
-      "Open bargaining protocols: Keep members updated throughout the process.",
-      "Invest in world-class economic research teams to out-negotiate corporations.",
-      "End the era of tiered systems once and for all across all sectors."
+      "Adopt 'Open Bargaining' protocols: Daily digital updates to the membership throughout the negotiation process.",
+      "Establish a Pre-Strike 'Economic War Room' staffed by world-class labor economists to counter corporate misinformation.",
+      "A binding commitment to eliminate ALL tiered wage and benefit systems in the first year of any new contract.",
+      "Full contract language must be released to the membership 7 days before any ratification vote."
     ],
-    memberMessage: "We don't just ask for more; we prepare to take it."
+    memberMessage: "We don't just ask for a fair share; we prepare to take what we've earned."
   },
   {
     id: "03",
     title: "Staff Development",
     icon: <Users className="w-6 h-6" />,
-    problem: "Our representatives need modern tools and training to fight modern corporate tactics.",
+    problem: "Our representatives are often outmatched not by talent, but by the modern digital tools and legal resources deployed by multi-national corporations. A lack of standardized training for stewards and servicing reps leads to inconsistent enforcement of our hard-won rights.",
     commitments: [
-      "Establish a UAW Leadership Institute for servicing reps and stewards.",
-      "Standardize grievance handling with digital tracking for faster resolution.",
-      "Diversify staff to reflect the full breadth of our multi-sector membership."
+      "Launch the 'UAW Leadership Institute'—a mandatory certification program for all servicing reps and local stewards.",
+      "Implement a Universal Digital Grievance Tracking System allowing members to see the status of their case in real-time.",
+      "Expand specialized legal and safety support staff to provide 24/7 assistance for complex industrial hazards.",
+      "Recruitment initiatives focused on reflecting the full multi-sector breadth of our modern membership."
     ],
-    memberMessage: "A professional staff for a professional fight."
+    memberMessage: "A professional, highly-trained staff is our first line of defense against corporate greed."
   },
   {
     id: "04",
     title: "Political Action (CAP)",
     icon: <Landmark className="w-6 h-6" />,
-    problem: "Labor's voice is often treated as secondary in the halls of power.",
+    problem: "Labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on worker protections. We have been too quick to endorse and too slow to hold elected officials accountable to our specific legislative agenda.",
     commitments: [
-      "Tie endorsements strictly to labor-first voting records.",
-      "Direct member participation in setting legislative priorities.",
-      "Massive investment in state-level worker protection laws."
+      "Tie all V-CAP endorsements strictly to a 'Labor-First' scorecard focused on anti-tier and anti-scab legislation.",
+      "Grant local councils Veto Power over regional endorsements that conflict with local member priorities.",
+      "Aggressive lobbying for the 'Worker Freedom Act' to end forced captive audience meetings nationwide.",
+      "Direct member-led development of the biennial UAW National Legislative Agenda."
     ],
-    memberMessage: "Politicians should work for us, not the other way around."
+    memberMessage: "Politicians work for us, or they don't get our support. Period."
   },
   {
     id: "05",
     title: "Healthcare Security",
     icon: <Heart className="w-6 h-6" />,
-    problem: "Rising costs are eating away at every hard-won wage increase.",
+    problem: "Healthcare is a fundamental human right, yet it is being used by corporations as a tool of coercion. Rising premiums and shrinking networks are effectively rolling back the wage increases we fight so hard to win.",
     commitments: [
-      "Launch a national UAW Healthcare Taskforce to fight for cost-caps.",
-      "Protect retiree healthcare benefits against inflation and corporate shell games.",
-      "Expand mental health and wellness support in every contract."
+      "Create a National UAW Healthcare Trust Defense Fund to aggressively fight off network reductions and cost-shifts.",
+      "Contractual guarantees for Healthcare Cost-Caps: No member's take-home pay should ever decrease due to premium hikes.",
+      "Mandatory mental health and substance abuse support parity in every multi-sector agreement.",
+      "Establish a Retiree Healthcare Advocacy Board to protect VEBA and traditional plans from inflation."
     ],
-    memberMessage: "Healthcare is a right, not a bargaining chip."
+    memberMessage: "Your health is not a bargaining chip. We will protect your care as fiercely as your paycheck."
   },
   {
     id: "06",
     title: "Campaign Finance",
     icon: <PieChart className="w-6 h-6" />,
-    problem: "The financial power of our union must be deployed more effectively.",
+    problem: "The 'Dues Dollar' is too often lost in administrative overhead. We need to shift our financial power from the mahogany offices of the International to the picket lines and organizing drives where it actually builds power for the members.",
     commitments: [
-      "Create a robust Strike Fund that ensures no member is starved back to work.",
-      "Transparent reporting on investment returns and fund allocations.",
-      "Shift resources from administrative overhead to direct organizing."
+      "Restructure the Strike Fund to ensure benefit payments match 100% of a member's base take-home pay.",
+      "Commitment to a 30% reduction in non-essential administrative overhead at Solidarity House within 24 months.",
+      "Redirection of saved funds directly to 'Ground-War' organizing and local servicing budgets.",
+      "Quarterly 'Dues Transparency Reports' mailed to every member's home."
     ],
-    memberMessage: "Building a war chest that makes CEOs tremble."
+    memberMessage: "Building a war chest that makes CEOs tremble requires a lean, focused, and transparent treasury."
   },
   {
     id: "07",
     title: "Retiree Dignity",
     icon: <HistoryIcon className="w-6 h-6" />,
-    problem: "The giants whose shoulders we stand on are being left behind.",
+    problem: "The giants whose shoulders we stand on are being left behind in a changing economy. Solidarity is a lifelong bond, yet our retirees often feel disconnected from the active leadership and vulnerable to pension erosion.",
     commitments: [
-      "Automatic COLA for retiree pensions in all future negotiations.",
-      "Dedicated retiree representation on the International Executive Board.",
-      "Strengthen the connection between current members and retiree locals."
+      "Negotiate Automatic COLA (Cost of Living Adjustments) for all retiree pensions in every future contract.",
+      "Create a permanent, voting seat on the International Executive Board for a Retiree Council Representative.",
+      "Launch a National Retiree Mentorship program to connect veteran experience with new-hire organizing.",
+      "Protect and expand surviving spouse benefits to ensure no UAW family is left in poverty."
     ],
-    memberMessage: "Solidarity doesn't end at retirement."
+    memberMessage: "Solidarity doesn't end at retirement. We will honor those who built this union."
   },
   {
     id: "08",
     title: "Aggressive Organizing",
     icon: <Network className="w-6 h-6" />,
-    problem: "Union density is falling, weakening our collective bargaining power.",
+    problem: "Falling union density is the single greatest threat to our collective bargaining power. If we don't organize the new industries—especially the EV and battery sectors—we will lose the leverage required to protect existing standards.",
     commitments: [
-      "Deploy 'Tiger Teams' for rapid response in non-union sector drives.",
-      "Leverage digital organizing tools to reach workers where they are.",
-      "Focus on new industries including EV battery plants and tech-manufacturing."
+      "Authorize a $100 Million Strategic Organizing Fund specifically targeted at the non-union South and EV sector.",
+      "Deploy 'Tiger Teams'—elite, rapid-response organizing units of rank-and-file members—for new plant drives.",
+      "Implement a 'Sector-Wide Solidarity' model to organize the entire supply chain, not just the assembly lines.",
+      "Leverage digital-first organizing tools to reach workers in tech-manufacturing and new industrial hubs."
     ],
-    memberMessage: "Grow the union, grow the power."
+    memberMessage: "To protect our standards, we must grow our movement. We will organize the unorganized."
   }
 ];
 const brandPillars = [
   {
     title: "Prepared",
-    desc: "Preparation is not a strategy — it is a standard. It is how you earn respect in rooms that weren't built for you. It is how you walk into a bargaining session, an organizing campaign, or a difficult conversation with the confidence to make the right call instead of the easy one. Every commitment in this platform — trained bargainers, developed leaders, data-driven organizing, researched positions — flows from the same belief: that the people counting on you deserve someone who did the work before they showed up.",
-    quote: "Preparation is the foundation of power."
+    desc: "Preparation is the foundation of power. It is how you earn respect in rooms that weren't built for you. Every commitment in this platform—trained bargainers, developed leaders, and data-driven organizing—flows from the belief that the people counting on you deserve someone who did the work before they showed up.",
+    quote: "Expertise is our armor."
   },
   {
     title: "Democratic",
-    desc: "Member democracy is not a slogan in this campaign — it is a governing principle with specific, structural commitments behind it. Bargaining agendas set by members, not presidents. Strike authorizations that require member votes, not press releases. CAP resources that respect local autonomy. Retirees with formal voice at the table. Election integrity that gives every candidate a fair shot. This union belongs to its members. Every decision this leadership makes will reflect that.",
-    quote: "Your power. Your choice. Your union."
+    desc: "Member democracy is our governing principle. Bargaining agendas set by members, not presidents. Strike authorizations that require member votes, not press releases. This union belongs to its members. Every decision this leadership makes will reflect the will of the floor.",
+    quote: "Your power. Your choice."
   },
   {
     title: "Accountable",
-    desc: "Accountability starts with the person asking for your trust. It means holding yourself to the highest standard first — not because it is easy, but because credibility cannot be claimed. It can only be built through transparency, follow-through, and the integrity to acknowledge failure and fix it. The members of this union have been lied to, let down, and asked to accept less than they deserve. That ends with leadership that answers for its decisions — every one of them.",
-    quote: "No excuses. Not for yourself. Not for this union."
+    desc: "Accountability starts with the person asking for your trust. It means transparency, follow-through, and the integrity to acknowledge failure and fix it. We will replace excuses with action and ensure every leader answers for their decisions to the membership.",
+    quote: "The buck stops here."
   }
 ];
 export function PlatformSection() {
   return (
-    <section id="platform" className="py-24 bg-campaign-tan/5">
+    <section id="platform" className="py-24 bg-campaign-tan/5 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20 space-y-4">
           <motion.div
@@ -140,7 +148,7 @@ export function PlatformSection() {
           >
             <h2 className="text-3xl md:text-6xl font-display font-black text-campaign-black uppercase tracking-tight">The 2026 Platform</h2>
             <p className="text-muted-foreground text-xl max-w-3xl mx-auto mt-6">
-              A Member-First blueprint to return power to the members.
+              A Member-First blueprint to restore the balance of power.
             </p>
           </motion.div>
         </div>
@@ -166,67 +174,73 @@ export function PlatformSection() {
             </motion.div>
           ))}
         </div>
-        {/* Central Directive Quote Block */}
-        <div className="mb-24 relative">
-          <div className="absolute inset-0 bg-campaign-black rounded-3xl -rotate-1 scale-[1.01] shadow-campaign-red/5" />
-          <div className="relative bg-campaign-gold p-10 md:p-20 rounded-3xl text-white text-center shadow-2xl shadow-campaign-red/10 overflow-hidden">
-            <Quote className="absolute -top-12 -left-12 text-white/10 w-64 h-64 select-none pointer-events-none" />
-            <div className="relative z-10 space-y-6">
-              <h3 className="text-2xl md:text-4xl font-black leading-tight max-w-4xl mx-auto italic">
-                "It is never about dollars and cents. It is always about people and the quality of their lives."
-              </h3>
-              <p className="text-lg md:text-xl font-bold uppercase tracking-widest text-campaign-black/80">
-                — Tricia Geiger
-              </p>
-            </div>
-          </div>
-        </div>
         {/* Strategic Pillars Grid */}
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 gap-12 lg:gap-16">
           {pillars.map((p, idx) => (
             <motion.div
               key={p.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: (idx % 2) * 0.1, duration: 0.5 }}
-              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true, margin: "-100px" }}
             >
-              <Card className="h-full border-none shadow-xl hover:shadow-2xl transition-all duration-300 group overflow-hidden bg-white flex flex-col">
-                <CardHeader className="bg-campaign-black text-white p-6 md:p-10 shrink-0">
-                  <div className="flex items-center justify-between mb-6">
-                    <span className="text-campaign-gold/30 font-black text-5xl md:text-6xl group-hover:text-campaign-red transition-colors duration-500">{p.id}</span>
-                    <div className="bg-campaign-red/10 p-4 rounded-2xl text-campaign-gold group-hover:text-campaign-red group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                      {p.icon}
+              <Card className="border-none shadow-2xl hover:shadow-campaign-red/10 transition-all duration-500 overflow-hidden bg-white">
+                <div className="flex flex-col lg:flex-row">
+                  <div className="lg:w-1/3 bg-campaign-black text-white p-8 md:p-12 flex flex-col justify-between">
+                    <div>
+                      <div className="flex items-center justify-between mb-8">
+                        <span className="text-campaign-gold/20 font-black text-6xl md:text-8xl">{p.id}</span>
+                        <div className="bg-campaign-red/20 p-4 rounded-2xl text-campaign-gold">
+                          {p.icon}
+                        </div>
+                      </div>
+                      <CardTitle className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight leading-[0.95] mb-6">
+                        {p.title}
+                      </CardTitle>
+                    </div>
+                    <div className="pt-8 border-t border-white/10">
+                      <p className="text-campaign-gold font-black uppercase tracking-widest text-sm mb-2">Member Impact</p>
+                      <p className="text-lg italic leading-tight text-white/90">"{p.memberMessage}"</p>
                     </div>
                   </div>
-                  <CardTitle className="text-2xl md:text-3xl lg:text-4xl font-black uppercase tracking-tight leading-none">{p.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="p-6 md:p-10 space-y-8 flex-grow">
-                  <div className="space-y-3">
-                    <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-red">The Challenge</p>
-                    <p className="text-muted-foreground italic text-lg leading-relaxed">"{p.problem}"</p>
-                  </div>
-                  <div className="space-y-5">
-                    <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">Strategic Commitments</p>
-                    <ul className="space-y-4">
-                      {p.commitments.map((c, i) => (
-                        <li key={i} className="flex gap-4 text-base leading-relaxed text-gray-700 items-start">
-                          <div className="mt-1 bg-campaign-red/5 p-1 rounded-full text-campaign-red/80 shrink-0">
-                            <ChevronRight size={14} />
-                          </div>
-                          <span>{c}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="pt-8 border-t border-gray-100 mt-auto">
-                    <p className="text-center font-black text-campaign-black text-base md:text-xl tracking-tight uppercase italic">{p.memberMessage}</p>
-                  </div>
-                </CardContent>
+                  <CardContent className="lg:w-2/3 p-8 md:p-12 space-y-10">
+                    <div className="problem-block">
+                      <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-red mb-2">The Problem</p>
+                      <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
+                        {p.problem}
+                      </p>
+                    </div>
+                    <div className="space-y-6">
+                      <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">Strategic Commitments</p>
+                      <ul className="grid sm:grid-cols-1 gap-4 platform-commitment-list">
+                        {p.commitments.map((c, i) => (
+                          <li key={i} className="flex gap-4 text-base md:text-lg leading-relaxed text-gray-800 items-start group">
+                            <div className="mt-1.5 bg-campaign-gold/10 p-1 rounded-full text-campaign-gold group-hover:bg-campaign-red group-hover:text-white transition-all shrink-0">
+                              <ChevronRight size={16} strokeWidth={3} />
+                            </div>
+                            <span>{c}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </CardContent>
+                </div>
               </Card>
             </motion.div>
           ))}
         </div>
+        {/* Closing Call to Action */}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="mt-24 text-center p-12 bg-campaign-black rounded-3xl text-white shadow-2xl border-b-8 border-campaign-gold"
+        >
+          <Quote className="mx-auto text-campaign-gold mb-6" size={48} />
+          <h3 className="text-2xl md:text-4xl font-black italic mb-6 max-w-4xl mx-auto leading-tight">
+            "We are not just electing a president. We are deciding if we want a union that works for the members, or a union that works for the status quo."
+          </h3>
+          <p className="text-campaign-gold font-black uppercase tracking-[0.3em]">Tricia Geiger, 2026</p>
+        </motion.div>
       </div>
     </section>
   );
