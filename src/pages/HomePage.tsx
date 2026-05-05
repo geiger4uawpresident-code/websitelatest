@@ -11,40 +11,48 @@ import { Toaster } from '@/components/ui/sonner';
 /**
  * HomePage: The central orchestration component for the Tricia Geiger 2026 UAW Campaign site.
  * 
- * Flow Strategy:
- * 1. Hero: Immediate impact and core message.
- * 2. Bio: Establishing the candidate's history and trustworthiness.
- * 3. Platform: Detailed policy and brand pillar communication.
- * 4. Involve: Clear, dual-funnel calls to action.
- * 5. Endorsements: Validating momentum through peer voices.
- * 6. Resources: Empowering members to organize locally.
+ * Strategic Flow:
+ * 1. Hero: Emotional hook and "Prepared. Democratic. Accountable." branding.
+ * 2. Bio: Personal history (Flint GM roots) to establish trust.
+ * 3. Platform: Concrete 8-pillar policy details for institutional reform.
+ * 4. Involve: Conversion funnel for supporters and organizers.
+ * 5. Endorsements: Social proof from rank-and-file members.
+ * 6. Resources: Practical tools for local organizing.
  */
 export function HomePage() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Accessibility: Priority keyboard navigation skip-link */}
+    <div className="min-h-screen bg-white selection:bg-campaign-gold selection:text-white">
+      {/* Accessibility Skip Link */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-[100] bg-campaign-gold text-white px-6 py-3 rounded-lg font-bold shadow-2xl ring-4 ring-white transition-all"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-[100] bg-campaign-black text-white px-6 py-3 rounded-lg font-bold shadow-2xl ring-4 ring-campaign-gold transition-all"
       >
-        Skip to main campaign content
+        Skip to content
       </a>
-      {/* Navigation Layer */}
+      {/* Global Navigation */}
       <Navbar />
-      <main id="main-content" role="main" tabIndex={-1} className="outline-none">
-        {/* Core Narrative Sections */}
+      <main id="main-content" role="main" className="outline-none">
         <HeroSection />
         <BioSection />
         <PlatformSection />
-        {/* Action and Social Proof Sections */}
         <InvolveSection />
         <Endorsements />
         <ResourcesSection />
       </main>
-      {/* Persistent Footer and Legal Attribution */}
+      {/* Global Footer & Legal */}
       <Footer />
-      {/* Feedback layer positioned to avoid mobile nav conflicts */}
-      <Toaster richColors closeButton position="bottom-right" />
+      {/* User Feedback Notifications */}
+      <Toaster 
+        richColors 
+        closeButton 
+        position="bottom-center"
+        toastOptions={{
+          style: {
+            borderRadius: '12px',
+            border: '1px solid #D4C4A8',
+          }
+        }}
+      />
     </div>
   );
 }

@@ -5,9 +5,9 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 10.2%;
-    --primary: 40 50% 56%; /* Gold approximation #C5A059 */
+    --primary: 40 50% 56%; /* #C5A059 Gold */
     --primary-foreground: 0 0% 100%;
-    --muted: 38 29% 90%;
+    --muted: 38 29% 90%; /* #D4C4A8 Tan */
     --muted-foreground: 0 0% 45.1%;
     --border: 0 0% 89.8%;
     --ring: 40 50% 56%;
@@ -48,43 +48,38 @@
   }
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* Offset for fixed navbar to prevent content clipping */
+    /* 80px ensures headings aren't hidden behind the fixed navbar on scroll */
+    scroll-padding-top: 80px; 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
-  /* High-contrast brand selection colors with smooth transition */
-  ::selection {
-    background-color: #C5A059;
-    color: #FFFFFF;
-  }
-  ::-moz-selection {
-    background-color: #C5A059;
-    color: #FFFFFF;
-  }
-  /* Custom scrollbar for campaign design system using the gold palette */
+  /* Branded scrollbar using the gold palette */
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: hsl(var(--muted));
+    background: #F4F1ED;
   }
   ::-webkit-scrollbar-thumb {
     background: #C5A059;
-    border-radius: 5px;
-    border: 2px solid hsl(var(--muted));
+    border-radius: 10px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #a8884c;
+    background: #A8884C;
   }
 }
 @layer components {
   .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32;
   }
-  .text-display {
-    @apply font-display font-black uppercase tracking-tight leading-none;
+  .campaign-heading {
+    @apply font-display font-black uppercase tracking-tight;
+  }
+  .campaign-transition {
+    @apply transition-all duration-300 ease-in-out;
   }
 }
