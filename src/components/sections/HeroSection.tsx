@@ -19,9 +19,9 @@ export function HeroSection() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { 
-        duration: 0.8, 
-        ease: "easeOut" as const 
+      transition: {
+        duration: 0.8,
+        ease: "easeOut" as const
       }
     }
   };
@@ -70,13 +70,15 @@ export function HeroSection() {
               <a href="#platform">Read the Platform</a>
             </Button>
           </div>
-          <a
+          <motion.a
             href="#about"
-            className="text-campaign-tan/40 hover:text-campaign-gold transition-all mt-8 animate-bounce hover:scale-110 active:scale-90 hidden sm:block"
+            className="text-campaign-tan/70 hover:text-campaign-gold transition-all mt-8 hover:scale-110 active:scale-90 hidden sm:block"
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             aria-label="Scroll to about section"
           >
             <ChevronDown size={32} />
-          </a>
+          </motion.a>
         </motion.div>
       </motion.div>
     </section>

@@ -45,7 +45,7 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-white font-black text-xl shadow-lg shadow-campaign-gold/20 transform hover:rotate-12 transition-all cursor-default select-none">
+          <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-campaign-black font-black text-xl shadow-lg shadow-campaign-gold/20 transform hover:rotate-12 transition-all cursor-default select-none">
             TG
           </div>
           <span className={cn(
@@ -91,10 +91,10 @@ export function Navbar() {
       <div
         className={cn(
           "md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-2xl transition-all duration-300 ease-in-out overflow-hidden",
-          isMobileMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+          isMobileMenuOpen ? "max-h-[90vh] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
         )}
       >
-        <div className="flex flex-col p-6 space-y-1">
+        <div className="flex flex-col p-6 space-y-1 overflow-y-auto">
           {navLinks.map((link) => (
             <a
               key={link.name}

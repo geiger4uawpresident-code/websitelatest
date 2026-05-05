@@ -31,7 +31,7 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-16">
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-white font-black text-xl">TG</div>
+              <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-campaign-black font-black text-xl">TG</div>
               <span className="font-display font-black text-lg tracking-tight uppercase">Tricia Geiger <span className="text-campaign-gold">2026</span></span>
             </div>
             <p className="text-campaign-tan/60 leading-relaxed max-w-xs">
@@ -79,7 +79,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-xs uppercase tracking-widest text-campaign-tan/30">
+        <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-xs uppercase tracking-widest text-campaign-tan/60">
           <p>© 2024-2026 Paid for by Tricia Geiger for UAW President 2026</p>
           <div className="flex gap-8">
             <a

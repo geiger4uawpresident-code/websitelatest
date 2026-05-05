@@ -18,7 +18,7 @@ export function BioSection() {
               <img
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
                 alt="Tricia Geiger, UAW Presidential Candidate"
-                className="w-full h-full transition-all duration-700 object-cover"
+                className="w-full h-full transition-all duration-700 object-cover object-[center_20%]"
                 loading="lazy"
               />
               {/* Decorative gradient overlay */}
@@ -64,7 +64,7 @@ export function BioSection() {
                 </div>
               </div>
             </div>
-            <blockquote className="relative p-8 bg-campaign-black rounded-2xl text-white shadow-xl">
+            <blockquote className="relative p-8 bg-campaign-black rounded-2xl text-white shadow-2xl shadow-campaign-gold/10">
               <Quote className="absolute top-4 right-4 text-campaign-gold/20" size={48} aria-hidden="true" />
               <p className="text-xl italic font-medium relative z-10 leading-relaxed">
                 "We are one Union. One movement with many groups of members. Prepared. Democratic. Accountable. That's the promise. That's the standard. That's the union we are going to build for all."
