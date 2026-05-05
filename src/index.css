@@ -54,8 +54,8 @@
   }
   body {
     @apply bg-background text-foreground;
-    selection:bg-[#C5A059]/30;
-    selection:text-black;
+    selection:bg-[#C5A059] !important;
+    selection:text-white !important;
   }
   ::-webkit-scrollbar {
     width: 10px;
@@ -75,13 +75,16 @@
 @layer components {
   /* Platform Typography & Blocks */
   .problem-block {
-    @apply border-l-4 border-campaign-red bg-campaign-red/5 p-6 md:p-8 rounded-r-xl transition-colors duration-300;
+    @apply border-l-4 border-campaign-red bg-campaign-red/5 p-6 md:p-8 rounded-r-xl transition-colors duration-300 box-border;
   }
   .platform-commitment-list li {
     @apply transition-all duration-200;
   }
   .text-display {
     @apply text-3xl sm:text-5xl md:text-6xl font-display font-black uppercase tracking-tight leading-none;
+  }
+  .text-shadow-campaign {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   /* Campaign Button System */
   .btn-campaign-gold {
@@ -90,13 +93,6 @@
   /* Campaign Gradient System */
   .bg-gradient-campaign {
     @apply bg-gradient-to-r from-campaign-gold to-campaign-red;
-  }
-  /* Campaign Text System */
-  .text-gradient-gold {
-    background: linear-gradient(90deg, #C5A059 0%, #DC2626 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   /* Layout Utilities */
   .section-container {

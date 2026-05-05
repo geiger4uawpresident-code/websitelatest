@@ -186,7 +186,7 @@ export function PlatformSection() {
             >
               <Card className="border-none shadow-2xl hover:shadow-campaign-red/10 transition-all duration-500 overflow-hidden bg-white">
                 <div className="flex flex-col lg:flex-row">
-                  <div className="lg:w-1/3 bg-campaign-black text-white p-8 md:p-12 flex flex-col justify-between">
+                  <div className="lg:w-1/3 bg-campaign-black text-white px-6 py-10 md:p-12 flex flex-col justify-between">
                     <div>
                       <div className="flex items-center justify-between mb-8">
                         <span className="text-campaign-gold/20 font-black text-6xl md:text-8xl">{p.id}</span>
@@ -194,7 +194,7 @@ export function PlatformSection() {
                           {p.icon}
                         </div>
                       </div>
-                      <CardTitle className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight leading-[0.95] mb-6">
+                      <CardTitle className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight leading-[1.1] mb-6">
                         {p.title}
                       </CardTitle>
                     </div>
@@ -203,16 +203,16 @@ export function PlatformSection() {
                       <p className="text-lg italic leading-tight text-white/90">"{p.memberMessage}"</p>
                     </div>
                   </div>
-                  <CardContent className="lg:w-2/3 p-8 md:p-12 space-y-10">
+                  <CardContent className="lg:w-2/3 px-6 py-10 md:p-12 space-y-10 flex flex-col justify-center">
                     <div className="problem-block">
-                      <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-red mb-2">The Problem</p>
+                      <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-red/90 mb-2">The Problem</p>
                       <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
                         {p.problem}
                       </p>
                     </div>
                     <div className="space-y-6">
                       <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">Strategic Commitments</p>
-                      <ul className="grid sm:grid-cols-1 gap-4 platform-commitment-list">
+                      <ul className="grid sm:grid-cols-1 gap-4 items-stretch platform-commitment-list">
                         {p.commitments.map((c, i) => (
                           <li key={i} className="flex gap-4 text-base md:text-lg leading-relaxed text-gray-800 items-start group">
                             <div className="mt-1.5 bg-campaign-gold/10 p-1 rounded-full text-campaign-gold group-hover:bg-campaign-red group-hover:text-white transition-all shrink-0">
@@ -230,7 +230,7 @@ export function PlatformSection() {
           ))}
         </div>
         {/* Closing Call to Action */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           className="mt-24 text-center p-12 bg-campaign-black rounded-3xl text-white shadow-2xl border-b-8 border-campaign-gold"

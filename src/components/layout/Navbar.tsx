@@ -44,13 +44,13 @@ export function Navbar() {
       aria-label="Main Campaign Navigation"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-campaign-black font-black text-xl shadow-lg shadow-campaign-gold/20 transform hover:rotate-12 transition-all cursor-default select-none">
+        <div className="flex items-center gap-3 group/logo">
+          <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-campaign-black font-black text-xl shadow-lg shadow-campaign-gold/20 transform group-hover/logo:rotate-12 transition-all cursor-default select-none border-none">
             TG
           </div>
           <span className={cn(
-            "font-display font-black text-lg tracking-tight uppercase transition-colors duration-300",
-            isNavActive ? "text-campaign-black" : "text-white drop-shadow-md"
+            "font-display font-black text-lg tracking-tight uppercase transition-colors duration-300 text-shadow-campaign",
+            isNavActive ? "text-campaign-black" : "text-white"
           )}>
             Tricia Geiger <span className="text-campaign-gold">2026</span>
           </span>
@@ -62,7 +62,7 @@ export function Navbar() {
               key={link.name}
               href={link.href}
               className={cn(
-                "text-xs font-bold uppercase tracking-widest hover:text-campaign-red/80 transition-all relative group",
+                "text-xs font-bold uppercase tracking-widest hover:text-campaign-red transition-all relative group",
                 isNavActive ? "text-campaign-black" : "text-white"
               )}
             >
@@ -82,7 +82,7 @@ export function Navbar() {
           )}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-expanded={isMobileMenuOpen}
-          aria-label="Toggle menu"
+          aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -90,16 +90,21 @@ export function Navbar() {
       {/* Mobile Menu Overlay */}
       <div
         className={cn(
-          "md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-2xl transition-all duration-300 ease-in-out overflow-hidden",
+          "md:hidden absolute top-full left-0 right-0 bg-gradient-to-b from-white to-campaign-tan/10 border-b border-gray-100 shadow-2xl transition-all duration-300 ease-in-out overflow-hidden",
           isMobileMenuOpen ? "max-h-[90vh] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
         )}
+        aria-hidden={!isMobileMenuOpen}
       >
         <div className="flex flex-col p-6 space-y-1 overflow-y-auto">
-          {navLinks.map((link) => (
+          {navLinks.map((link, idx) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-lg font-black text-campaign-black py-4 border-b border-gray-50 last:border-0 active:text-campaign-red transition-colors uppercase tracking-tight"
+              className={cn(
+                "text-lg font-black text-campaign-black py-4 border-b border-gray-50 last:border-0 active:text-campaign-red transition-all uppercase tracking-tight transform",
+                isMobileMenuOpen ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0"
+              )}
+              style={{ transitionDelay: `${idx * 50}ms` }}
               onClick={closeMobileMenu}
             >
               {link.name}
