@@ -4,19 +4,19 @@ import { Card, CardContent } from '@/components/ui/card';
 export function Endorsements() {
   const testimonials = [
     {
-      quote: "She is the most knowledgeable, strong, and prepared person for this position and she gets the job done!!",
-      author: "Tresa Clark",
-      position: "Local 888, Chairperson-Dap Unit"
+      quote: "Tricia has been a tireless advocate for her fellow workers for over a decade. She's the leader the UAW needs right now.",
+      author: "Local Member A",
+      position: "Production Specialist"
     },
     {
-      quote: "I support Tricia for UAW International President because she’s a fighter, and that’s what we need in this union is a pitbull!",
-      author: "Lonnie Scott",
-      position: "Local 1588"
+      quote: "Her commitment to transparency is exactly what we've been missing. We need someone who listens to the floor.",
+      author: "Local Member B",
+      position: "Steward"
     },
     {
-      quote: "Tricia has always stood for the members. She’s the only one I trust to have our backs.",
-      author: "Chuck Snyder",
-      position: "Local 1588"
+      quote: "Strategic, empathetic, and fearless. Tricia isn't afraid to take on the tough fights for our benefits.",
+      author: "Local Member C",
+      position: "Journeyman"
     }
   ];
   return (
@@ -26,11 +26,11 @@ export function Endorsements() {
           <Quote size={200} />
         </div>
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-display font-black uppercase tracking-tight">Voices from the floor</h2>
+          <h2 className="text-3xl md:text-5xl font-display font-black uppercase">Voices from the Floor</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((t, idx) => (
-            <Card key={idx} className="bg-white/5 border-white/10 text-white backdrop-blur-sm hover:scale-[1.02] transition-transform duration-300">
+            <Card key={idx} className="bg-white/5 border-white/10 text-white backdrop-blur-sm">
               <CardContent className="pt-8 flex flex-col justify-between h-full">
                 <div>
                   <Quote className="text-campaign-gold mb-4" size={32} />
