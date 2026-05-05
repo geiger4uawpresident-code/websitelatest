@@ -16,20 +16,20 @@ export function HomePage() {
   return (
     <div className="min-h-screen bg-white selection:bg-campaign-gold/30 selection:text-campaign-black">
       {/* Accessibility: Skip to main content link for keyboard users */}
-      <a 
-        href="#main-content" 
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 z-[100] bg-campaign-gold text-white px-4 py-2 rounded-md font-bold"
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 z-[100] bg-campaign-gold text-white px-4 py-2 rounded-md font-bold shadow-lg ring-2 ring-white"
       >
         Skip to content
       </a>
       {/* Navigation Layer */}
       <Navbar />
-      <main id="main-content" role="main">
+      <main id="main-content" role="main" tabIndex={-1}>
         {/* Phase 1: The Hook - High impact video and core value proposition */}
         <HeroSection />
         {/* Phase 2: The Candidate - establishing union roots and personal history */}
         <BioSection />
-        {/* Phase 3: The Plan - Detailed policy pillars and campaign brand values */}
+        {/* Phase 3: The Plan - Detailed policy pillars and verbatim brand values */}
         <PlatformSection />
         {/* Phase 4: The Call to Action - Dual-funnel involvement tracks */}
         <InvolveSection />

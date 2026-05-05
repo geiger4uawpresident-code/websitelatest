@@ -114,18 +114,18 @@ const pillars = [
 const brandPillars = [
   {
     title: "Prepared",
-    desc: "Wins aren't accidental; they are engineered. We leverage aggressive economic research and strategic foresight to out-maneuver corporate tactics. By identifying corporate vulnerabilities before we hit the table, we ensure our members enter every negotiation with an unshakeable advantage.",
+    desc: "Preparation is not a strategy — it is a standard. Our members have lived through the consequences of a lack of preparedness. They deserve someone who did the work before they showed up.",
     quote: "Preparation is the foundation of power."
   },
   {
     title: "Democratic",
-    desc: "The floor is the highest authority in this union. We are ending the era of top-down decision-making and restoring true rank-and-file control. Every major move, from contract goals to legislative priorities, will be driven by the collective voice and direct participation of our membership.",
-    quote: "Your power. Your choice. Your union."
+    desc: "Member democracy is not a slogan. It is the only way forward. The UAW belongs to the floor, not the executive board. Every decision this leadership makes will reflect that.",
+    quote: "The floor is the highest authority."
   },
   {
     title: "Accountable",
-    desc: "Transparency is our default setting, not an afterthought. We implement real-time digital auditing and open bargaining protocols to ensure every member knows exactly how their dues are spent and how their future is being negotiated. Leadership must answer to the floor, without exception.",
-    quote: "No excuses. Not for yourself. Not for this union."
+    desc: "Accountability starts with being present and being honest. The International shouldn't be a black box. It’s time for a leadership that answers for its decisions — every one of them.",
+    quote: "Leadership must answer to the floor."
   }
 ];
 export function PlatformSection() {
