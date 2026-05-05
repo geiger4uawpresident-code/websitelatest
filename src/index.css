@@ -70,20 +70,27 @@
     border: 2px solid hsl(var(--muted));
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #a8884c;
+    background: #DC2626;
   }
 }
 @layer components {
   /* Campaign Button System */
   .btn-campaign-gold {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-bold text-white transition-all duration-200 bg-[#C5A059] hover:bg-[#a8884c] active:scale-95 shadow-lg shadow-campaign-gold/10;
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-bold text-white transition-all duration-200 bg-[#C5A059] hover:bg-[#a8884c] active:scale-95 shadow-lg shadow-campaign-red/10;
+  }
+  /* Campaign Gradient System */
+  .bg-gradient-campaign {
+    @apply bg-gradient-to-r from-campaign-gold to-campaign-red;
   }
   /* Campaign Text System */
   .text-gradient-gold {
-    background: linear-gradient(90deg, #C5A059 0%, #D4C4A8 100%);
+    background: linear-gradient(90deg, #C5A059 0%, #DC2626 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .text-glow-red {
+    text-shadow: 0 0 10px rgba(220, 38, 38, 0.4);
   }
   /* Layout Utilities */
   .section-container {

@@ -37,6 +37,8 @@ export default {
   				tan: '#D4C4A8',
   				gold: '#C5A059',
   				black: '#1A1A1A',
+          red: '#DC2626',
+          'red-soft': 'rgba(220, 38, 38, 0.2)',
   			},
   			muted: {
   				DEFAULT: 'hsl(var(--muted))',

@@ -37,7 +37,7 @@ export function HeroSection() {
         animate="visible"
       >
         <motion.div variants={itemVariants} className="space-y-4">
-          <span className="inline-block px-6 py-2 rounded-full bg-campaign-gold text-white text-xs font-bold uppercase tracking-[0.2em] shadow-lg shadow-campaign-gold/20">
+          <span className="inline-block px-6 py-2 rounded-full bg-campaign-gold text-white text-xs font-bold uppercase tracking-[0.2em] shadow-lg shadow-campaign-red/20">
             Prepared. Democratic. Accountable.
           </span>
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-black text-white leading-tight uppercase tracking-tight">
@@ -55,7 +55,7 @@ export function HeroSection() {
           <VideoPlayer
             url="https://www.youtube.com/embed/zh5ejvM71qU"
             title="Tricia Geiger Campaign Launch Speech"
-            className="shadow-campaign-gold/5"
+            className="shadow-campaign-red/10 border-campaign-red/20"
           />
         </motion.div>
         <motion.div
@@ -63,17 +63,20 @@ export function HeroSection() {
           className="flex flex-col items-center gap-4"
         >
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <Button asChild size="lg" className="bg-campaign-gold hover:bg-campaign-gold/90 text-white font-bold h-12 px-8 transition-all active:scale-95 shadow-xl shadow-campaign-gold/20">
+            <Button asChild size="lg" className="bg-gradient-campaign hover:opacity-90 text-white font-bold h-12 px-8 transition-all active:scale-95 shadow-xl shadow-campaign-red/20">
               <a href="#involve">Join the Movement</a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-campaign-tan text-campaign-tan hover:bg-campaign-tan/10 h-12 px-8 transition-all active:scale-95">
+            <Button asChild variant="outline" size="lg" className="border-campaign-tan text-campaign-tan hover:bg-campaign-red/10 hover:text-white h-12 px-8 transition-all active:scale-95">
               <a href="#platform">Read the Platform</a>
             </Button>
           </div>
           <motion.a
             href="#about"
-            className="text-campaign-tan/70 hover:text-campaign-gold transition-all mt-8 hover:scale-110 active:scale-90 hidden sm:block"
-            animate={{ y: [0, 8, 0] }}
+            className="transition-all mt-8 hover:scale-110 active:scale-90 hidden sm:block"
+            animate={{ 
+              y: [0, 8, 0],
+              color: ["rgba(212, 196, 168, 0.7)", "rgba(220, 38, 38, 0.6)", "rgba(212, 196, 168, 0.7)"]
+            }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             aria-label="Scroll to about section"
           >
