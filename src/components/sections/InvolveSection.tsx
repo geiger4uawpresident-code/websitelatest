@@ -7,16 +7,16 @@ export function InvolveSection() {
   const cards = [
     {
       title: "Campaign Updates",
-      description: "Stay informed about Tricia's mission and upcoming events in your region.",
+      description: "Stay informed about Tricia's mission, legislative wins, and upcoming events in your region.",
       icon: <Mail className="w-8 h-8 text-campaign-gold" />,
-      link: "https://sender.site/l/general-updates", // Placeholder
+      link: "https://tricia-geiger-for-u-a-w-president2026.sender.site/",
       cta: "Sign Up for Updates"
     },
     {
       title: "Campaign Amplifier",
-      description: "Ready to lead? Join our network of amplifiers to spread the word in your local.",
+      description: "Ready to lead? Join our network of amplifiers to spread the word and organize in your local.",
       icon: <Megaphone className="w-8 h-8 text-campaign-gold" />,
-      link: "https://sender.site/l/campaign-amplifier", // Placeholder
+      link: "https://tricia-geiger-for-u-a-w-president2026-badger.sender.site/",
       cta: "Become an Amplifier"
     }
   ];
@@ -26,7 +26,7 @@ export function InvolveSection() {
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-3xl md:text-5xl font-display font-black text-campaign-black uppercase">Get Involved</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            This movement belongs to the workers. Choose how you want to participate in rebuilding our union.
+            This movement belongs to the workers. Choose how you want to participate in rebuilding our union and ensuring every voice is heard.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
@@ -47,7 +47,7 @@ export function InvolveSection() {
                 <CardContent>
                   <Button asChild className="w-full bg-campaign-black hover:bg-campaign-gold text-white font-bold h-12 group">
                     <a href={card.link} target="_blank" rel="noopener noreferrer">
-                      {card.cta} <ArrowRight className="ml-2 w-4 h-4" />
+                      {card.cta} <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </a>
                   </Button>
                 </CardContent>

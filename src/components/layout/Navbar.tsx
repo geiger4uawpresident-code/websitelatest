@@ -17,6 +17,7 @@ export function Navbar() {
     { name: 'Get Involved', href: '#involve' },
     { name: 'Resources', href: '#resources' },
   ];
+  const DONATE_URL = "https://gofund.me/5e6d6b33f";
   return (
     <nav className={cn(
       "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
@@ -44,12 +45,16 @@ export function Navbar() {
             </a>
           ))}
           <Button asChild className="bg-campaign-gold hover:bg-campaign-gold/90 text-white font-bold">
-            <a href="https://www.gofundme.com/" target="_blank" rel="noopener noreferrer">Donate Now</a>
+            <a href={DONATE_URL} target="_blank" rel="noopener noreferrer">Donate Now</a>
           </Button>
         </div>
         {/* Mobile Toggle */}
         <button className="md:hidden p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-          {isMobileMenuOpen ? <X className="text-campaign-black" /> : <Menu className={isScrolled ? "text-campaign-black" : "text-campaign-black"} />}
+          {isMobileMenuOpen ? (
+            <X className="text-campaign-black" />
+          ) : (
+            <Menu className={isScrolled ? "text-campaign-black" : "text-campaign-black md:text-white"} />
+          )}
         </button>
       </div>
       {/* Mobile Menu */}
@@ -59,14 +64,14 @@ export function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-lg font-medium text-campaign-black py-2"
+              className="text-lg font-medium text-campaign-black py-2 border-b border-gray-50"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.name}
             </a>
           ))}
-          <Button asChild className="bg-campaign-gold hover:bg-campaign-gold/90 text-white font-bold w-full">
-            <a href="https://www.gofundme.com/" target="_blank" rel="noopener noreferrer">Donate Now</a>
+          <Button asChild className="bg-campaign-gold hover:bg-campaign-gold/90 text-white font-bold w-full mt-2">
+            <a href={DONATE_URL} target="_blank" rel="noopener noreferrer">Donate Now</a>
           </Button>
         </div>
       )}

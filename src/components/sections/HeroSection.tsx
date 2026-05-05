@@ -33,8 +33,8 @@ export function HeroSection() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="max-w-4xl mx-auto"
         >
-          <VideoPlayer 
-            url="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+          <VideoPlayer
+            url="https://www.youtube.com/embed/zh5ejvM71qU"
             title="Tricia Geiger Campaign Launch Speech"
           />
         </motion.div>
@@ -45,11 +45,11 @@ export function HeroSection() {
           className="flex flex-col items-center gap-4"
         >
           <div className="flex gap-4">
-            <Button size="lg" className="bg-campaign-gold hover:bg-campaign-gold/90 text-white font-bold h-12 px-8">
-              Join the Movement
+            <Button asChild size="lg" className="bg-campaign-gold hover:bg-campaign-gold/90 text-white font-bold h-12 px-8">
+              <a href="#involve">Join the Movement</a>
             </Button>
-            <Button variant="outline" size="lg" className="border-campaign-tan text-campaign-tan hover:bg-campaign-tan/10 h-12 px-8">
-              Read the Platform
+            <Button asChild variant="outline" size="lg" className="border-campaign-tan text-campaign-tan hover:bg-campaign-tan/10 h-12 px-8">
+              <a href="#platform">Read the Platform</a>
             </Button>
           </div>
           <a href="#about" className="text-campaign-tan/60 hover:text-campaign-gold transition-colors mt-8 animate-bounce">

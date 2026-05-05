@@ -7,7 +7,7 @@ import { Endorsements } from '@/components/sections/Endorsements';
 import { ResourcesSection } from '@/components/sections/ResourcesSection';
 import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/sonner';
-import { User, Award, History, Building } from 'lucide-react';
+import { Award, History } from 'lucide-react';
 function BioSection() {
   return (
     <section id="about" className="py-24 bg-white overflow-hidden">
@@ -15,11 +15,11 @@ function BioSection() {
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2 relative">
             <div className="absolute -top-10 -left-10 w-64 h-64 bg-campaign-gold/10 rounded-full blur-3xl" />
-            <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
-              <img 
-                src="https://images.unsplash.com/photo-1600880212340-02d956ea7188?auto=format&fit=crop&q=80" 
-                alt="Tricia Geiger" 
-                className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700"
+            <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-8 border-white bg-gray-100">
+              <img
+                src="https://images.unsplash.com/photo-1580674239581-3fbc1917ebb0?auto=format&fit=crop&q=80"
+                alt="Tricia Geiger on the Picket Line"
+                className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700 object-cover aspect-[4/5]"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-campaign-gold text-white p-8 rounded-xl shadow-xl hidden md:block">
@@ -32,7 +32,7 @@ function BioSection() {
               <div className="h-1.5 w-24 bg-campaign-gold" />
             </div>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Tricia Geiger is a veteran union activist with over 15 years of dedicated service in the UAW. Starting on the shop floor, she has witnessed firsthand the challenges and triumphs of our labor movement. 
+              Tricia Geiger is a veteran union activist with over 15 years of dedicated service in the UAW. Starting on the shop floor, she has witnessed firsthand the challenges and triumphs of our labor movement.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
               <div className="flex gap-4">
