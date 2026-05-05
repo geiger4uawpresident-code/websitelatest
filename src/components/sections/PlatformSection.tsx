@@ -10,7 +10,8 @@ import {
   Network,
   ChevronRight,
   Quote,
-  History as HistoryIcon
+  History as HistoryIcon,
+  LucideIcon
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
@@ -19,11 +20,19 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-const pillars = [
+interface Pillar {
+  id: string;
+  title: string;
+  icon: LucideIcon;
+  problem: string;
+  commitments: string[];
+  memberMessage: string;
+}
+const pillars: Pillar[] = [
   {
     id: "01",
     title: "Clean Governance",
-    icon: <Shield className="w-6 h-6" />,
+    icon: Shield,
     problem: "The Promise Was Reform. For decades, a 'club culture' at the top of the UAW allowed bureaucracy and opaque financial reporting to erode the fundamental trust between leadership and the shop floor. Members were treated as spectators rather than owners. To build a powerful union, we must first get our own house under control.",
     commitments: [
       "Implement real-time forensic auditing of all international and regional expenditures accessible via a secure member portal.",
@@ -36,7 +45,7 @@ const pillars = [
   {
     id: "02",
     title: "Strategic Bargaining",
-    icon: <Handshake className="w-6 h-6" />,
+    icon: Handshake,
     problem: "The 'Crisis of Tiers' was born from a lack of strategic preparation and transparency. For too long, corporations used complex contracts to hide concessions, while members were the last to know the details of the deals that define their lives. We need a bargaining strategy that uses our full economic power.",
     commitments: [
       "Adopt 'Open Bargaining' protocols: Daily digital updates to the membership throughout the negotiation process.",
@@ -49,7 +58,7 @@ const pillars = [
   {
     id: "03",
     title: "Staff Development",
-    icon: <Users className="w-6 h-6" />,
+    icon: Users,
     problem: "Our representatives are often outmatched not by talent, but by the modern digital tools and legal resources deployed by multi-national corporations. A lack of standardized training for stewards and servicing reps leads to inconsistent enforcement of our hard-won rights across different locals.",
     commitments: [
       "Launch the 'UAW Leadership Institute'—a mandatory certification program for all servicing reps and local stewards.",
@@ -62,7 +71,7 @@ const pillars = [
   {
     id: "04",
     title: "Political Action (CAP)",
-    icon: <Landmark className="w-6 h-6" />,
+    icon: Landmark,
     problem: "Labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on worker protections. We have been too quick to endorse and too slow to hold elected officials accountable to our specific legislative agenda and the needs of our families.",
     commitments: [
       "Tie all V-CAP endorsements strictly to a 'Labor-First' scorecard focused on anti-tier and anti-scab legislation.",
@@ -75,7 +84,7 @@ const pillars = [
   {
     id: "05",
     title: "Healthcare Security",
-    icon: <Heart className="w-6 h-6" />,
+    icon: Heart,
     problem: "Healthcare is a fundamental human right, yet it is being used by corporations as a tool of coercion during negotiations. Rising premiums and shrinking networks are effectively rolling back the wage increases we fight so hard to win, leaving families vulnerable when they are most in need.",
     commitments: [
       "Create a National UAW Healthcare Trust Defense Fund to aggressively fight off network reductions and cost-shifts.",
@@ -88,7 +97,7 @@ const pillars = [
   {
     id: "06",
     title: "Campaign Finance",
-    icon: <PieChart className="w-6 h-6" />,
+    icon: PieChart,
     problem: "The 'Dues Dollar' is too often lost in administrative overhead and non-essential spending. We need to shift our financial power from the mahogany offices of the International to the picket lines and organizing drives where it actually builds power for the members on the ground.",
     commitments: [
       "Restructure the Strike Fund to ensure benefit payments match 100% of a member's base take-home pay.",
@@ -101,7 +110,7 @@ const pillars = [
   {
     id: "07",
     title: "Retiree Dignity",
-    icon: <HistoryIcon className="w-6 h-6" />,
+    icon: HistoryIcon,
     problem: "The giants whose shoulders we stand on are being left behind in a changing economy. Solidarity is a lifelong bond, yet our retirees often feel disconnected from the active leadership and vulnerable to pension erosion. We must honor the promises made to those who built this union.",
     commitments: [
       "Negotiate Automatic COLA (Cost of Living Adjustments) for all retiree pensions in every future contract.",
@@ -114,7 +123,7 @@ const pillars = [
   {
     id: "08",
     title: "Aggressive Organizing",
-    icon: <Network className="w-6 h-6" />,
+    icon: Network,
     problem: "Falling union density is the single greatest threat to our collective bargaining power. If we don't organize the new industries—especially the EV and battery sectors—we will lose the leverage required to protect existing standards and the future of our trades.",
     commitments: [
       "Authorize a $100 Million Strategic Organizing Fund specifically targeted at the non-union South and EV sector.",
@@ -182,64 +191,67 @@ export function PlatformSection() {
         </div>
         {/* Strategic Pillars Grid */}
         <div className="grid grid-cols-1 gap-12 lg:gap-16">
-          {pillars.map((p, idx) => (
-            <motion.div
-              key={p.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true, margin: "-100px" }}
-            >
-              <Card className="border-none shadow-2xl hover:shadow-campaign-gold/10 transition-all duration-500 overflow-hidden bg-white">
-                <div className="flex flex-col lg:flex-row">
-                  <div className="lg:w-1/3 bg-campaign-black text-white px-6 py-10 md:p-12 flex flex-col justify-between">
-                    <div>
-                      <div className="flex items-center justify-between mb-8">
-                        <span className="text-campaign-gold/20 font-black text-6xl md:text-8xl">{p.id}</span>
-                        <div className="bg-campaign-gold/20 p-4 rounded-2xl text-campaign-gold">
-                          {p.icon}
+          {pillars.map((p) => {
+            const Icon = p.icon;
+            return (
+              <motion.div
+                key={p.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true, margin: "-100px" }}
+              >
+                <Card className="border-none shadow-2xl hover:shadow-campaign-gold/10 transition-all duration-500 overflow-hidden bg-white">
+                  <div className="flex flex-col lg:flex-row">
+                    <div className="lg:w-1/3 bg-campaign-black text-white px-6 py-10 md:p-12 flex flex-col justify-between">
+                      <div>
+                        <div className="flex items-center justify-between mb-8">
+                          <span className="text-campaign-gold/20 font-black text-6xl md:text-8xl">{p.id}</span>
+                          <div className="bg-campaign-gold/20 p-4 rounded-2xl text-campaign-gold">
+                            <Icon className="w-6 h-6" />
+                          </div>
                         </div>
+                        <CardTitle className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight leading-[1.1] mb-6">
+                          {p.title}
+                        </CardTitle>
                       </div>
-                      <CardTitle className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight leading-[1.1] mb-6">
-                        {p.title}
-                      </CardTitle>
+                      <div className="pt-8 border-t border-white/10">
+                        <p className="text-campaign-gold font-black uppercase tracking-widest text-sm mb-2">Member Impact</p>
+                        <p className="text-lg italic leading-tight text-white/90">"{p.memberMessage}"</p>
+                      </div>
                     </div>
-                    <div className="pt-8 border-t border-white/10">
-                      <p className="text-campaign-gold font-black uppercase tracking-widest text-sm mb-2">Member Impact</p>
-                      <p className="text-lg italic leading-tight text-white/90">"{p.memberMessage}"</p>
-                    </div>
+                    <CardContent className="lg:w-2/3 px-6 py-10 md:p-12 space-y-10 flex flex-col justify-center">
+                      <div className="problem-block-refined">
+                        <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold mb-2">The Challenge</p>
+                        <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
+                          {p.problem}
+                        </p>
+                      </div>
+                      <Accordion type="single" collapsible className="w-full">
+                        <AccordionItem value="commitments" className="border-none">
+                          <AccordionTrigger className="hover:no-underline py-4">
+                            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">View Strategic Commitments</span>
+                          </AccordionTrigger>
+                          <AccordionContent className="pt-4">
+                            <ul className="space-y-6">
+                              {p.commitments.map((c, i) => (
+                                <li key={i} className="flex gap-4 text-base md:text-lg leading-relaxed text-gray-800 items-start group">
+                                  <div className="mt-1.5 bg-campaign-gold/10 p-1 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
+                                    <ChevronRight size={16} strokeWidth={3} />
+                                  </div>
+                                  <span>{c}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </AccordionContent>
+                        </AccordionItem>
+                      </Accordion>
+                    </CardContent>
                   </div>
-                  <CardContent className="lg:w-2/3 px-6 py-10 md:p-12 space-y-10 flex flex-col justify-center">
-                    <div className="problem-block-refined">
-                      <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold mb-2">The Challenge</p>
-                      <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
-                        {p.problem}
-                      </p>
-                    </div>
-                    <Accordion type="single" collapsible className="w-full">
-                      <AccordionItem value="commitments" className="border-none">
-                        <AccordionTrigger className="hover:no-underline py-4">
-                          <span className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">View Strategic Commitments</span>
-                        </AccordionTrigger>
-                        <AccordionContent className="pt-4">
-                          <ul className="space-y-6">
-                            {p.commitments.map((c, i) => (
-                              <li key={i} className="flex gap-4 text-base md:text-lg leading-relaxed text-gray-800 items-start group">
-                                <div className="mt-1.5 bg-campaign-gold/10 p-1 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
-                                  <ChevronRight size={16} strokeWidth={3} />
-                                </div>
-                                <span>{c}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
-                  </CardContent>
-                </div>
-              </Card>
-            </motion.div>
-          ))}
+                </Card>
+              </motion.div>
+            );
+          })}
         </div>
         {/* Closing Call to Action */}
         <motion.div
