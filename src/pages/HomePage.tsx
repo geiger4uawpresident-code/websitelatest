@@ -24,7 +24,7 @@ export function HomePage() {
       </a>
       {/* Navigation Layer */}
       <Navbar />
-      <main id="main-content" role="main" tabIndex={-1}>
+      <main id="main-content" role="main" tabIndex={-1} className="outline-none">
         {/* Phase 1: The Hook - High impact video and core value proposition */}
         <HeroSection />
         {/* Phase 2: The Candidate - establishing union roots and personal history */}
