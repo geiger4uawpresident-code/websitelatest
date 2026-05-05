@@ -15,8 +15,8 @@ export function BioSection() {
               className="relative z-10 rounded-2xl overflow-hidden shadow-2xl shadow-campaign-gold/10 border-8 border-white bg-gray-100"
             >
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
-                alt="Tricia Geiger Professional Portrait"
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80"
+                alt="Tricia Geiger, UAW Presidential Candidate"
                 className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700 object-cover aspect-[4/5]"
                 loading="lazy"
               />
