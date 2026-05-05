@@ -114,18 +114,18 @@ const pillars = [
 const brandPillars = [
   {
     title: "Prepared",
-    desc: "Wins aren't accidental. We use data, research, and strategy to out-think the boss.",
+    desc: "Wins aren't accidental; they are engineered. We leverage aggressive economic research and strategic foresight to out-maneuver corporate tactics. By identifying corporate vulnerabilities before we hit the table, we ensure our members enter every negotiation with an unshakeable advantage.",
     quote: "Preparation is the foundation of power."
   },
   {
     title: "Democratic",
-    desc: "Every member is an owner. We restore the 'U' in Union through direct participation.",
-    quote: "The floor is the highest authority."
+    desc: "The floor is the highest authority in this union. We are ending the era of top-down decision-making and restoring true rank-and-file control. Every major move, from contract goals to legislative priorities, will be driven by the collective voice and direct participation of our membership.",
+    quote: "Your power. Your choice. Your union."
   },
   {
     title: "Accountable",
-    desc: "Transparency is our default setting. We answer to the membership, always.",
-    quote: "Sunlight is the best disinfectant."
+    desc: "Transparency is our default setting, not an afterthought. We implement real-time digital auditing and open bargaining protocols to ensure every member knows exactly how their dues are spent and how their future is being negotiated. Leadership must answer to the floor, without exception.",
+    quote: "No excuses. Not for yourself. Not for this union."
   }
 ];
 export function PlatformSection() {
@@ -144,7 +144,8 @@ export function PlatformSection() {
             </p>
           </motion.div>
         </div>
-        <div className="grid md:grid-cols-3 gap-8 mb-24">
+        {/* Brand Pillars Grid */}
+        <div className="grid md:grid-cols-3 gap-8 mb-24 items-stretch">
           {brandPillars.map((bp, i) => (
             <motion.div
               key={bp.title}
@@ -152,12 +153,14 @@ export function PlatformSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-white p-8 rounded-2xl border-t-4 border-campaign-gold shadow-xl shadow-campaign-gold/5 flex flex-col h-full"
+              className="bg-white p-8 rounded-2xl border-t-4 border-campaign-gold shadow-xl shadow-campaign-gold/5 flex flex-col min-h-[360px]"
             >
               <h3 className="text-2xl font-black text-campaign-black mb-4 uppercase tracking-tighter">{bp.title}</h3>
-              <p className="text-muted-foreground mb-8 leading-relaxed flex-grow">{bp.desc}</p>
+              <p className="text-muted-foreground mb-8 leading-relaxed flex-grow text-sm md:text-base">
+                {bp.desc}
+              </p>
               <div className="pt-6 border-t border-gray-100 mt-auto">
-                <p className="text-campaign-gold font-black italic">"{bp.quote}"</p>
+                <p className="text-campaign-gold font-black italic text-lg">"{bp.quote}"</p>
               </div>
             </motion.div>
           ))}
