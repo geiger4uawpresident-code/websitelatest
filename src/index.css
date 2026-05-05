@@ -75,7 +75,7 @@
 @layer components {
   /* Platform Typography & Blocks */
   .problem-block-refined {
-    @apply border-l-4 border-campaign-gold bg-campaign-gold/5 p-6 md:p-8 rounded-r-xl transition-colors duration-300 box-border;
+    @apply border-l-4 border-campaign-gold bg-campaign-gold/5 p-6 md:p-8 rounded-r-xl transition-colors duration-300 box-border w-full h-auto;
   }
   .platform-commitment-list li {
     @apply transition-all duration-200;

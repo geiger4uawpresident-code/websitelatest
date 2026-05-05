@@ -13,13 +13,7 @@ import {
   History as HistoryIcon,
   LucideIcon
 } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Card, CardContent, CardTitle } from '@/components/ui/card';
 interface Pillar {
   id: string;
   title: string;
@@ -189,8 +183,8 @@ export function PlatformSection() {
             </motion.div>
           ))}
         </div>
-        {/* Strategic Pillars Grid */}
-        <div className="grid grid-cols-1 gap-12 lg:gap-16">
+        {/* Strategic Pillars List - Full Verbatim Content */}
+        <div className="space-y-16 lg:space-y-24">
           {pillars.map((p) => {
             const Icon = p.icon;
             return (
@@ -202,13 +196,14 @@ export function PlatformSection() {
                 viewport={{ once: true, margin: "-100px" }}
               >
                 <Card className="border-none shadow-2xl hover:shadow-campaign-gold/10 transition-all duration-500 overflow-hidden bg-white">
-                  <div className="flex flex-col lg:flex-row">
+                  <div className="flex flex-col lg:flex-row min-h-[500px]">
+                    {/* Left Column: Title & Member Message */}
                     <div className="lg:w-1/3 bg-campaign-black text-white px-6 py-10 md:p-12 flex flex-col justify-between">
                       <div>
                         <div className="flex items-center justify-between mb-8">
                           <span className="text-campaign-gold/20 font-black text-6xl md:text-8xl">{p.id}</span>
                           <div className="bg-campaign-gold/20 p-4 rounded-2xl text-campaign-gold">
-                            <Icon className="w-6 h-6" />
+                            <Icon className="w-8 h-8" />
                           </div>
                         </div>
                         <CardTitle className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight leading-[1.1] mb-6">
@@ -216,36 +211,35 @@ export function PlatformSection() {
                         </CardTitle>
                       </div>
                       <div className="pt-8 border-t border-white/10">
-                        <p className="text-campaign-gold font-black uppercase tracking-widest text-sm mb-2">Member Impact</p>
-                        <p className="text-lg italic leading-tight text-white/90">"{p.memberMessage}"</p>
-                      </div>
-                    </div>
-                    <CardContent className="lg:w-2/3 px-6 py-10 md:p-12 space-y-10 flex flex-col justify-center">
-                      <div className="problem-block-refined">
-                        <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold mb-2">The Challenge</p>
-                        <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
-                          {p.problem}
+                        <p className="text-campaign-gold font-black uppercase tracking-widest text-[10px] mb-4">Member-Facing Message</p>
+                        <p className="text-xl italic font-medium leading-tight text-white/95">
+                          "{p.memberMessage}"
                         </p>
                       </div>
-                      <Accordion type="single" collapsible className="w-full">
-                        <AccordionItem value="commitments" className="border-none">
-                          <AccordionTrigger className="hover:no-underline py-4">
-                            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">View Strategic Commitments</span>
-                          </AccordionTrigger>
-                          <AccordionContent className="pt-4">
-                            <ul className="space-y-6">
-                              {p.commitments.map((c, i) => (
-                                <li key={i} className="flex gap-4 text-base md:text-lg leading-relaxed text-gray-800 items-start group">
-                                  <div className="mt-1.5 bg-campaign-gold/10 p-1 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
-                                    <ChevronRight size={16} strokeWidth={3} />
-                                  </div>
-                                  <span>{c}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </AccordionContent>
-                        </AccordionItem>
-                      </Accordion>
+                    </div>
+                    {/* Right Column: Challenge & Commitments */}
+                    <CardContent className="lg:w-2/3 px-6 py-10 md:p-12 space-y-12 flex flex-col justify-center">
+                      <div className="space-y-4">
+                        <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">The Challenge</h4>
+                        <div className="problem-block-refined">
+                          <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
+                            {p.problem}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="space-y-6">
+                        <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">Strategic Commitments</h4>
+                        <ul className="grid gap-6">
+                          {p.commitments.map((c, i) => (
+                            <li key={i} className="flex gap-4 text-base md:text-lg leading-relaxed text-gray-800 items-start group">
+                              <div className="mt-1.5 bg-campaign-gold/10 p-1.5 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
+                                <ChevronRight size={18} strokeWidth={3} />
+                              </div>
+                              <span className="font-medium">{c}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </CardContent>
                   </div>
                 </Card>
