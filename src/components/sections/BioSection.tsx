@@ -5,30 +5,32 @@ export function BioSection() {
   return (
     <section id="about" className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
-          <div className="lg:w-1/2 relative">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+          <div className="lg:w-1/2 relative w-full">
             <div className="absolute -top-10 -left-10 w-64 h-64 bg-campaign-gold/10 rounded-full blur-3xl" />
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="relative z-10 rounded-2xl overflow-hidden shadow-2xl shadow-campaign-gold/10 border-8 border-white bg-gray-100"
+              className="relative z-10 rounded-2xl overflow-hidden shadow-2xl shadow-campaign-gold/10 border-8 border-white bg-gray-100 aspect-[4/5]"
             >
               <img
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
                 alt="Tricia Geiger, UAW Presidential Candidate"
-                className="w-full h-auto transition-all duration-700 object-cover aspect-[4/5]"
+                className="w-full h-full transition-all duration-700 object-cover"
                 loading="lazy"
               />
+              {/* Decorative gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-campaign-black/40 via-transparent to-transparent pointer-events-none" />
             </motion.div>
-            <div className="absolute -bottom-6 -right-6 bg-campaign-gold text-white p-8 rounded-xl shadow-xl hidden md:block z-20 max-w-xs">
-              <p className="text-xl font-black italic leading-tight">
+            <div className="absolute -bottom-6 -right-6 bg-campaign-gold text-white p-6 md:p-8 rounded-xl shadow-xl hidden md:block z-20 max-w-xs">
+              <p className="text-lg md:text-xl font-black italic leading-tight">
                 "Let's write solidarity's next chapter together"
               </p>
             </div>
           </div>
-          <div className="lg:w-1/2 space-y-8">
+          <div className="lg:w-1/2 space-y-8 mt-12 lg:mt-0">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +42,7 @@ export function BioSection() {
             </motion.div>
             <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-6">
               <p>
-                Tricia Geiger is a veteran UAW member and organizer who has spent the last 20 years fighting for the dignity of labor. Tricia got her start at <strong>GM Local 651 in Flint, Michigan</strong>, where she first learned the power of a collective voice. Her roots in the union aren't just professional—they're part of a multi-generational legacy. Her grandfather was a migrant farmworker who found stability and a middle-class life as a member of <strong>GM Fisher Body Local 598</strong>.
+                Tricia Geiger is a veteran UAW member and organizer who has spent the last 20 years fighting for the dignity of labor. Tricia got her start at <strong>GM Local 651 in Flint, Michigan</strong>, where she first learned the power of a <strong>member-first</strong> collective voice. Her roots in the union aren't just professional—they're part of a multi-generational legacy. Her grandfather was a migrant farmworker who found stability and a middle-class life as a member of <strong>GM Fisher Body Local 598</strong>.
               </p>
               <p>
                 For nearly a decade, Tricia served as an <strong>International Servicing Representative for Region 2B</strong>. She has stood on the front lines of multi-sector fights, managing complex grievances, negotiating high-stakes contracts, and organizing strategic strikes that delivered real wins for <strong>members</strong>.
@@ -51,7 +53,7 @@ export function BioSection() {
                 <div className="text-campaign-gold shrink-0 group-hover:scale-110 transition-transform"><Award size={28} /></div>
                 <div>
                   <h4 className="font-bold text-campaign-black">20 Years of Service</h4>
-                  <p className="text-sm text-muted-foreground">Dedicated UAW member with proven shop floor experience.</p>
+                  <p className="text-sm text-muted-foreground">Dedicated UAW member with proven, member-first shop floor experience.</p>
                 </div>
               </div>
               <div className="flex gap-4 p-4 rounded-xl bg-campaign-tan/5 border border-campaign-tan/10 hover:bg-campaign-tan/10 hover:border-campaign-gold/30 transition-all duration-300 group cursor-default">

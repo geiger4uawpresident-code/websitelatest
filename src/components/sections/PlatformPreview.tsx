@@ -1,7 +1,5 @@
 /**
- * DEPRECATED: This component has been replaced by PlatformSection.tsx.
- * It is no longer in use and can be safely removed from the file system.
+ * DEPRECATED: This component has been fully replaced by PlatformSection.tsx.
+ * Do not use this in production.
  */
-export function PlatformPreview() {
-  return null;
-}
+export const PlatformPreview = () => null;

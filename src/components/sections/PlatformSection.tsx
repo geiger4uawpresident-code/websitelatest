@@ -144,7 +144,7 @@ export function PlatformSection() {
             </p>
           </motion.div>
         </div>
-        {/* Brand Pillars Grid */}
+        {/* Brand Pillars Grid with Enhanced Interaction */}
         <div className="grid md:grid-cols-3 gap-8 mb-24 items-stretch">
           {brandPillars.map((bp, i) => (
             <motion.div
@@ -152,8 +152,9 @@ export function PlatformSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
+              whileHover={{ y: -8 }}
               viewport={{ once: true }}
-              className="bg-white p-8 rounded-2xl border-t-4 border-campaign-gold shadow-xl shadow-campaign-gold/5 flex flex-col h-full"
+              className="bg-white p-8 rounded-2xl border-t-4 border-campaign-gold shadow-xl shadow-campaign-gold/5 flex flex-col h-full transition-shadow hover:shadow-2xl hover:shadow-campaign-gold/10"
             >
               <h3 className="text-2xl font-black text-campaign-black mb-4 uppercase tracking-tighter shrink-0">{bp.title}</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed flex-grow text-sm md:text-base">
@@ -174,7 +175,8 @@ export function PlatformSection() {
             </h3>
           </div>
         </div>
-        <div className="grid lg:grid-cols-2 gap-8">
+        {/* Strategic Pillars Grid with Optimized Spacing */}
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-10">
           {pillars.map((p, idx) => (
             <motion.div
               key={p.id}
@@ -184,16 +186,16 @@ export function PlatformSection() {
               viewport={{ once: true, margin: "-50px" }}
             >
               <Card className="h-full border-none shadow-xl hover:shadow-2xl transition-all duration-300 group overflow-hidden bg-white flex flex-col">
-                <CardHeader className="bg-campaign-black text-white p-8 shrink-0">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-campaign-gold/30 font-black text-5xl group-hover:text-campaign-gold/100 transition-colors duration-500">{p.id}</span>
+                <CardHeader className="bg-campaign-black text-white p-6 md:p-10 shrink-0">
+                  <div className="flex items-center justify-between mb-6">
+                    <span className="text-campaign-gold/30 font-black text-5xl md:text-6xl group-hover:text-campaign-gold/100 transition-colors duration-500">{p.id}</span>
                     <div className="bg-campaign-gold/20 p-4 rounded-2xl text-campaign-gold group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                       {p.icon}
                     </div>
                   </div>
-                  <CardTitle className="text-2xl md:text-3xl font-black uppercase tracking-tight leading-none">{p.title}</CardTitle>
+                  <CardTitle className="text-2xl md:text-3xl lg:text-4xl font-black uppercase tracking-tight leading-none">{p.title}</CardTitle>
                 </CardHeader>
-                <CardContent className="p-8 space-y-8 flex-grow">
+                <CardContent className="p-6 md:p-10 space-y-8 flex-grow">
                   <div className="space-y-3">
                     <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">The Challenge</p>
                     <p className="text-muted-foreground italic text-lg leading-relaxed">"{p.problem}"</p>
@@ -202,7 +204,7 @@ export function PlatformSection() {
                     <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">Strategic Commitments</p>
                     <ul className="space-y-4">
                       {p.commitments.map((c, i) => (
-                        <li key={i} className="flex gap-4 text-sm md:text-base leading-relaxed text-gray-700 items-start">
+                        <li key={i} className="flex gap-4 text-base leading-relaxed text-gray-700 items-start">
                           <div className="mt-1 bg-campaign-gold/10 p-1 rounded-full text-campaign-gold shrink-0">
                             <ChevronRight size={14} />
                           </div>
@@ -212,7 +214,7 @@ export function PlatformSection() {
                     </ul>
                   </div>
                   <div className="pt-8 border-t border-gray-100 mt-auto">
-                    <p className="text-center font-black text-campaign-black text-lg tracking-tight uppercase italic">{p.memberMessage}</p>
+                    <p className="text-center font-black text-campaign-black text-base md:text-xl tracking-tight uppercase italic">{p.memberMessage}</p>
                   </div>
                 </CardContent>
               </Card>
