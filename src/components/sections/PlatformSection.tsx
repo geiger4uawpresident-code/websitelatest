@@ -140,7 +140,7 @@ export function PlatformSection() {
           >
             <h2 className="text-3xl md:text-6xl font-display font-black text-campaign-black uppercase tracking-tight">The 2026 Platform</h2>
             <p className="text-muted-foreground text-xl max-w-3xl mx-auto mt-6">
-              A comprehensive blueprint to revitalize the UAW and return power to the hands that do the work.
+              A comprehensive blueprint to return power to the members.
             </p>
           </motion.div>
         </div>
