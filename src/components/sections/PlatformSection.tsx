@@ -250,9 +250,9 @@ export function PlatformSection() {
         >
           <Quote className="mx-auto text-campaign-gold mb-6" size={48} />
           <h3 className="text-2xl md:text-4xl font-black italic mb-6 max-w-4xl mx-auto leading-tight">
-            "We are not just electing a president. We are deciding if we want a union that works for the members, or a union that works for the status quo."
+            "We are not just electing a president. We are deciding who we are as a movement!"
           </h3>
-          <p className="text-campaign-gold font-black uppercase tracking-[0.3em]">Tricia Geiger, 2026</p>
+          <p className="text-campaign-gold font-black uppercase tracking-[0.3em]">Tricia Geiger</p>
         </motion.div>
       </div>
     </section>
