@@ -9,6 +9,8 @@ export function Navbar() {
     setIsScrolled(window.scrollY > 20);
   }, []);
   useEffect(() => {
+    // Check scroll position immediately on mount to prevent flicker on refresh
+    handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, [handleScroll]);

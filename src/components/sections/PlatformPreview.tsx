@@ -1,5 +1,5 @@
 /**
  * DEPRECATED: This component has been fully replaced by PlatformSection.tsx.
- * Do not use this in production.
+ * This file is kept as an empty export during the transition period.
  */
 export const PlatformPreview = () => null;
