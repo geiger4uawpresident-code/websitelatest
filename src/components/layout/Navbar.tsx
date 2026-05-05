@@ -62,15 +62,15 @@ export function Navbar() {
               key={link.name}
               href={link.href}
               className={cn(
-                "text-xs font-bold uppercase tracking-widest hover:text-campaign-red transition-all relative group",
+                "text-xs font-bold uppercase tracking-widest hover:text-campaign-gold transition-all relative group",
                 isNavActive ? "text-campaign-black" : "text-white"
               )}
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-campaign-gold to-campaign-red transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-campaign-gold transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
-          <Button asChild className="bg-campaign-gold hover:bg-campaign-red text-white font-bold px-6 shadow-lg shadow-campaign-red/10 active:scale-95 transition-all">
+          <Button asChild className="bg-campaign-gold hover:opacity-90 text-white font-bold px-6 shadow-lg shadow-campaign-gold/10 active:scale-95 transition-all">
             <a href={DONATE_URL} target="_blank" rel="noopener noreferrer">Donate</a>
           </Button>
         </div>
@@ -90,7 +90,7 @@ export function Navbar() {
       {/* Mobile Menu Overlay */}
       <div
         className={cn(
-          "md:hidden absolute top-full left-0 right-0 bg-gradient-to-b from-white to-campaign-tan/10 border-b border-gray-100 shadow-2xl transition-all duration-300 ease-in-out overflow-hidden",
+          "md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-2xl transition-all duration-300 ease-in-out overflow-hidden",
           isMobileMenuOpen ? "max-h-[90vh] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
         )}
         aria-hidden={!isMobileMenuOpen}
@@ -101,7 +101,7 @@ export function Navbar() {
               key={link.name}
               href={link.href}
               className={cn(
-                "text-lg font-black text-campaign-black py-4 border-b border-gray-50 last:border-0 active:text-campaign-red transition-all uppercase tracking-tight transform",
+                "text-lg font-black text-campaign-black py-4 border-b border-gray-50 last:border-0 active:text-campaign-gold transition-all uppercase tracking-tight transform",
                 isMobileMenuOpen ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0"
               )}
               style={{ transitionDelay: `${idx * 50}ms` }}
@@ -111,7 +111,7 @@ export function Navbar() {
             </a>
           ))}
           <div className="pt-6">
-            <Button asChild size="lg" className="bg-gradient-campaign hover:opacity-90 text-white font-black w-full h-14 shadow-lg active:scale-[0.98] transition-all">
+            <Button asChild size="lg" className="bg-campaign-gold hover:opacity-90 text-white font-black w-full h-14 shadow-lg active:scale-[0.98] transition-all">
               <a href={DONATE_URL} target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
                 Donate to the Campaign
               </a>

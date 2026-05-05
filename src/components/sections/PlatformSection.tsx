@@ -204,7 +204,7 @@ export function PlatformSection() {
                     </div>
                   </div>
                   <CardContent className="lg:w-2/3 px-6 py-10 md:p-12 space-y-10 flex flex-col justify-center">
-                    <div className="problem-block">
+                    <div className="problem-block-refined">
                       <p className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-red/90 mb-2">The Problem</p>
                       <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
                         {p.problem}

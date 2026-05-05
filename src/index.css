@@ -5,7 +5,7 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 10.2%;
-    --primary: 40 50% 56%; /* Gold approximation */
+    --primary: 40 50% 56%; /* Gold approximation #C5A059 */
     --primary-foreground: 0 0% 100%;
     --muted: 38 29% 90%;
     --muted-foreground: 0 0% 45.1%;
@@ -69,13 +69,13 @@
     border: 2px solid hsl(var(--muted));
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #DC2626;
+    background: #a8884c;
   }
 }
 @layer components {
   /* Platform Typography & Blocks */
-  .problem-block {
-    @apply border-l-4 border-campaign-red bg-campaign-red/5 p-6 md:p-8 rounded-r-xl transition-colors duration-300 box-border;
+  .problem-block-refined {
+    @apply border-l-4 border-campaign-gold bg-campaign-gold/5 p-6 md:p-8 rounded-r-xl transition-colors duration-300 box-border;
   }
   .platform-commitment-list li {
     @apply transition-all duration-200;
@@ -88,11 +88,11 @@
   }
   /* Campaign Button System */
   .btn-campaign-gold {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-bold text-white transition-all duration-200 bg-[#C5A059] hover:bg-[#a8884c] active:scale-95 shadow-lg shadow-campaign-red/10;
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-bold text-white transition-all duration-200 bg-[#C5A059] hover:opacity-90 active:scale-95 shadow-lg shadow-campaign-gold/10;
   }
   /* Campaign Gradient System */
   .bg-gradient-campaign {
-    @apply bg-gradient-to-r from-campaign-gold to-campaign-red;
+    @apply bg-gradient-to-r from-campaign-gold to-campaign-tan;
   }
   /* Layout Utilities */
   .section-container {

@@ -8,14 +8,14 @@ export function InvolveSection() {
     {
       title: "Campaign Updates",
       description: "Stay informed about Tricia's mission, legislative wins, and upcoming events in your region.",
-      icon: <Mail className="w-8 h-8 text-campaign-gold group-hover:text-campaign-red transition-colors" />,
+      icon: <Mail className="w-8 h-8 text-campaign-gold group-hover:text-campaign-black transition-colors" />,
       link: "https://tricia-geiger-for-u-a-w-president2026.sender.site/",
       cta: "Sign Up for Updates"
     },
     {
       title: "Campaign Amplifier",
       description: "Ready to lead? Join our network of amplifiers to spread the word and organize in your local.",
-      icon: <Megaphone className="w-8 h-8 text-campaign-gold group-hover:text-campaign-red transition-colors" />,
+      icon: <Megaphone className="w-8 h-8 text-campaign-gold group-hover:text-campaign-black transition-colors" />,
       link: "https://tricia-geiger-for-u-a-w-president2026-badger.sender.site/",
       cta: "Become an Amplifier"
     }
@@ -36,16 +36,16 @@ export function InvolveSection() {
               whileHover={{ y: -5 }}
               transition={{ duration: 0.2 }}
             >
-              <Card className="h-full border-2 border-campaign-tan/20 hover:border-campaign-red/30 transition-all shadow-lg overflow-hidden group">
+              <Card className="h-full border-2 border-campaign-tan/20 hover:border-campaign-gold/40 transition-all shadow-lg overflow-hidden group">
                 <CardHeader className="pb-4">
-                  <div className="mb-4 bg-campaign-tan/10 group-hover:bg-campaign-red/10 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all">
+                  <div className="mb-4 bg-campaign-tan/10 group-hover:bg-campaign-gold/10 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all">
                     {card.icon}
                   </div>
                   <CardTitle className="text-2xl font-bold text-campaign-black">{card.title}</CardTitle>
                   <CardDescription className="text-base leading-relaxed">{card.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button asChild className="w-full bg-campaign-black hover:bg-campaign-red hover:shadow-campaign-red/20 text-white font-bold h-12 group transition-all">
+                  <Button asChild className="w-full bg-campaign-black hover:bg-campaign-gold text-white font-bold h-12 group transition-all shadow-md hover:shadow-campaign-gold/10">
                     <a href={card.link} target="_blank" rel="noopener noreferrer">
                       {card.cta} <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </a>

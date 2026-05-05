@@ -44,7 +44,7 @@ export function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-campaign-tan/50 hover:text-campaign-red transition-all duration-200 hover:scale-110 active:scale-95"
+                  className="text-campaign-tan/50 hover:text-campaign-gold transition-all duration-200 hover:scale-110 active:scale-95"
                   aria-label={`Visit our ${social.name}`}
                 >
                   {social.icon}
@@ -72,7 +72,7 @@ export function Footer() {
                 href={DONATE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full bg-campaign-gold hover:bg-campaign-gold/90 text-white text-center font-bold py-4 rounded-lg transition-all shadow-lg active:scale-95 shadow-campaign-gold/10"
+                className="block w-full bg-campaign-gold hover:opacity-90 text-white text-center font-bold py-4 rounded-lg transition-all shadow-lg active:scale-95 shadow-campaign-gold/10"
               >
                 Donate via GoFundMe
               </a>

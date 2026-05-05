@@ -13,7 +13,7 @@ export function BioSection() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="relative z-10 rounded-2xl overflow-hidden shadow-2xl shadow-campaign-red/5 border-8 border-white bg-gray-100 aspect-[4/5]"
+              className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-8 border-white bg-gray-100 aspect-[4/5]"
             >
               <img
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
@@ -24,7 +24,7 @@ export function BioSection() {
               {/* Decorative gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-campaign-black/40 via-transparent to-transparent pointer-events-none" />
             </motion.div>
-            <div className="absolute -bottom-6 -right-6 bg-campaign-gold text-white p-6 md:p-8 rounded-xl shadow-xl hidden md:block z-20 max-w-xs shadow-campaign-red/10">
+            <div className="absolute -bottom-6 -right-6 bg-campaign-gold text-white p-6 md:p-8 rounded-xl shadow-xl hidden md:block z-20 max-w-xs shadow-campaign-gold/10">
               <p className="text-lg md:text-xl font-black italic leading-tight">
                 "Let's write solidarity's next chapter together"
               </p>
@@ -38,7 +38,7 @@ export function BioSection() {
               className="space-y-4"
             >
               <h2 className="text-3xl md:text-5xl font-display font-black text-campaign-black uppercase">The Journey of Service</h2>
-              <div className="h-1.5 w-24 bg-gradient-to-r from-campaign-gold to-campaign-red" />
+              <div className="h-1.5 w-24 bg-gradient-to-r from-campaign-gold to-campaign-tan" />
             </motion.div>
             <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-6">
               <p>
@@ -49,28 +49,28 @@ export function BioSection() {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
-              <div className="flex gap-4 p-4 rounded-xl bg-campaign-tan/5 border border-campaign-tan/10 hover:bg-campaign-tan/10 hover:border-campaign-red/30 transition-all duration-300 group cursor-default">
-                <div className="text-campaign-gold shrink-0 group-hover:text-campaign-red group-hover:scale-110 transition-all"><Award size={28} /></div>
+              <div className="flex gap-4 p-4 rounded-xl bg-campaign-tan/5 border border-campaign-tan/10 hover:bg-campaign-tan/10 hover:border-campaign-gold/30 transition-all duration-300 group cursor-default">
+                <div className="text-campaign-gold shrink-0 group-hover:scale-110 transition-all"><Award size={28} /></div>
                 <div>
                   <h4 className="font-bold text-campaign-black">20 Years of Service</h4>
                   <p className="text-sm text-muted-foreground">Dedicated UAW member with proven, member-first shop floor experience.</p>
                 </div>
               </div>
-              <div className="flex gap-4 p-4 rounded-xl bg-campaign-tan/5 border border-campaign-tan/10 hover:bg-campaign-tan/10 hover:border-campaign-red/30 transition-all duration-300 group cursor-default">
-                <div className="text-campaign-gold shrink-0 group-hover:text-campaign-red group-hover:scale-110 transition-all"><GraduationCap size={28} /></div>
+              <div className="flex gap-4 p-4 rounded-xl bg-campaign-tan/5 border border-campaign-tan/10 hover:bg-campaign-tan/10 hover:border-campaign-gold/30 transition-all duration-300 group cursor-default">
+                <div className="text-campaign-gold shrink-0 group-hover:scale-110 transition-all"><GraduationCap size={28} /></div>
                 <div>
                   <h4 className="font-bold text-campaign-black">Academic Excellence</h4>
                   <p className="text-sm text-muted-foreground leading-snug">Union Leadership & Administration (National Labor College) & Strategic Corporate Research (Cornell).</p>
                 </div>
               </div>
             </div>
-            <blockquote className="relative p-8 bg-campaign-black rounded-2xl text-white shadow-2xl shadow-campaign-red/5">
+            <blockquote className="relative p-8 bg-campaign-black rounded-2xl text-white shadow-2xl">
               <Quote className="absolute top-4 right-4 text-campaign-gold/20" size={48} aria-hidden="true" />
               <p className="text-xl italic font-medium relative z-10 leading-relaxed">
                 "We are one Union. One movement with many groups of members. Prepared. Democratic. Accountable. That's the promise. That's the standard. That's the union we are going to build for all."
               </p>
               <footer className="mt-6 relative z-10">
-                <cite className="text-campaign-red font-bold uppercase tracking-widest text-sm not-italic">
+                <cite className="text-campaign-gold font-bold uppercase tracking-widest text-sm not-italic">
                   — Tricia Geiger, UAW President Candidate
                 </cite>
               </footer>
