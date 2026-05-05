@@ -1,9 +1,10 @@
 import React from 'react';
-import { Facebook, Youtube, Instagram, Twitter, Mail } from 'lucide-react';
+import { Facebook, Youtube, Instagram, Mail } from 'lucide-react';
+import { toast } from 'sonner';
 const TikTokIcon = ({ className }: { className?: string }) => (
-  <svg 
-    viewBox="0 0 24 24" 
-    fill="currentColor" 
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
     className={className}
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -11,11 +12,17 @@ const TikTokIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 export function Footer() {
+  const handleLegalClick = (e: React.MouseEvent, type: string) => {
+    e.preventDefault();
+    toast.info(`${type} Coming Soon`, {
+      description: "Our legal documents are currently being finalized for the 2026 campaign cycle."
+    });
+  };
   const socialLinks = [
-    { icon: <Facebook />, href: "https://www.facebook.com/profile.php?id=61588992516309" },
-    { icon: <Youtube />, href: "https://www.youtube.com/@TriciaGeiger4UAWPresident2026" },
-    { icon: <Instagram />, href: "https://www.instagram.com/geiger_triciageiger4uaw/" },
-    { icon: <TikTokIcon className="w-6 h-6" />, href: "https://www.tiktok.com/@geiger4uaw" },
+    { name: "Facebook", icon: <Facebook />, href: "https://www.facebook.com/profile.php?id=61588992516309" },
+    { name: "Youtube", icon: <Youtube />, href: "https://www.youtube.com/@TriciaGeiger4UAWPresident2026" },
+    { name: "Instagram", icon: <Instagram />, href: "https://www.instagram.com/geiger_triciageiger4uaw/" },
+    { name: "TikTok", icon: <TikTokIcon className="w-6 h-6" />, href: "https://www.tiktok.com/@geiger4uaw" },
   ];
   const DONATE_URL = "https://gofund.me/5e6d6b33f";
   return (
@@ -32,7 +39,14 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social, idx) => (
-                <a key={idx} href={social.href} target="_blank" rel="noopener noreferrer" className="text-campaign-tan/40 hover:text-campaign-gold transition-colors">
+                <a 
+                  key={idx} 
+                  href={social.href} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-campaign-tan/40 hover:text-campaign-gold transition-all duration-200 hover:scale-110"
+                  aria-label={`Visit our ${social.name}`}
+                >
                   {social.icon}
                 </a>
               ))}
@@ -50,11 +64,16 @@ export function Footer() {
           <div className="space-y-6">
             <h4 className="font-bold uppercase tracking-widest text-campaign-gold">Contact & Support</h4>
             <a href="mailto:info@geiger2026.com" className="flex items-center gap-3 text-campaign-tan/60 hover:text-white transition-colors group">
-              <Mail className="group-hover:text-campaign-gold" />
+              <Mail className="group-hover:text-campaign-gold transition-colors" />
               info@geiger2026.com
             </a>
             <div className="pt-4">
-              <a href={DONATE_URL} target="_blank" rel="noopener noreferrer" className="block w-full bg-campaign-gold hover:bg-campaign-gold/90 text-white text-center font-bold py-3 rounded-lg transition-colors shadow-lg">
+              <a 
+                href={DONATE_URL} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="block w-full bg-campaign-gold hover:bg-campaign-gold/90 text-white text-center font-bold py-3 rounded-lg transition-all shadow-lg active:scale-95"
+              >
                 Donate via GoFundMe
               </a>
             </div>
@@ -63,8 +82,20 @@ export function Footer() {
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-xs uppercase tracking-widest text-campaign-tan/30">
           <p>© 2024 Paid for by Tricia Geiger for UAW President 2026</p>
           <div className="flex gap-8">
-            <a href="#" className="hover:text-campaign-gold">Privacy Policy</a>
-            <a href="#" className="hover:text-campaign-gold">Terms of Use</a>
+            <a 
+              href="#" 
+              onClick={(e) => handleLegalClick(e, 'Privacy Policy')}
+              className="hover:text-campaign-gold transition-colors"
+            >
+              Privacy Policy
+            </a>
+            <a 
+              href="#" 
+              onClick={(e) => handleLegalClick(e, 'Terms of Use')}
+              className="hover:text-campaign-gold transition-colors"
+            >
+              Terms of Use
+            </a>
           </div>
         </div>
       </div>

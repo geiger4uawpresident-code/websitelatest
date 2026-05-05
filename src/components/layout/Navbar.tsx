@@ -26,7 +26,10 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-white font-bold text-xl">TG</div>
-          <span className={cn("font-display font-bold text-lg tracking-tight uppercase", isScrolled ? "text-campaign-black" : "text-campaign-black md:text-white")}>
+          <span className={cn(
+            "font-display font-bold text-lg tracking-tight uppercase transition-colors duration-300",
+            isScrolled ? "text-campaign-black" : "text-white"
+          )}>
             Tricia Geiger <span className="text-campaign-gold">2026</span>
           </span>
         </div>
@@ -38,7 +41,7 @@ export function Navbar() {
               href={link.href}
               className={cn(
                 "text-sm font-medium hover:text-campaign-gold transition-colors",
-                isScrolled ? "text-campaign-black" : "text-campaign-black md:text-white"
+                isScrolled ? "text-campaign-black" : "text-white"
               )}
             >
               {link.name}
@@ -49,22 +52,26 @@ export function Navbar() {
           </Button>
         </div>
         {/* Mobile Toggle */}
-        <button className="md:hidden p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+        <button 
+          className="md:hidden p-2 focus:outline-none" 
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
           {isMobileMenuOpen ? (
             <X className="text-campaign-black" />
           ) : (
-            <Menu className={isScrolled ? "text-campaign-black" : "text-campaign-black md:text-white"} />
+            <Menu className={isScrolled ? "text-campaign-black" : "text-white"} />
           )}
         </button>
       </div>
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white absolute top-full left-0 right-0 border-b border-gray-100 shadow-xl p-4 flex flex-col gap-4">
+        <div className="md:hidden bg-white absolute top-full left-0 right-0 border-b border-gray-100 shadow-xl p-4 flex flex-col gap-4 animate-in slide-in-from-top-2 duration-200">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-lg font-medium text-campaign-black py-2 border-b border-gray-50"
+              className="text-lg font-medium text-campaign-black py-2 border-b border-gray-50 active:bg-gray-50 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.name}
