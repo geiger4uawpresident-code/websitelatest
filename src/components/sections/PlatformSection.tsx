@@ -1,12 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Shield, Users, TrendingUp, Handshake, 
-  Heart, PieChart, Landmark, Network, 
-  ChevronRight, Quote
+import {
+  Shield, 
+  Users, 
+  Handshake,
+  Heart, 
+  PieChart, 
+  Landmark, 
+  Network,
+  ChevronRight, 
+  Quote,
+  History
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 const pillars = [
   {
     id: "01",
