@@ -12,6 +12,7 @@ export function BioSection() {
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
               className="relative z-10 rounded-2xl overflow-hidden shadow-2xl shadow-campaign-gold/10 border-8 border-white bg-gray-100"
             >
               <img
@@ -31,6 +32,7 @@ export function BioSection() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               className="space-y-4"
             >
               <h2 className="text-3xl md:text-5xl font-display font-black text-campaign-black uppercase">The Journey of Service</h2>
@@ -45,15 +47,15 @@ export function BioSection() {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
-              <div className="flex gap-4 p-4 rounded-xl bg-campaign-tan/5 border border-campaign-tan/10 hover:bg-campaign-tan/10 transition-colors duration-300">
-                <div className="text-campaign-gold shrink-0"><Award size={28} /></div>
+              <div className="flex gap-4 p-4 rounded-xl bg-campaign-tan/5 border border-campaign-tan/10 hover:bg-campaign-tan/10 hover:border-campaign-gold/30 transition-all duration-300 group cursor-default">
+                <div className="text-campaign-gold shrink-0 group-hover:scale-110 transition-transform"><Award size={28} /></div>
                 <div>
                   <h4 className="font-bold text-campaign-black">20 Years of Service</h4>
                   <p className="text-sm text-muted-foreground">Dedicated UAW member with proven shop floor experience.</p>
                 </div>
               </div>
-              <div className="flex gap-4 p-4 rounded-xl bg-campaign-tan/5 border border-campaign-tan/10 hover:bg-campaign-tan/10 transition-colors duration-300">
-                <div className="text-campaign-gold shrink-0"><GraduationCap size={28} /></div>
+              <div className="flex gap-4 p-4 rounded-xl bg-campaign-tan/5 border border-campaign-tan/10 hover:bg-campaign-tan/10 hover:border-campaign-gold/30 transition-all duration-300 group cursor-default">
+                <div className="text-campaign-gold shrink-0 group-hover:scale-110 transition-transform"><GraduationCap size={28} /></div>
                 <div>
                   <h4 className="font-bold text-campaign-black">Academic Excellence</h4>
                   <p className="text-sm text-muted-foreground leading-snug">Union Leadership & Administration (National Labor College) & Strategic Corporate Research (Cornell).</p>
@@ -63,7 +65,7 @@ export function BioSection() {
             <blockquote className="relative p-8 bg-campaign-black rounded-2xl text-white shadow-xl">
               <Quote className="absolute top-4 right-4 text-campaign-gold/20" size={48} aria-hidden="true" />
               <p className="text-xl italic font-medium relative z-10 leading-relaxed">
-                "We are one Union. One movement with many groups of workers. Prepared. Democratic. Accountable. That's the promise. That's the standard. That's the union we are going to build for all."
+                "We are one Union. One movement with many groups of members. Prepared. Democratic. Accountable. That's the promise. That's the standard. That's the union we are going to build for all."
               </p>
               <footer className="mt-6 relative z-10">
                 <cite className="text-campaign-gold font-bold uppercase tracking-widest text-sm not-italic">
