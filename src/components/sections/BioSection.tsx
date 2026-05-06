@@ -4,85 +4,67 @@ import { Award, GraduationCap, Quote } from 'lucide-react';
 export function BioSection() {
   return (
     <section id="about" className="py-24 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-          <div className="lg:w-1/2 relative w-full group">
-            {/* Background Accent */}
-            <div className="absolute -top-10 -left-10 w-64 h-64 bg-campaign-gold/10 rounded-full blur-3xl group-hover:bg-campaign-gold/20 transition-colors duration-700" />
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-8 border-white bg-gray-100 aspect-[4/5] shadow-campaign-gold/10"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
-                alt="Tricia Geiger, UAW Presidential Candidate"
-                className="w-full h-full transition-all duration-700 object-cover object-[center_15%] group-hover:scale-105"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-campaign-black/40 via-transparent to-transparent pointer-events-none" />
-            </motion.div>
-            {/* Overlapping Quote Box */}
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
-              viewport={{ once: true }}
-              className="absolute -bottom-6 -right-2 md:-right-6 bg-campaign-gold text-white p-6 md:p-8 rounded-xl shadow-2xl z-20 max-w-[280px] md:max-w-xs shadow-campaign-gold/30 border-4 border-white/20 backdrop-blur-sm"
-            >
-              <p className="text-lg md:text-xl font-black italic leading-tight">
-                "Let's write solidarity's next chapter together"
-              </p>
-            </motion.div>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="space-y-12">
+          {/* Header Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="flex flex-col items-center text-center space-y-4"
+          >
+            <h2 className="text-3xl md:text-5xl font-display font-black text-campaign-black uppercase">The Journey of Service</h2>
+            <div className="h-1.5 w-24 bg-gradient-to-r from-campaign-gold to-campaign-tan" />
+          </motion.div>
+          {/* Narrative Section */}
+          <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-6 text-center md:text-left">
+            <p className="text-lg md:text-xl">
+              Tricia Geiger is a veteran UAW member and organizer who has spent the last 20 years fighting for the dignity of labor. Tricia got her start at <strong>GM Local 651 in Flint, Michigan</strong>. Her roots in the union aren't just professional—they're part of a multi-generational legacy. Her grandfather was a migrant farmworker who found stability and a middle-class life as a member of <strong>GM Fisher Body Local 598</strong>.
+            </p>
+            <p className="text-lg md:text-xl">
+              For nearly a decade, Tricia served as an <strong>International Servicing Representative for Region 2B</strong>. She has stood on the front lines of multi-sector fights, managing complex grievances, negotiating high-stakes contracts, and organizing strategic strikes that delivered real wins for <strong>members</strong>.
+            </p>
           </div>
-          <div className="lg:w-1/2 space-y-8 mt-12 lg:mt-0">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="space-y-4"
-            >
-              <h2 className="text-3xl md:text-5xl font-display font-black text-campaign-black uppercase">The Journey of Service</h2>
-              <div className="h-1.5 w-24 bg-gradient-to-r from-campaign-gold to-campaign-tan" />
-            </motion.div>
-            <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-6">
-              <p>
-                Tricia Geiger is a veteran UAW member and organizer who has spent the last 20 years fighting for the dignity of labor. Tricia got her start at <strong>GM Local 651 in Flint, Michigan</strong>. Her roots in the union aren't just professional—they're part of a multi-generational legacy. Her grandfather was a migrant farmworker who found stability and a middle-class life as a member of <strong>GM Fisher Body Local 598</strong>.
-              </p>
-              <p>
-                For nearly a decade, Tricia served as an <strong>International Servicing Representative for Region 2B</strong>. She has stood on the front lines of multi-sector fights, managing complex grievances, negotiating high-stakes contracts, and organizing strategic strikes that delivered real wins for <strong>members</strong>.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
-              <div className="flex gap-4 p-5 rounded-xl bg-campaign-tan/5 border border-campaign-tan/10 hover:bg-white hover:border-campaign-gold/30 hover:shadow-lg hover:shadow-campaign-gold/5 transition-all duration-300 group cursor-default">
-                <div className="text-campaign-gold shrink-0 group-hover:scale-110 transition-all"><Award size={28} /></div>
-                <div>
-                  <h4 className="font-bold text-campaign-black">20 Years of Service</h4>
-                  <p className="text-sm text-muted-foreground">Proven, member-first shop floor experience across multiple UAW sectors.</p>
-                </div>
+          {/* Impact Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+            <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4 p-6 rounded-xl bg-campaign-tan/5 border border-campaign-tan/10 hover:bg-white hover:border-campaign-gold/30 hover:shadow-lg hover:shadow-campaign-gold/5 transition-all duration-300 group cursor-default">
+              <div className="text-campaign-gold shrink-0 group-hover:scale-110 transition-all">
+                <Award size={32} />
               </div>
-              <div className="flex gap-4 p-5 rounded-xl bg-campaign-tan/5 border border-campaign-tan/10 hover:bg-white hover:border-campaign-gold/30 hover:shadow-lg hover:shadow-campaign-gold/5 transition-all duration-300 group cursor-default">
-                <div className="text-campaign-gold shrink-0 group-hover:scale-110 transition-all"><GraduationCap size={28} /></div>
-                <div>
-                  <h4 className="font-bold text-campaign-black">Academic Excellence</h4>
-                  <p className="text-sm text-muted-foreground leading-snug">Union Leadership (NLC) & Strategic Corporate Research (Cornell University).</p>
-                </div>
+              <div>
+                <h4 className="font-bold text-campaign-black text-lg">20 Years of Service</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">Proven, member-first shop floor experience across multiple UAW sectors.</p>
               </div>
             </div>
-            <blockquote className="relative p-8 bg-campaign-black rounded-2xl text-white shadow-2xl border-l-8 border-campaign-gold">
-              <Quote className="absolute top-4 right-4 text-campaign-gold/20" size={48} aria-hidden="true" />
-              <p className="text-xl italic font-medium relative z-10 leading-relaxed">
+            <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4 p-6 rounded-xl bg-campaign-tan/5 border border-campaign-tan/10 hover:bg-white hover:border-campaign-gold/30 hover:shadow-lg hover:shadow-campaign-gold/5 transition-all duration-300 group cursor-default">
+              <div className="text-campaign-gold shrink-0 group-hover:scale-110 transition-all">
+                <GraduationCap size={32} />
+              </div>
+              <div>
+                <h4 className="font-bold text-campaign-black text-lg">Academic Excellence</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">Union Leadership (NLC) & Strategic Corporate Research (Cornell University).</p>
+              </div>
+            </div>
+          </div>
+          {/* Centered Blockquote */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="relative p-10 bg-campaign-black rounded-3xl text-white shadow-2xl border-l-8 border-campaign-gold overflow-hidden"
+          >
+            <Quote className="absolute top-4 right-4 text-campaign-gold/10" size={64} aria-hidden="true" />
+            <div className="relative z-10 text-center space-y-6">
+              <p className="text-xl md:text-2xl italic font-medium leading-relaxed max-w-2xl mx-auto">
                 "We are one Union. One movement with many groups of members. Prepared. Democratic. Accountable. That's the promise. That's the standard. That's the union we are going to build for all."
               </p>
-              <footer className="mt-6 relative z-10">
+              <footer className="pt-4 border-t border-white/10 max-w-xs mx-auto">
                 <cite className="text-campaign-gold font-bold uppercase tracking-widest text-sm not-italic">
-                  — Tricia Geiger, UAW President Candidate
+                  — Tricia Geiger
                 </cite>
               </footer>
-            </blockquote>
-          </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

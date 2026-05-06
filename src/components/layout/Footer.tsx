@@ -83,8 +83,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-[10px] sm:text-xs uppercase tracking-widest text-campaign-tan/60">
-          <p className="text-center md:text-left">© 2024-2026 Paid for by Tricia Geiger for UAW President 2026</p>
+        <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-center gap-6 text-[10px] sm:text-xs uppercase tracking-widest text-campaign-tan/60">
           <div className="flex gap-8">
             <a
               href="#"

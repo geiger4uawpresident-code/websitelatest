@@ -1,29 +1,28 @@
 import React, { useMemo } from 'react';
 import { FileDown, FileText, Package, ExternalLink } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 export function ResourcesSection() {
   const materials = useMemo(() => [
-    { 
-      title: "Digital Campaign Flyer", 
-      type: "PNG", 
-      size: "0.8 MB", 
+    {
+      title: "Digital Campaign Flyer",
+      type: "PNG",
+      size: "0.8 MB",
       icon: FileDown,
-      link: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&q=80" 
+      link: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&q=80"
     },
-    { 
-      title: "Printable Campaign Flier", 
-      type: "DOC", 
-      size: "1.1 MB", 
+    {
+      title: "Printable Campaign Flier",
+      type: "DOC",
+      size: "1.1 MB",
       icon: FileText,
-      link: "https://drive.google.com/file/d/1stSPREfhvNyVBZ2RjsWcRP6mXT5wL6z9/view?usp=drive_link" 
+      link: "https://drive.google.com/file/d/1stSPREfhvNyVBZ2RjsWcRP6mXT5wL6z9/view?usp=drive_link"
     },
-    { 
-      title: "Meeting Toolkit", 
-      type: "DOCX", 
-      size: "4.2 MB", 
+    {
+      title: "Meeting Toolkit",
+      type: "DOCX",
+      size: "4.2 MB",
       icon: Package,
-      link: "https://drive.google.com/file/d/1ek2Ncd7ZcIDBxHFt83AQEUIttONQLuWf/view?usp=drive_link" 
+      link: "https://drive.google.com/file/d/1ek2Ncd7ZcIDBxHFt83AQEUIttONQLuWf/view?usp=drive_link"
     }
   ], []);
   return (
@@ -65,13 +64,6 @@ export function ResourcesSection() {
               </a>
             );
           })}
-        </div>
-        <div className="mt-16 p-8 rounded-2xl bg-campaign-black text-white text-center">
-          <p className="text-sm uppercase tracking-[0.2em] text-campaign-gold font-bold mb-2">Need physical materials?</p>
-          <p className="text-campaign-tan/80 mb-6">Contact the campaign office for bulk orders of buttons, shirts, and high-gloss palm cards.</p>
-          <Button asChild variant="outline" className="border-campaign-gold text-campaign-gold hover:bg-campaign-gold hover:text-white">
-            <a href="mailto:info@geiger2026.com">Contact Supply Coordinator</a>
-          </Button>
         </div>
       </div>
     </section>
