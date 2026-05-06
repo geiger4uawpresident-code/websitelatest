@@ -38,7 +38,7 @@ export function HeroSection() {
         animate="visible"
       >
         <motion.div variants={itemVariants} className="space-y-4">
-          <motion.div 
+          <motion.div
             className="flex justify-center mb-6"
             initial={{ scale: 0, rotate: -180 }}
             animate={{ scale: 1, rotate: 0 }}
@@ -61,9 +61,8 @@ export function HeroSection() {
           variants={itemVariants}
           className="max-w-4xl mx-auto w-full px-2"
         >
-          {/* rel=0 prevents related videos from other channels after video finishes */}
           <VideoPlayer
-            url="https://www.youtube.com/embed/zh5ejvM71qU?rel=0"
+            url="https://www.youtube.com/embed/sAoPSp2HQGo?rel=0"
             title="Tricia Geiger Campaign Launch Speech"
             className="shadow-2xl shadow-campaign-gold/10 border-campaign-gold/10"
           />

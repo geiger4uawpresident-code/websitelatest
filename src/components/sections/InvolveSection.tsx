@@ -7,14 +7,14 @@ export function InvolveSection() {
   const cards = useMemo(() => [
     {
       title: "Campaign Updates",
-      description: "Stay informed about Tricia's mission, legislative wins, and upcoming events in your region.",
+      description: "Stay informed about Tricia’s mission and upcoming events.",
       icon: Mail,
       link: "https://tricia-geiger-for-u-a-w-president2026.sender.site/",
       cta: "Sign Up for Updates"
     },
     {
       title: "Campaign Amplifier",
-      description: "Ready to lead? Join our network of amplifiers to spread the word and organize in your local.",
+      description: "Ready to lead? Join the network of amplifiers doing the work to make real and lasting change in our union.",
       icon: Megaphone,
       link: "https://tricia-geiger-for-u-a-w-president2026-badger.sender.site/",
       cta: "Become an Amplifier"

@@ -4,19 +4,19 @@ import { Card, CardContent } from '@/components/ui/card';
 export function Endorsements() {
   const testimonials = [
     {
-      quote: "Tricia has been a tireless advocate for her fellow members for over a decade. She's the leader the UAW needs right now.",
-      author: "Sarah J.",
-      position: "Local 600, Production Specialist"
+      quote: "Tricia is the leader that the UAW has needed for a very long time. Her focus on education and empowerment for members is second to none. She understands that a union's strength comes from its educated and active membership.",
+      author: "Tresa Clark",
+      position: "Local 888"
     },
     {
-      quote: "Her commitment to transparency is exactly what we've been missing. We need someone who listens to the floor.",
-      author: "Robert M.",
-      position: "Local 12, Steward"
+      quote: "Strategic, empathetic, and fearless. Tricia isn't afraid to take on the tough fights for our benefits and our futures. She has been on the front lines and knows what it takes to win.",
+      author: "Lonnie Scott",
+      position: "Local 1588"
     },
     {
-      quote: "Strategic, empathetic, and fearless. Tricia isn't afraid to take on the tough fights for our benefits.",
-      author: "Jessica W.",
-      position: "Local 862, Journeyman"
+      quote: "We need a leader who actually listens to the floor and understands our daily struggles. Tricia's roots are in Flint, and she has never forgotten where she came from. She is one of us.",
+      author: "Chuck Snyder",
+      position: "Local 1588"
     }
   ];
   return (

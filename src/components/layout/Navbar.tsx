@@ -31,7 +31,7 @@ export function Navbar() {
     { name: 'Join Us', href: '#involve' },
     { name: 'Resources', href: '#resources' },
   ];
-  const DONATE_URL = "https://gofund.me/5e6d6b33f";
+  const DONATE_URL = "https://secure.anedot.com/2026-tricia-geiger-for-uaw-president/donate";
   const isNavActive = isScrolled || isMobileMenuOpen;
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
   return (
@@ -46,10 +46,10 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <div className="flex items-center gap-3 group/logo">
-          <CampaignLogo 
-            variant={isNavActive ? "gold-on-black" : "black-on-gold"} 
+          <CampaignLogo
+            variant={isNavActive ? "gold-on-black" : "black-on-gold"}
             size="md"
-            className="shadow-campaign-gold/20 group-hover/logo:scale-110" 
+            className="shadow-campaign-gold/20 group-hover/logo:scale-110"
           />
           <span className={cn(
             "font-display font-black text-lg tracking-tight uppercase transition-colors duration-300",

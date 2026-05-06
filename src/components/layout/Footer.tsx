@@ -25,7 +25,7 @@ export function Footer() {
       description: "Our legal documents are currently being finalized for the 2026 campaign cycle."
     });
   };
-  const DONATE_URL = "https://gofund.me/5e6d6b33f";
+  const DONATE_URL = "https://secure.anedot.com/2026-tricia-geiger-for-uaw-president/donate";
   return (
     <footer className="bg-campaign-black text-white pt-20 pb-10 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,7 +78,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="block w-full bg-campaign-gold hover:opacity-90 text-white text-center font-bold py-4 rounded-lg transition-all shadow-lg active:scale-95 shadow-campaign-gold/10"
               >
-                Donate via GoFundMe
+                Donate to the Movement
               </a>
             </div>
           </div>
