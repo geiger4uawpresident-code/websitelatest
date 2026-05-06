@@ -14,7 +14,7 @@ import { Toaster } from '@/components/ui/sonner';
  * Strategic Narrative Flow:
  * 1. Hero: Branding and launch video.
  * 2. Bio: Establishing trust through Flint GM origins.
- * 3. Platform: In-depth 8-pillar strategic roadmap.
+ * 3. Platform: In-depth 8-pillar strategic roadmap with full verbatim commitments.
  * 4. Involve: Dual-funnel conversion for updates and activism.
  * 5. Endorsements: Social proof from rank-and-file leadership.
  * 6. Resources: Tools for local organizing and material distribution.
@@ -32,6 +32,7 @@ export function HomePage() {
       {/* Persistent Global Navigation */}
       <Navbar />
       <main id="main-content" role="main" className="outline-none">
+        {/* Sections flow in a continuous, strategic scroll */}
         <HeroSection />
         <BioSection />
         <PlatformSection />
@@ -42,9 +43,9 @@ export function HomePage() {
       {/* Comprehensive Footer & Social Integration */}
       <Footer />
       {/* Global Toast Provider for User Feedback */}
-      <Toaster
-        richColors
-        closeButton
+      <Toaster 
+        richColors 
+        closeButton 
         position="bottom-center"
         toastOptions={{
           style: {

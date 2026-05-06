@@ -28,12 +28,13 @@ export function PlatformSection() {
       id: "01",
       title: "Clean Governance & Institutional Reform",
       icon: Shield,
-      problem: "The Promise Was Reform. For decades, a 'club culture' at the top of the UAW allowed bureaucracy and opaque financial reporting to erode the fundamental trust between leadership and the shop floor. Members were treated as spectators rather than owners. To build a powerful union, we must first get our own house under control.",
+      problem: "The Promise Was Reform. For decades, a 'club culture' at the top of the UAW allowed bureaucracy and opaque financial reporting to erode the fundamental trust between leadership and the shop floor. While we are transitioning out of a period of federal oversight, the risk of backsliding into old habits remains high. Members were treated as spectators rather than owners. To build a powerful union, we must first get our own house under control and ensure the members are the ultimate monitor.",
       commitments: [
         "Implement real-time forensic auditing of all international and regional expenditures accessible via a secure member portal.",
-        "Establish an independent Member Oversight Committee with the constitutional power to subpoena financial records.",
-        "Mandatory 'Constitutional Town Halls' held 30 days prior to any major Executive Board vote on policy changes.",
-        "Strict 'No-Gift' policy for all elected officials with immediate removal for violations."
+        "Establish an independent Member Oversight Committee with the constitutional power to subpoena financial records and report directly to the membership.",
+        "Mandatory 'Constitutional Town Halls' held 30 days prior to any major Executive Board vote on policy changes or administrative expenditures.",
+        "Strict 'No-Gift' policy for all elected officials with immediate removal for violations and a ban on corporate-funded travel.",
+        "Direct election of all international representatives to ensure they answer to the members they service, not the people who appoint them."
       ],
       memberMessage: "Members voted for reform because they wanted their union back. We will deliver that transparency on day one."
     },
@@ -41,92 +42,104 @@ export function PlatformSection() {
       id: "02",
       title: "Bargaining: Preparing for the Fights Ahead",
       icon: Handshake,
-      problem: "The 'Crisis of Tiers' was born from a lack of strategic preparation and transparency. For too long, corporations used complex contracts to hide concessions, while members were the last to know the details of the deals that define their lives. We need a bargaining strategy that uses our full economic power.",
+      problem: "The 'Crisis of Tiers' was born from a lack of strategic preparation and transparency. Corporations have spent years refining their ability to use complex contracts to hide concessions, while members were often the last to know the details of the deals that define their lives. We are entering a bargaining climate where automation and 'green transition' are being used as threats. We need a strategy that uses our full economic power and puts the corporation on the defensive.",
       commitments: [
-        "Adopt 'Open Bargaining' protocols: Daily digital updates to the membership throughout the negotiation process.",
-        "Establish a Pre-Strike 'Economic War Room' staffed by world-class labor economists to counter corporate misinformation.",
-        "A binding commitment to eliminate ALL tiered wage and benefit systems in the first year of any new contract.",
-        "Full contract language must be released to the membership 7 days before any ratification vote."
+        "Adopt 'Open Bargaining' protocols: Daily digital updates and summarized transcripts of negotiations provided to the membership.",
+        "Establish a Pre-Strike 'Economic War Room' staffed by labor economists and industry experts to counter corporate misinformation.",
+        "A binding constitutional commitment to eliminate ALL tiered wage and benefit systems in the first contract negotiated under this administration.",
+        "Full contract language must be released to the membership in a searchable digital format 7 days before any ratification vote.",
+        "Standardized 'Solidarity Clauses' in all sector contracts to allow for common expiration dates and coordinated industrial action.",
+        "Mandatory strike-readiness training for every local 12 months prior to contract expiration."
       ],
-      memberMessage: "We don't just ask for a fair share; we prepare to take what we've earned through strength and strategy."
+      memberMessage: "The fights ahead require a union that is steps ahead of the boss. We will lead by leading the way."
     },
     {
       id: "03",
-      title: "Staff & Local Leader Development",
+      title: "Staff & Local Leader Development: Building a Culture of Preparation",
       icon: Users,
-      problem: "Our representatives are often outmatched not by talent, but by the modern digital tools and legal resources deployed by multi-national corporations. A lack of standardized training for stewards and servicing reps leads to inconsistent enforcement of our hard-won rights across different locals.",
+      problem: "Our representatives are often outmatched not by talent, but by the modern digital tools, legal resources, and data analytics deployed by multi-national corporations. A lack of standardized, high-level training for stewards and servicing reps leads to inconsistent enforcement of our hard-won rights. We cannot win tomorrow's grievances with yesterday's training. We must build a culture where preparation is the baseline for every leader.",
       commitments: [
-        "Launch the 'UAW Leadership Institute'—a mandatory certification program for all servicing reps and local stewards.",
-        "Implement a Universal Digital Grievance Tracking System allowing members to see the status of their case in real-time.",
-        "Expand specialized legal and safety support staff to provide 24/7 assistance for complex industrial hazards.",
-        "Recruitment initiatives focused on reflecting the full multi-sector breadth of our modern membership."
+        "Launch the 'UAW Leadership Institute'—a mandatory, rigorous certification program for all servicing reps and local stewards.",
+        "Implement a Universal Digital Grievance Tracking System allowing members to see the status, history, and notes of their case in real-time.",
+        "Expand specialized legal and safety support staff to provide 24/7 assistance for complex industrial hazards and legal challenges.",
+        "Create a 'Best Practices' digital library where locals can share successful strategies, contract language, and organizing wins.",
+        "Institutionalize 'Shadowing Programs' where new stewards learn from veteran leaders on the shop floor before taking office."
       ],
-      memberMessage: "A professional, highly-trained staff is our first line of defense against corporate greed."
+      memberMessage: "Every member deserves representation that is trained to the highest level. We will settle for nothing less."
     },
     {
       id: "04",
-      title: "Reimagining Political Action & CAP",
+      title: "Reimagining National Political Action & CAP",
       icon: Landmark,
-      problem: "Labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on worker protections. We have been too quick to endorse and too slow to hold elected officials accountable to our specific legislative agenda.",
+      problem: "Walter Reuther once said the 'bread box' is tied to the 'ballot box.' But labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on fundamental worker protections. We have been too quick to endorse and too slow to hold elected officials accountable. We must return to a model where we use our political weight to move the needle for all workers, not just to gain access to the halls of power.",
       commitments: [
-        "Tie all V-CAP endorsements strictly to a 'Labor-First' scorecard focused on anti-tier and anti-scab legislation.",
-        "Grant local councils Veto Power over regional endorsements that conflict with local member priorities.",
-        "Aggressive lobbying for the 'Worker Freedom Act' to end forced captive audience meetings nationwide.",
-        "Direct member-led development of the biennial UAW National Legislative Agenda."
+        "Tie all V-CAP endorsements strictly to a 'Labor-First' scorecard focused on anti-tier, anti-scab, and card-check legislation.",
+        "Grant local councils Veto Power over regional endorsements that conflict with local member priorities or candidate records.",
+        "Aggressive, member-led lobbying for the 'Worker Freedom Act' to end forced captive audience meetings and 'right-to-work' laws.",
+        "Establish a 'UAW Political Fellowships' program to train rank-and-file members to run for local and state offices.",
+        "Direct member-led development of the biennial UAW National Legislative Agenda through regional summits."
       ],
-      memberMessage: "Politicians work for us, or they don't get our support. Ending blank-check politics is our priority."
+      memberMessage: "It's time we stop being a junior partner to political parties and start being a lead negotiator at the bargaining table."
     },
     {
       id: "05",
-      title: "Healthcare: Protecting Our Families",
+      title: "Healthcare: Bargaining, Standards & the Issue Campaign",
       icon: Heart,
-      problem: "Healthcare is a fundamental human right, yet it is being used by corporations as a tool of coercion during negotiations. Rising premiums and shrinking networks are effectively rolling back the wage increases we fight so hard to win, leaving families vulnerable.",
+      problem: "Healthcare is a fundamental human right, yet it is being used by corporations as a tool of coercion during negotiations. The 'healthcare cliff'—where rising premiums and shrinking networks roll back wage increases—is a deliberate corporate strategy. We must treat healthcare not just as a benefit to be defended, but as a national issue campaign that we lead for the entire working class.",
       commitments: [
-        "Create a National UAW Healthcare Trust Defense Fund to aggressively fight off network reductions and cost-shifts.",
-        "Contractual guarantees for Healthcare Cost-Caps: Take-home pay should never decrease due to premium hikes.",
-        "Mandatory mental health and substance abuse support parity in every multi-sector agreement.",
-        "Establish a Retiree Healthcare Advocacy Board to protect VEBA and traditional plans from inflation."
+        "Create a National UAW Healthcare Trust Defense Fund to aggressively litigate and fight off network reductions and cost-shifts.",
+        "Contractual guarantees for Healthcare Cost-Caps: Ensuring take-home pay never decreases due to premium or deductible hikes.",
+        "Mandatory mental health and substance abuse support parity in every multi-sector agreement, including onsite support where possible.",
+        "Establish a Retiree Healthcare Advocacy Board to protect VEBA and traditional plans from inflationary erosion."
       ],
-      memberMessage: "Your health is not a bargaining chip. We will protect your care as fiercely as we protect your paycheck."
+      memberMessage: "Every member has a right to health and dignity. We will fight for it at the table and in the streets."
     },
     {
       id: "06",
-      title: "Internal Campaign Finance & Integrity",
+      title: "Internal Campaign Finance Reform & Union Election Integrity",
       icon: PieChart,
-      problem: "The 'Dues Dollar' is too often lost in administrative overhead. We need to shift our financial power from the mahogany offices of the International to the picket lines and organizing drives where it actually builds power for the members on the ground.",
+      problem: "The move to Direct Elections was a victory for the members, but the 'incumbency advantage' remains a barrier to true democracy. When dues dollars are used to fund the public relations of sitting officers during election cycles, it creates an unlevel playing field. We need strict rules that separate the work of the union from the work of campaigning, ensuring that every member has a fair shot at leading.",
       commitments: [
-        "Restructure the Strike Fund to ensure benefit payments match 100% of a member's base take-home pay.",
+        "Strict separation of union communication assets from campaign activities during election periods.",
         "Commitment to a 30% reduction in non-essential administrative overhead at Solidarity House within 24 months.",
-        "Redirection of saved funds directly to 'Ground-War' organizing and local servicing budgets.",
-        "Quarterly 'Dues Transparency Reports' mailed to every member's home."
+        "Redirection of saved administrative funds directly to 'Ground-War' organizing and local servicing budgets.",
+        "Quarterly 'Dues Transparency Reports' mailed to every member's home, detailing exactly how every dollar is spent.",
+        "Establish an independent Election Commission to oversee all international and regional votes with no ties to the IEB.",
+        "Ban on all 'Administrative Caucus' assessments or forced contributions from appointed staff.",
+        "Restructure the Strike Fund to ensure benefit payments match 100% of a member's base take-home pay from day one."
       ],
-      memberMessage: "Building a war chest that makes CEOs tremble requires a lean, focused, and transparent treasury."
+      memberMessage: "Leadership that wins the trust of the members shouldn't be afraid to defend its record without using the members' money to do it."
     },
     {
       id: "07",
       title: "Retiree Dignity & Continued Voice",
       icon: HistoryIcon,
-      problem: "The giants whose shoulders we stand on are being left behind. Solidarity is a lifelong bond, yet our retirees often feel disconnected from active leadership and vulnerable to pension erosion. We must honor the promises made to those who built this union.",
+      problem: "The giants whose shoulders we stand on are being sidelined. Solidarity is a lifelong bond, yet our retirees often feel disconnected from active leadership and vulnerable to pension erosion. As inflation rises, the fixed incomes of our veterans are being squeezed. We must honor the promises made to those who built this union and ensure they remain an active, voting part of our future strength.",
       commitments: [
-        "Negotiate Automatic COLA (Cost of Living Adjustments) for all retiree pensions in every future contract.",
-        "Create a permanent, voting seat on the International Executive Board for a Retiree Council Representative.",
-        "Launch a National Retiree Mentorship program to connect veteran experience with new-hire organizing.",
-        "Protect and expand surviving spouse benefits to ensure no UAW family is left in poverty."
+        "Negotiate Automatic COLA (Cost of Living Adjustments) for all retiree pensions in every future contract negotiation.",
+        "Create a permanent, voting seat on the International Executive Board (IEB) for a Retiree Council Representative.",
+        "Launch a National Retiree Mentorship program to connect veteran experience with new-hire organizing and steward training.",
+        "Protect and expand surviving spouse benefits to ensure no UAW family is left in poverty after a lifetime of service.",
+        "Establish 'Retiree Resource Hubs' in every region to assist with healthcare navigation and benefit claims.",
+        "Constitutional protection of retiree chapters to ensure they have the budget and autonomy to organize locally.",
+        "Annual 'State of the Retiree' reports presented to the International Convention."
       ],
-      memberMessage: "Solidarity doesn't end at retirement. We will honor and protect those who built this foundation."
+      memberMessage: "Retirees are not the past of this union; they are the conscience and the backbone. We will fight for those who decided to fight for us."
     },
     {
       id: "08",
       title: "Organizing: Growing Our Power",
       icon: Network,
-      problem: "Falling union density is the single greatest threat to our collective bargaining power. If we don't organize the new industries—especially the EV and battery sectors—we will lose the leverage required to protect existing standards.",
+      problem: "Falling union density is the single greatest threat to our collective bargaining power. Every non-union plant is a weapon the boss uses against us at the bargaining table. If we don't organize the new industries—especially the EV and battery sectors in the South—we will lose the leverage required to protect our existing standards. We cannot wait for the workers to come to us; we must take the fight to the gates.",
       commitments: [
-        "Authorize a $100 Million Strategic Organizing Fund specifically targeted at the non-union South and EV sector.",
-        "Deploy 'Tiger Teams'—elite, rapid-response organizing units of rank-and-file members—for new plant drives.",
-        "Implement a 'Sector-Wide Solidarity' model to organize the entire supply chain, not just the assembly lines.",
-        "Leverage digital-first organizing tools to reach workers in tech-manufacturing and new industrial hubs."
+        "Authorize a $100 Million Strategic Organizing Fund specifically targeted at the non-union South and the burgeoning EV sector.",
+        "Deploy 'Tiger Teams'—elite, rapid-response organizing units of rank-and-file members—for new plant drives and community outreach.",
+        "Implement a 'Sector-Wide Solidarity' model to organize the entire supply chain, ensuring no link is left vulnerable to corporate pressure.",
+        "Leverage digital-first organizing tools and data analytics to reach workers in tech-manufacturing and new industrial hubs.",
+        "Establish 'Worker Centers' in non-union corridors to build community support and provide resources before a drive even begins.",
+        "Commitment to 'Card Check' neutrality agreements in all future master contracts with multi-national employers."
       ],
-      memberMessage: "To protect our standards, we must grow our movement. We will organize the unorganized."
+      memberMessage: "Every worker we leave behind is a worker the boss will use against us. We will organize until the first worker is the one who wins last."
     }
   ], []);
   const brandPillars = useMemo(() => [
@@ -197,6 +210,7 @@ export function PlatformSection() {
               >
                 <Card className="border-none shadow-2xl overflow-hidden bg-white hover:shadow-campaign-gold/10 transition-shadow duration-500">
                   <div className="flex flex-col lg:flex-row min-h-[500px]">
+                    {/* Sidebar / Header of the Pillar */}
                     <div className="lg:w-1/3 bg-campaign-black text-white px-6 py-10 md:p-12 flex flex-col justify-between">
                       <div>
                         <div className="flex items-center justify-between mb-8">
@@ -216,6 +230,7 @@ export function PlatformSection() {
                         </p>
                       </div>
                     </div>
+                    {/* Main Content Area */}
                     <CardContent className="lg:w-2/3 px-6 py-10 md:p-12 space-y-12 flex flex-col justify-center">
                       <div className="space-y-4">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">The Challenge</h4>
