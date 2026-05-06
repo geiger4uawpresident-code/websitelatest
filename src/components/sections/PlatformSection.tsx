@@ -224,7 +224,8 @@ export function PlatformSection() {
                         </CardTitle>
                       </div>
                       <div className="pt-8 border-t border-white/10">
-                        <p className="text-campaign-gold font-black uppercase tracking-widest text-[10px] mb-4">Member Mandate</p>
+                        {/* Refined label strictly aligning with client's Member-Facing Message directive */}
+                        <p className="text-campaign-gold font-black uppercase tracking-widest text-[10px] mb-4">Member-Facing Message</p>
                         <p className="text-lg md:text-xl italic font-medium leading-relaxed text-white/90">
                           "{p.memberMessage}"
                         </p>
