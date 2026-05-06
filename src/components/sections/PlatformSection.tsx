@@ -52,7 +52,7 @@ export function PlatformSection() {
     },
     {
       id: "03",
-      title: "Staff & Local Leader Development: Building a Culture of Preparation",
+      title: "Staff & Local Leader Development",
       icon: Users,
       problem: "Our representatives are often outmatched not by talent, but by the modern digital tools and legal resources deployed by multi-national corporations. A lack of standardized training for stewards and servicing reps leads to inconsistent enforcement of our hard-won rights across different locals.",
       commitments: [
@@ -61,29 +61,29 @@ export function PlatformSection() {
         "Expand specialized legal and safety support staff to provide 24/7 assistance for complex industrial hazards.",
         "Recruitment initiatives focused on reflecting the full multi-sector breadth of our modern membership."
       ],
-      memberMessage: "A professional, highly-trained staff is our first line of defense against corporate greed and contract violations."
+      memberMessage: "A professional, highly-trained staff is our first line of defense against corporate greed."
     },
     {
       id: "04",
-      title: "Reimagining National Political Action & CAP",
+      title: "Reimagining Political Action & CAP",
       icon: Landmark,
-      problem: "Labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on worker protections. We have been too quick to endorse and too slow to hold elected officials accountable to our specific legislative agenda and the needs of our families.",
+      problem: "Labor's voice has been treated as a 'transactional' asset by politicians who take our V-CAP money and then fail to deliver on worker protections. We have been too quick to endorse and too slow to hold elected officials accountable to our specific legislative agenda.",
       commitments: [
         "Tie all V-CAP endorsements strictly to a 'Labor-First' scorecard focused on anti-tier and anti-scab legislation.",
         "Grant local councils Veto Power over regional endorsements that conflict with local member priorities.",
         "Aggressive lobbying for the 'Worker Freedom Act' to end forced captive audience meetings nationwide.",
         "Direct member-led development of the biennial UAW National Legislative Agenda."
       ],
-      memberMessage: "Politicians work for us, or they don't get our support. We are ending the era of blank-check politics."
+      memberMessage: "Politicians work for us, or they don't get our support. Ending blank-check politics is our priority."
     },
     {
       id: "05",
-      title: "Healthcare: Bargaining, Standards & the Issue Campaign",
+      title: "Healthcare: Protecting Our Families",
       icon: Heart,
-      problem: "Healthcare is a fundamental human right, yet it is being used by corporations as a tool of coercion during negotiations. Rising premiums and shrinking networks are effectively rolling back the wage increases we fight so hard to win, leaving families vulnerable when they are most in need.",
+      problem: "Healthcare is a fundamental human right, yet it is being used by corporations as a tool of coercion during negotiations. Rising premiums and shrinking networks are effectively rolling back the wage increases we fight so hard to win, leaving families vulnerable.",
       commitments: [
         "Create a National UAW Healthcare Trust Defense Fund to aggressively fight off network reductions and cost-shifts.",
-        "Contractual guarantees for Healthcare Cost-Caps: No member's take-home pay should ever decrease due to premium hikes.",
+        "Contractual guarantees for Healthcare Cost-Caps: Take-home pay should never decrease due to premium hikes.",
         "Mandatory mental health and substance abuse support parity in every multi-sector agreement.",
         "Establish a Retiree Healthcare Advocacy Board to protect VEBA and traditional plans from inflation."
       ],
@@ -91,9 +91,9 @@ export function PlatformSection() {
     },
     {
       id: "06",
-      title: "Internal Campaign Finance Reform & Union Election Integrity",
+      title: "Internal Campaign Finance & Integrity",
       icon: PieChart,
-      problem: "The 'Dues Dollar' is too often lost in administrative overhead and non-essential spending. We need to shift our financial power from the mahogany offices of the International to the picket lines and organizing drives where it actually builds power for the members on the ground.",
+      problem: "The 'Dues Dollar' is too often lost in administrative overhead. We need to shift our financial power from the mahogany offices of the International to the picket lines and organizing drives where it actually builds power for the members on the ground.",
       commitments: [
         "Restructure the Strike Fund to ensure benefit payments match 100% of a member's base take-home pay.",
         "Commitment to a 30% reduction in non-essential administrative overhead at Solidarity House within 24 months.",
@@ -106,43 +106,43 @@ export function PlatformSection() {
       id: "07",
       title: "Retiree Dignity & Continued Voice",
       icon: HistoryIcon,
-      problem: "The giants whose shoulders we stand on are being left behind in a changing economy. Solidarity is a lifelong bond, yet our retirees often feel disconnected from the active leadership and vulnerable to pension erosion. We must honor the promises made to those who built this union.",
+      problem: "The giants whose shoulders we stand on are being left behind. Solidarity is a lifelong bond, yet our retirees often feel disconnected from active leadership and vulnerable to pension erosion. We must honor the promises made to those who built this union.",
       commitments: [
         "Negotiate Automatic COLA (Cost of Living Adjustments) for all retiree pensions in every future contract.",
         "Create a permanent, voting seat on the International Executive Board for a Retiree Council Representative.",
         "Launch a National Retiree Mentorship program to connect veteran experience with new-hire organizing.",
         "Protect and expand surviving spouse benefits to ensure no UAW family is left in poverty."
       ],
-      memberMessage: "Solidarity doesn't end at retirement. We will honor and protect those who built the foundation of our strength."
+      memberMessage: "Solidarity doesn't end at retirement. We will honor and protect those who built this foundation."
     },
     {
       id: "08",
       title: "Organizing: Growing Our Power",
       icon: Network,
-      problem: "Falling union density is the single greatest threat to our collective bargaining power. If we don't organize the new industries—especially the EV and battery sectors—we will lose the leverage required to protect existing standards and the future of our trades.",
+      problem: "Falling union density is the single greatest threat to our collective bargaining power. If we don't organize the new industries—especially the EV and battery sectors—we will lose the leverage required to protect existing standards.",
       commitments: [
         "Authorize a $100 Million Strategic Organizing Fund specifically targeted at the non-union South and EV sector.",
         "Deploy 'Tiger Teams'—elite, rapid-response organizing units of rank-and-file members—for new plant drives.",
         "Implement a 'Sector-Wide Solidarity' model to organize the entire supply chain, not just the assembly lines.",
         "Leverage digital-first organizing tools to reach workers in tech-manufacturing and new industrial hubs."
       ],
-      memberMessage: "To protect our standards, we must grow our movement. We will organize the unorganized and lead the transition."
+      memberMessage: "To protect our standards, we must grow our movement. We will organize the unorganized."
     }
   ], []);
   const brandPillars = useMemo(() => [
     {
       title: "Prepared",
-      desc: "Preparation is not a strategy — it is a standard. It is how you earn respect in rooms that weren't built for you. Every commitment in this platform—trained bargainers, developed leaders, and data-driven organizing—flows from the belief that the people counting on you deserve someone who did the work before they showed up.",
+      desc: "Preparation is not a strategy — it is a standard. It is how you earn respect in rooms that weren't built for you. Every commitment in this platform flows from the belief that members deserve leaders who did the work before they showed up.",
       quote: "Preparation is the foundation of power"
     },
     {
       title: "Democratic",
-      desc: "Member democracy is not a slogan—it is our governing principle. Bargaining agendas set by members, not presidents. Strike authorizations that require member votes, not press releases. This union belongs to its members. Every decision this leadership makes will reflect that.",
+      desc: "Member democracy is our governing principle. Bargaining agendas set by members, not presidents. Strike authorizations that require member votes, not press releases. This union belongs to its members.",
       quote: "Your power. Your choice. Your union."
     },
     {
       title: "Accountable",
-      desc: "Accountability starts with the person asking for your trust. It means transparency, follow-through, and the integrity to acknowledge failure and fix it. We will replace excuses with action and ensure every leader answers for their decisions to the membership. Every one of them.",
+      desc: "Accountability starts with the person asking for your trust. It means transparency and the integrity to acknowledge failure and fix it. We will replace excuses with action and ensure every leader answers to the membership.",
       quote: "No excuses. Not for yourself. Not for this union."
     }
   ], []);
@@ -154,13 +154,15 @@ export function PlatformSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-6xl font-display font-black text-campaign-black uppercase tracking-tight">The 2026 Platform</h2>
+            <h2 className="text-3xl md:text-6xl font-display font-black text-campaign-black uppercase tracking-tight">The 2026 Strategic Platform</h2>
             <p className="text-muted-foreground text-xl max-w-3xl mx-auto mt-6">
-              A Member-First blueprint to return power to the membership.
+              A Member-First blueprint to restore power, transparency, and results to the shop floor.
             </p>
           </motion.div>
         </div>
+        {/* Brand Pillars Summary */}
         <div className="grid md:grid-cols-3 gap-8 mb-24 items-stretch">
           {brandPillars.map((bp, i) => (
             <motion.div
@@ -168,20 +170,20 @@ export function PlatformSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              whileHover={{ y: -8 }}
               viewport={{ once: true }}
-              className="bg-white p-8 rounded-2xl border-t-4 border-campaign-gold shadow-xl shadow-campaign-gold/5 flex flex-col h-full transition-all hover:shadow-2xl hover:shadow-campaign-gold/10"
+              className="bg-white p-8 rounded-2xl border-t-4 border-campaign-gold shadow-xl shadow-campaign-gold/5 flex flex-col h-full hover:shadow-2xl hover:shadow-campaign-gold/10 transition-all group"
             >
               <h3 className="text-2xl font-black text-campaign-black mb-4 uppercase tracking-tighter shrink-0">{bp.title}</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed flex-grow text-sm md:text-base">
                 {bp.desc}
               </p>
               <div className="pt-6 border-t border-gray-100 mt-auto shrink-0">
-                <p className="text-campaign-gold font-black italic text-lg">"{bp.quote}"</p>
+                <p className="text-campaign-gold font-black italic text-lg group-hover:scale-105 transition-transform duration-300">"{bp.quote}"</p>
               </div>
             </motion.div>
           ))}
         </div>
+        {/* Detailed Strategic Pillars */}
         <div className="space-y-16 lg:space-y-24">
           {pillars.map((p) => {
             const Icon = p.icon;
@@ -193,7 +195,7 @@ export function PlatformSection() {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true, margin: "-100px" }}
               >
-                <Card className="border-none shadow-2xl hover:shadow-campaign-gold/10 transition-all duration-500 overflow-hidden bg-white">
+                <Card className="border-none shadow-2xl overflow-hidden bg-white hover:shadow-campaign-gold/10 transition-shadow duration-500">
                   <div className="flex flex-col lg:flex-row min-h-[500px]">
                     <div className="lg:w-1/3 bg-campaign-black text-white px-6 py-10 md:p-12 flex flex-col justify-between">
                       <div>
@@ -208,7 +210,7 @@ export function PlatformSection() {
                         </CardTitle>
                       </div>
                       <div className="pt-8 border-t border-white/10">
-                        <p className="text-campaign-gold font-black uppercase tracking-widest text-[10px] mb-4">Member-Facing Message</p>
+                        <p className="text-campaign-gold font-black uppercase tracking-widest text-[10px] mb-4">Member Mandate</p>
                         <p className="text-lg md:text-xl italic font-medium leading-tight text-white/95">
                           "{p.memberMessage}"
                         </p>
@@ -231,7 +233,7 @@ export function PlatformSection() {
                               <div className="mt-1.5 bg-campaign-gold/10 p-1.5 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
                                 <ChevronRight size={18} strokeWidth={3} />
                               </div>
-                              <span className="font-medium">{c}</span>
+                              <span className="font-medium group-hover:text-campaign-black transition-colors">{c}</span>
                             </li>
                           ))}
                         </ul>
@@ -243,14 +245,16 @@ export function PlatformSection() {
             );
           })}
         </div>
+        {/* Closing Narrative Callout */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           className="mt-24 text-center p-12 bg-campaign-black rounded-3xl text-white shadow-2xl border-b-8 border-campaign-gold"
         >
           <Quote className="mx-auto text-campaign-gold mb-6" size={48} />
           <h3 className="text-2xl md:text-4xl font-black italic mb-6 max-w-4xl mx-auto leading-tight">
-            "We are not just electing a president. We are deciding who we are!"
+            "We are not just electing a president. We are deciding who we are as a union and what we will demand for our future."
           </h3>
           <p className="text-campaign-gold font-black uppercase tracking-[0.3em]">Tricia Geiger</p>
         </motion.div>
