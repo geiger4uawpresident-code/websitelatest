@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useId } from 'react';
 import { cn } from '@/lib/utils';
 interface CampaignLogoProps {
   className?: string;
@@ -10,6 +10,8 @@ export function CampaignLogo({
   variant = 'gold-on-black',
   size = 'md'
 }: CampaignLogoProps) {
+  const uniqueId = useId();
+  const pathId = `curve-${uniqueId.replace(/:/g, '')}`;
   const sizeMap = {
     sm: 'h-8 w-8',
     md: 'h-10 w-10',
@@ -44,12 +46,12 @@ export function CampaignLogo({
       {/* 2026 Circular Text */}
       <svg className="absolute inset-0 w-full h-full -rotate-90 pointer-events-none" viewBox="0 0 100 100">
         <path
-          id="curve"
+          id={pathId}
           fill="transparent"
           d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
         />
         <text className={cn("text-[11px] font-black tracking-[0.2em] uppercase", textClass)}>
-          <textPath href="#curve" startOffset="25%" textAnchor="middle">
+          <textPath href={`#${pathId}`} startOffset="25%" textAnchor="middle">
             2026
           </textPath>
         </text>

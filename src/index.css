@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -48,8 +49,8 @@
   }
   html {
     scroll-behavior: smooth;
-    /* 80px ensures headings aren't hidden behind the fixed navbar on scroll */
-    scroll-padding-top: 80px; 
+    /* 90px ensures headings aren't hidden behind the fixed navbar on scroll */
+    scroll-padding-top: 90px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

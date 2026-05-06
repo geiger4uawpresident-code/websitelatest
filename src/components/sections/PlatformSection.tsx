@@ -225,7 +225,7 @@ export function PlatformSection() {
                       </div>
                       <div className="pt-8 border-t border-white/10">
                         <p className="text-campaign-gold font-black uppercase tracking-widest text-[10px] mb-4">Member Mandate</p>
-                        <p className="text-lg md:text-xl italic font-medium leading-tight text-white/95">
+                        <p className="text-lg md:text-xl italic font-medium leading-tight text-white/90">
                           "{p.memberMessage}"
                         </p>
                       </div>
@@ -235,14 +235,14 @@ export function PlatformSection() {
                       <div className="space-y-4">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">The Challenge</h4>
                         <div className="border-l-4 border-campaign-gold bg-campaign-gold/5 p-6 md:p-8 rounded-r-xl">
-                          <p className="text-muted-foreground text-lg leading-relaxed">
+                          <p className="text-gray-700 text-lg leading-relaxed">
                             {p.problem}
                           </p>
                         </div>
                       </div>
                       <div className="space-y-6">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">Strategic Commitments</h4>
-                        <ul className="grid gap-6">
+                        <ul className="grid gap-4 md:gap-6">
                           {p.commitments.map((commitment, index) => (
                             <li key={`${p.id}-commitment-${index}`} className="flex gap-4 text-base md:text-lg leading-relaxed text-gray-800 items-start group">
                               <div className="mt-1.5 bg-campaign-gold/10 p-1.5 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
