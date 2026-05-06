@@ -55,7 +55,7 @@ export function PlatformSection() {
     },
     {
       id: "03",
-      title: "Staff & Local Leader Development: Building a Culture of Preparation",
+      title: "Staff & Local Leader Development",
       icon: Users,
       problem: "Our representatives are often outmatched not by talent, but by the modern digital tools, legal resources, and data analytics deployed by multi-national corporations. A lack of standardized, high-level training for stewards and servicing reps leads to inconsistent enforcement of our hard-won rights. We cannot win tomorrow's grievances with yesterday's training. We must build a culture where preparation is the baseline for every leader.",
       commitments: [
@@ -96,7 +96,7 @@ export function PlatformSection() {
     },
     {
       id: "06",
-      title: "Internal Campaign Finance Reform & Union Election Integrity",
+      title: "Internal Campaign Finance Reform & Union Integrity",
       icon: PieChart,
       problem: "The move to Direct Elections was a victory for the members, but the 'incumbency advantage' remains a barrier to true democracy. When dues dollars are used to fund the public relations of sitting officers during election cycles, it creates an unlevel playing field. We need strict rules that separate the work of the union from the work of campaigning, ensuring that every member has a fair shot at leading.",
       commitments: [
@@ -108,7 +108,7 @@ export function PlatformSection() {
         "Ban on all 'Administrative Caucus' assessments or forced contributions from appointed staff.",
         "Restructure the Strike Fund to ensure benefit payments match 100% of a member's base take-home pay from day one."
       ],
-      memberMessage: "Leadership that wins the trust of the members shouldn't be afraid to defend its record without using the members' money to do it."
+      memberMessage: "Leadership that wins the trust of the members shouldn't be afraid to defend its record without using the members' money."
     },
     {
       id: "07",
@@ -124,7 +124,7 @@ export function PlatformSection() {
         "Constitutional protection of retiree chapters to ensure they have the budget and autonomy to organize locally.",
         "Annual 'State of the Retiree' reports presented to the International Convention."
       ],
-      memberMessage: "Retirees are not the past of this union; they are the conscience and the backbone. We will fight for those who decided to fight for us."
+      memberMessage: "Retirees are not the past of this union; they are the conscience and the backbone. We will fight for those who fought for us."
     },
     {
       id: "08",
@@ -139,7 +139,7 @@ export function PlatformSection() {
         "Establish 'Worker Centers' in non-union corridors to build community support and provide resources before a drive even begins.",
         "Commitment to 'Card Check' neutrality agreements in all future master contracts with multi-national employers."
       ],
-      memberMessage: "Every worker we leave behind is a worker the boss will use against us. We will organize until the first worker is the one who wins last."
+      memberMessage: "Every worker we leave behind is a worker the boss will use against us. We will organize until we win."
     }
   ], []);
   const brandPillars = useMemo(() => [
@@ -214,7 +214,7 @@ export function PlatformSection() {
                     <div className="lg:w-1/3 bg-campaign-black text-white px-8 py-10 md:p-12 flex flex-col justify-between">
                       <div>
                         <div className="flex items-center justify-between mb-8">
-                          <span className="text-campaign-gold/20 font-black text-6xl md:text-8xl">{p.id}</span>
+                          <span className="text-campaign-gold/20 font-black text-5xl sm:text-6xl md:text-8xl">{p.id}</span>
                           <div className="bg-campaign-gold/20 p-4 rounded-2xl text-campaign-gold">
                             <Icon className="w-8 h-8" />
                           </div>
@@ -225,7 +225,7 @@ export function PlatformSection() {
                       </div>
                       <div className="pt-8 border-t border-white/10">
                         <p className="text-campaign-gold font-black uppercase tracking-widest text-[10px] mb-4">Member Mandate</p>
-                        <p className="text-lg md:text-xl italic font-medium leading-tight text-white/90">
+                        <p className="text-lg md:text-xl italic font-medium leading-relaxed text-white/90">
                           "{p.memberMessage}"
                         </p>
                       </div>
@@ -234,7 +234,7 @@ export function PlatformSection() {
                     <CardContent className="lg:w-2/3 px-8 py-10 md:p-12 space-y-12 flex flex-col justify-center">
                       <div className="space-y-4">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">The Challenge</h4>
-                        <div className="border-l-4 border-campaign-gold bg-campaign-gold/5 p-6 md:p-8 rounded-r-xl">
+                        <div className="border-l-4 border-campaign-gold bg-campaign-gold/5 p-5 sm:p-6 md:p-8 rounded-r-xl">
                           <p className="text-gray-700 text-lg leading-relaxed">
                             {p.problem}
                           </p>
@@ -244,7 +244,7 @@ export function PlatformSection() {
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">Strategic Commitments</h4>
                         <ul className="grid gap-4 md:gap-6">
                           {p.commitments.map((commitment, index) => (
-                            <li key={`${p.id}-commitment-${index}`} className="flex gap-4 text-base md:text-lg leading-relaxed text-gray-800 items-start group">
+                            <li key={`${p.id}-commitment-${index}`} className="flex gap-4 pb-2 text-base md:text-lg leading-relaxed text-gray-800 items-start group border-b border-gray-50 last:border-0 last:pb-0">
                               <div className="mt-1.5 bg-campaign-gold/10 p-1.5 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
                                 <ChevronRight size={18} strokeWidth={3} />
                               </div>

@@ -49,7 +49,7 @@ export function Navbar() {
           <CampaignLogo
             variant={isNavActive ? "gold-on-black" : "black-on-gold"}
             size="md"
-            className="shadow-campaign-gold/20 group-hover/logo:scale-110"
+            className="shadow-campaign-gold/20 group-hover/logo:scale-110 transition-transform duration-500"
           />
           <span className={cn(
             "font-display font-black text-lg tracking-tight uppercase transition-colors duration-300",
@@ -93,7 +93,7 @@ export function Navbar() {
       {/* Mobile Menu Overlay */}
       <div
         className={cn(
-          "md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-2xl transition-all duration-300 ease-in-out overflow-hidden",
+          "md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-2xl transition-all duration-300 ease-in-out overflow-y-auto",
           isMobileMenuOpen ? "max-h-[90vh] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
         )}
         aria-hidden={!isMobileMenuOpen}
