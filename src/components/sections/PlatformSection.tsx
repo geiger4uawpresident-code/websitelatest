@@ -11,7 +11,7 @@ import {
   ChevronRight,
   Quote,
   History as HistoryIcon,
-  LucideIcon
+  type LucideIcon
 } from 'lucide-react';
 import { Card, CardContent, CardTitle } from '@/components/ui/card';
 interface Pillar {
@@ -211,7 +211,7 @@ export function PlatformSection() {
                 <Card className="border-none shadow-2xl overflow-hidden bg-white hover:shadow-campaign-gold/10 transition-shadow duration-500">
                   <div className="flex flex-col lg:flex-row min-h-[500px]">
                     {/* Sidebar / Header of the Pillar */}
-                    <div className="lg:w-1/3 bg-campaign-black text-white px-6 py-10 md:p-12 flex flex-col justify-between">
+                    <div className="lg:w-1/3 bg-campaign-black text-white px-8 py-10 md:p-12 flex flex-col justify-between">
                       <div>
                         <div className="flex items-center justify-between mb-8">
                           <span className="text-campaign-gold/20 font-black text-6xl md:text-8xl">{p.id}</span>
@@ -231,7 +231,7 @@ export function PlatformSection() {
                       </div>
                     </div>
                     {/* Main Content Area */}
-                    <CardContent className="lg:w-2/3 px-6 py-10 md:p-12 space-y-12 flex flex-col justify-center">
+                    <CardContent className="lg:w-2/3 px-8 py-10 md:p-12 space-y-12 flex flex-col justify-center">
                       <div className="space-y-4">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">The Challenge</h4>
                         <div className="border-l-4 border-campaign-gold bg-campaign-gold/5 p-6 md:p-8 rounded-r-xl">
@@ -243,12 +243,12 @@ export function PlatformSection() {
                       <div className="space-y-6">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">Strategic Commitments</h4>
                         <ul className="grid gap-6">
-                          {p.commitments.map((c, i) => (
-                            <li key={i} className="flex gap-4 text-base md:text-lg leading-relaxed text-gray-800 items-start group">
+                          {p.commitments.map((commitment, index) => (
+                            <li key={`${p.id}-commitment-${index}`} className="flex gap-4 text-base md:text-lg leading-relaxed text-gray-800 items-start group">
                               <div className="mt-1.5 bg-campaign-gold/10 p-1.5 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
                                 <ChevronRight size={18} strokeWidth={3} />
                               </div>
-                              <span className="font-medium group-hover:text-campaign-black transition-colors">{c}</span>
+                              <span className="font-medium group-hover:text-campaign-black transition-colors">{commitment}</span>
                             </li>
                           ))}
                         </ul>

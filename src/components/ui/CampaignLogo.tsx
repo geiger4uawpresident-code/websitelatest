@@ -21,7 +21,7 @@ export function CampaignLogo({
   const textClass = variant === 'gold-on-black' ? 'fill-campaign-gold' : 'fill-campaign-black';
   return (
     <div className={cn(
-      "relative rounded-full flex items-center justify-center shadow-xl transition-transform hover:rotate-6 duration-300 select-none",
+      "relative rounded-full flex items-center justify-center shadow-xl transition-transform hover:rotate-6 duration-300 select-none shrink-0",
       sizeMap[size],
       bgClass,
       className
@@ -33,14 +33,13 @@ export function CampaignLogo({
       >
         {/* Simplified Fist */}
         <path d="M35 55v15a5 5 0 0 0 5 5h20a5 5 0 0 0 5-5v-5h2a5 5 0 0 0 5-5v-2a5 5 0 0 0 5-5v-2a5 5 0 0 0-5-5h-8v-3a5 5 0 0 0-5-5h-2a5 5 0 0 0-5 5v2H35z" />
-        {/* TG Initials */}
+        {/* TG Initials - Removed fill="currentColor" to inherit from parent iconClass */}
         <text
           x="50%"
           y="48%"
           textAnchor="middle"
+          dominantBaseline="middle"
           className="font-display font-black text-[18px]"
-          fill="currentColor"
-          style={{ dominantBaseline: 'middle' }}
         >
           TG
         </text>
