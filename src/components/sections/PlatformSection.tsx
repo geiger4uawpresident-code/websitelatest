@@ -132,17 +132,17 @@ export function PlatformSection() {
   const brandPillars = useMemo(() => [
     {
       title: "Prepared",
-      desc: "Preparation is the foundation of power. It is how you earn respect in rooms that weren't built for you. Every commitment in this platform—trained bargainers, developed leaders, and data-driven organizing—flows from the belief that the people counting on you deserve someone who did the work before they showed up.",
+      desc: "Preparation is not a strategy — it is a standard. It is how you earn respect in rooms that weren't built for you. Every commitment in this platform—trained bargainers, developed leaders, and data-driven organizing—flows from the belief that the people counting on you deserve someone who did the work before they showed up.",
       quote: "Preparation is the foundation of power"
     },
     {
       title: "Democratic",
-      desc: "Member democracy is our governing principle. Bargaining agendas set by members, not presidents. Strike authorizations that require member votes, not press releases. This union belongs to its members. Every decision this leadership makes will reflect the will of the floor.",
+      desc: "Member democracy is not a slogan—it is our governing principle. Bargaining agendas set by members, not presidents. Strike authorizations that require member votes, not press releases. This union belongs to its members. Every decision this leadership makes will reflect that.",
       quote: "Your power. Your choice. Your union."
     },
     {
       title: "Accountable",
-      desc: "Accountability starts with the person asking for your trust. It means transparency, follow-through, and the integrity to acknowledge failure and fix it. We will replace excuses with action and ensure every leader answers for their decisions to the membership.",
+      desc: "Accountability starts with the person asking for your trust. It means transparency, follow-through, and the integrity to acknowledge failure and fix it. We will replace excuses with action and ensure every leader answers for their decisions to the membership. Every one of them.",
       quote: "No excuses. Not for yourself. Not for this union."
     }
   ], []);

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { CampaignLogo } from '@/components/ui/CampaignLogo';
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -45,9 +46,11 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <div className="flex items-center gap-3 group/logo">
-          <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-campaign-black font-black text-xl shadow-lg shadow-campaign-gold/20 transform group-hover/logo:rotate-12 transition-all cursor-default select-none">
-            TG
-          </div>
+          <CampaignLogo 
+            variant={isNavActive ? "gold-on-black" : "black-on-gold"} 
+            size="md"
+            className="shadow-campaign-gold/20 group-hover/logo:scale-110" 
+          />
           <span className={cn(
             "font-display font-black text-lg tracking-tight uppercase transition-colors duration-300",
             isNavActive ? "text-campaign-black" : "text-white"

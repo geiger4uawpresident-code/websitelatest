@@ -3,6 +3,7 @@ import { motion, Variants } from 'framer-motion';
 import { VideoPlayer } from '@/components/ui/VideoPlayer';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
+import { CampaignLogo } from '@/components/ui/CampaignLogo';
 export function HeroSection() {
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -37,6 +38,14 @@ export function HeroSection() {
         animate="visible"
       >
         <motion.div variants={itemVariants} className="space-y-4">
+          <motion.div 
+            className="flex justify-center mb-6"
+            initial={{ scale: 0, rotate: -180 }}
+            animate={{ scale: 1, rotate: 0 }}
+            transition={{ type: "spring", stiffness: 260, damping: 20 }}
+          >
+            <CampaignLogo variant="black-on-gold" size="lg" className="shadow-2xl shadow-campaign-gold/20" />
+          </motion.div>
           <span className="inline-block px-6 py-2 rounded-full bg-campaign-gold text-white text-xs font-bold uppercase tracking-[0.2em] shadow-lg shadow-campaign-gold/20">
             Prepared. Democratic. Accountable.
           </span>

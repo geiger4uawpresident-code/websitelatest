@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { Facebook, Youtube, Instagram, Mail } from 'lucide-react';
 import { toast } from 'sonner';
+import { CampaignLogo } from '@/components/ui/CampaignLogo';
 const TikTokIcon = ({ className }: { className?: string }) => (
   <svg
     viewBox="0 0 24 24"
@@ -31,7 +32,7 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-16">
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <div className="h-10 w-10 bg-campaign-gold rounded-full flex items-center justify-center text-campaign-black font-black text-xl">TG</div>
+              <CampaignLogo variant="black-on-gold" size="sm" />
               <span className="font-display font-black text-lg tracking-tight uppercase">Tricia Geiger <span className="text-campaign-gold">2026</span></span>
             </div>
             <p className="text-campaign-tan/70 leading-relaxed max-w-xs">
