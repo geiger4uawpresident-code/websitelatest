@@ -16,13 +16,13 @@ export function BioSection() {
             <h2 className="text-3xl md:text-5xl font-display font-black text-campaign-black uppercase">The Journey of Service</h2>
             <div className="h-1.5 w-24 bg-gradient-to-r from-campaign-gold to-campaign-tan" />
           </motion.div>
-          {/* Narrative Section */}
-          <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-6 text-center md:text-left">
-            <p className="text-lg md:text-xl">
-              Tricia Geiger is a veteran UAW member and organizer who has spent the last 20 years fighting for the dignity of labor. Tricia got her start at <strong>GM Local 651 in Flint, Michigan</strong>. Her roots in the union aren't just professional—they're part of a multi-generational legacy. Her grandfather was a migrant farmworker who found stability and a middle-class life as a member of <strong>GM Fisher Body Local 598</strong>.
+          {/* Narrative Section - Updated to avoid prose plugin dependency */}
+          <div className="max-w-none text-muted-foreground space-y-6 text-center md:text-left">
+            <p className="text-lg md:text-xl leading-relaxed">
+              Tricia Geiger is a veteran UAW member and organizer who has spent the last 20 years fighting for the dignity of labor. Tricia got her start at <strong className="text-campaign-black font-bold">GM Local 651 in Flint, Michigan</strong>. Her roots in the union aren't just professional—they're part of a multi-generational legacy. Her grandfather was a migrant farmworker who found stability and a middle-class life as a member of <strong className="text-campaign-black font-bold">GM Fisher Body Local 598</strong>.
             </p>
-            <p className="text-lg md:text-xl">
-              For nearly a decade, Tricia served as an <strong>International Servicing Representative for Region 2B</strong>. She has stood on the front lines of multi-sector fights, managing complex grievances, negotiating high-stakes contracts, and organizing strategic strikes that delivered real wins for <strong>members</strong>.
+            <p className="text-lg md:text-xl leading-relaxed">
+              For nearly a decade, Tricia served as an <strong className="text-campaign-black font-bold">International Servicing Representative for Region 2B</strong>. She has stood on the front lines of multi-sector fights, managing complex grievances, negotiating high-stakes contracts, and organizing strategic strikes that delivered real wins for <strong className="text-campaign-black font-bold">members</strong>.
             </p>
           </div>
           {/* Impact Grid */}

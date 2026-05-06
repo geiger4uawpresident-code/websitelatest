@@ -169,7 +169,7 @@ export function PlatformSection() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-6xl font-display font-black text-campaign-black uppercase tracking-tight">The 2026 Strategic Platform</h2>
+            <h2 className="text-3xl md:text-6xl font-display font-black text-campaign-black uppercase tracking-tight leading-none">The 2026 Strategic Platform</h2>
             <p className="text-muted-foreground text-xl max-w-3xl mx-auto mt-6">
               A Member-First blueprint to restore power, transparency, and results to the membership.
             </p>
@@ -211,12 +211,12 @@ export function PlatformSection() {
                 <Card className="border-none shadow-2xl overflow-hidden bg-white hover:shadow-campaign-gold/10 transition-shadow duration-500">
                   <div className="flex flex-col lg:flex-row min-h-[500px]">
                     {/* Sidebar / Header of the Pillar */}
-                    <div className="lg:w-1/3 bg-campaign-black text-white px-8 py-10 md:p-12 flex flex-col justify-between">
+                    <div className="lg:w-1/3 bg-campaign-black text-white px-8 py-12 md:p-12 flex flex-col justify-between">
                       <div>
-                        <div className="flex items-center justify-between mb-8">
-                          <span className="text-campaign-gold/20 font-black text-5xl sm:text-6xl md:text-8xl">{p.id}</span>
+                        <div className="flex items-center justify-between mb-10">
+                          <span className="text-campaign-gold/20 font-black text-6xl md:text-8xl">{p.id}</span>
                           <div className="bg-campaign-gold/20 p-4 rounded-2xl text-campaign-gold">
-                            <Icon className="w-8 h-8" />
+                            <Icon className="w-8 h-8 md:w-10 md:h-10" />
                           </div>
                         </div>
                         <CardTitle className="text-2xl md:text-3xl lg:text-4xl font-black uppercase tracking-tight leading-tight mb-6">
@@ -231,10 +231,10 @@ export function PlatformSection() {
                       </div>
                     </div>
                     {/* Main Content Area */}
-                    <CardContent className="lg:w-2/3 px-8 py-10 md:p-12 space-y-12 flex flex-col justify-center">
+                    <CardContent className="lg:w-2/3 px-6 py-10 md:p-12 space-y-12 flex flex-col justify-center">
                       <div className="space-y-4">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-gold">The Challenge</h4>
-                        <div className="border-l-4 border-campaign-gold bg-campaign-gold/5 p-5 sm:p-6 md:p-8 rounded-r-xl">
+                        <div className="border-l-4 border-campaign-gold bg-campaign-gold/5 p-6 sm:p-8 rounded-r-xl shadow-sm">
                           <p className="text-gray-700 text-lg leading-relaxed">
                             {p.problem}
                           </p>
@@ -242,13 +242,13 @@ export function PlatformSection() {
                       </div>
                       <div className="space-y-6">
                         <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-campaign-black">Strategic Commitments</h4>
-                        <ul className="grid gap-4 md:gap-6">
+                        <ul className="grid gap-5 md:gap-6">
                           {p.commitments.map((commitment, index) => (
-                            <li key={`${p.id}-commitment-${index}`} className="flex gap-4 pb-2 text-base md:text-lg leading-relaxed text-gray-800 items-start group border-b border-gray-50 last:border-0 last:pb-0">
+                            <li key={`${p.id}-commitment-${index}`} className="flex gap-4 pb-4 text-base md:text-lg leading-relaxed text-gray-800 items-start group border-b border-gray-50 last:border-0 last:pb-0 transition-colors">
                               <div className="mt-1.5 bg-campaign-gold/10 p-1.5 rounded-full text-campaign-gold group-hover:bg-campaign-gold group-hover:text-white transition-all shrink-0">
                                 <ChevronRight size={18} strokeWidth={3} />
                               </div>
-                              <span className="font-medium group-hover:text-campaign-black transition-colors">{commitment}</span>
+                              <span className="font-medium group-hover:text-campaign-black">{commitment}</span>
                             </li>
                           ))}
                         </ul>
@@ -271,7 +271,7 @@ export function PlatformSection() {
           <h3 className="text-2xl md:text-4xl font-black italic mb-6 max-w-4xl mx-auto leading-tight">
             "We are not just electing a president. We are deciding who we are as a union and what we will demand for our future."
           </h3>
-          <p className="text-campaign-gold font-black uppercase tracking-[0.3em]">Tricia Geiger</p>
+          <p className="text-campaign-gold font-black uppercase tracking-[0.3em] text-sm md:text-base">Tricia Geiger</p>
         </motion.div>
       </div>
     </section>

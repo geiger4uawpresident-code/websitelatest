@@ -27,7 +27,7 @@ export function Footer() {
   };
   const DONATE_URL = "https://secure.anedot.com/2026-tricia-geiger-for-uaw-president/donate";
   return (
-    <footer className="bg-campaign-black text-white pt-20 pb-10 border-t border-white/5">
+    <footer className="bg-campaign-black text-white pt-20 pb-12 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-12 mb-16">
           <div className="space-y-6">
@@ -38,7 +38,7 @@ export function Footer() {
             <p className="text-campaign-tan/70 leading-relaxed max-w-xs">
               A member-first movement dedicated to restoring the power, dignity, and future of every UAW member.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-5 pt-2">
               {socialLinks.map((social, idx) => {
                 const Icon = social.icon;
                 return (
@@ -47,7 +47,7 @@ export function Footer() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-campaign-tan/50 hover:text-campaign-gold transition-all duration-200 hover:scale-110 active:scale-95"
+                    className="text-campaign-tan/50 hover:text-campaign-gold transition-all duration-300 hover:scale-110 active:scale-95"
                     aria-label={`Visit our ${social.name}`}
                   >
                     <Icon className="w-6 h-6" />
@@ -57,49 +57,52 @@ export function Footer() {
             </div>
           </div>
           <div className="space-y-6">
-            <h4 className="font-bold uppercase tracking-widest text-campaign-gold">Navigation</h4>
+            <h4 className="font-bold uppercase tracking-widest text-campaign-gold text-sm">Navigation</h4>
             <ul className="space-y-3">
-              <li><a href="#home" className="text-campaign-tan/70 hover:text-white transition-colors">Home</a></li>
-              <li><a href="#about" className="text-campaign-tan/70 hover:text-white transition-colors">Meet Tricia</a></li>
-              <li><a href="#platform" className="text-campaign-tan/70 hover:text-white transition-colors">The Platform</a></li>
-              <li><a href="#involve" className="text-campaign-tan/70 hover:text-white transition-colors">Get Involved</a></li>
+              <li><a href="#home" className="text-campaign-tan/70 hover:text-white hover:translate-x-1 inline-block transition-all">Home</a></li>
+              <li><a href="#about" className="text-campaign-tan/70 hover:text-white hover:translate-x-1 inline-block transition-all">Meet Tricia</a></li>
+              <li><a href="#platform" className="text-campaign-tan/70 hover:text-white hover:translate-x-1 inline-block transition-all">The Platform</a></li>
+              <li><a href="#involve" className="text-campaign-tan/70 hover:text-white hover:translate-x-1 inline-block transition-all">Get Involved</a></li>
             </ul>
           </div>
           <div className="space-y-6">
-            <h4 className="font-bold uppercase tracking-widest text-campaign-gold">Contact & Support</h4>
+            <h4 className="font-bold uppercase tracking-widest text-campaign-gold text-sm">Contact & Support</h4>
             <a href="mailto:info@geiger2026.com" className="flex items-center gap-3 text-campaign-tan/70 hover:text-white transition-colors group">
-              <Mail className="group-hover:text-campaign-gold transition-colors" />
-              info@geiger2026.com
+              <Mail className="group-hover:text-campaign-gold transition-colors w-5 h-5" />
+              <span className="font-medium">info@geiger2026.com</span>
             </a>
             <div className="pt-4">
               <a
                 href={DONATE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full bg-campaign-gold hover:opacity-90 text-white text-center font-bold py-4 rounded-lg transition-all shadow-lg active:scale-95 shadow-campaign-gold/10"
+                className="block w-full bg-campaign-gold hover:opacity-95 text-white text-center font-bold py-4 rounded-lg transition-all shadow-lg active:scale-95 shadow-campaign-gold/10"
               >
                 Donate to the Movement
               </a>
             </div>
           </div>
         </div>
-        <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-center gap-6 text-[10px] sm:text-xs uppercase tracking-widest text-campaign-tan/60">
-          <div className="flex gap-8">
+        <div className="pt-10 border-t border-white/10 flex flex-col items-center justify-center gap-8">
+          <div className="flex gap-10 text-[10px] sm:text-xs uppercase tracking-widest text-campaign-tan/60 font-bold">
             <a
               href="#"
               onClick={(e) => handleLegalClick(e, 'Privacy Policy')}
-              className="hover:text-campaign-gold transition-colors hover:cursor-pointer"
+              className="hover:text-campaign-gold transition-colors hover:cursor-pointer px-2 py-1"
             >
               Privacy Policy
             </a>
             <a
               href="#"
               onClick={(e) => handleLegalClick(e, 'Terms of Use')}
-              className="hover:text-campaign-gold transition-colors hover:cursor-pointer"
+              className="hover:text-campaign-gold transition-colors hover:cursor-pointer px-2 py-1"
             >
               Terms of Use
             </a>
           </div>
+          <p className="text-[10px] uppercase tracking-widest text-campaign-tan/40">
+            © {new Date().getFullYear()} Tricia Geiger for UAW President. All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>
