@@ -8,7 +8,7 @@ export function ResourcesSection() {
       type: "PNG",
       size: "0.8 MB",
       icon: FileDown,
-      link: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&q=80"
+      link: "https://drive.google.com/file/d/1DNKAnFb5bRIeZL40QQdv9ddssncrHUGl/view?usp=sharing"
     },
     {
       title: "Printable Campaign Flier",
