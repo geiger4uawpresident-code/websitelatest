@@ -28,18 +28,15 @@ export function CampaignLogo({
     )}>
       <svg
         viewBox="0 0 100 100"
-        className={cn("w-[70%] h-[70%]", iconClass)}
+        className={cn("w-full h-full", iconClass)}
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* Simplified Fist */}
-        <path d="M35 55v15a5 5 0 0 0 5 5h20a5 5 0 0 0 5-5v-5h2a5 5 0 0 0 5-5v-2a5 5 0 0 0 5-5v-2a5 5 0 0 0-5-5h-8v-3a5 5 0 0 0-5-5h-2a5 5 0 0 0-5 5v2H35z" />
-        {/* TG Initials - Removed fill="currentColor" to inherit from parent iconClass */}
         <text
           x="50%"
-          y="48%"
+          y="52%"
           textAnchor="middle"
           dominantBaseline="middle"
-          className="font-display font-black text-[18px]"
+          className="font-display font-black text-[32px]"
         >
           TG
         </text>

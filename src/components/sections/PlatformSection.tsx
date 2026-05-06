@@ -171,7 +171,7 @@ export function PlatformSection() {
           >
             <h2 className="text-3xl md:text-6xl font-display font-black text-campaign-black uppercase tracking-tight">The 2026 Strategic Platform</h2>
             <p className="text-muted-foreground text-xl max-w-3xl mx-auto mt-6">
-              A Member-First blueprint to restore power, transparency, and results to the shop floor.
+              A Member-First blueprint to restore power, transparency, and results to the membership.
             </p>
           </motion.div>
         </div>

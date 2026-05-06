@@ -4,17 +4,17 @@ import { Card, CardContent } from '@/components/ui/card';
 export function Endorsements() {
   const testimonials = [
     {
-      quote: "Tricia is the leader that the UAW has needed for a very long time. Her focus on education and empowerment for members is second to none. She understands that a union's strength comes from its educated and active membership.",
+      quote: "She is the most knowledgeable, strong, and prepared person for this position and she gets the job done!!",
       author: "Tresa Clark",
-      position: "Local 888"
+      position: "Local 888, Chairperson-Dap Unit"
     },
     {
-      quote: "Strategic, empathetic, and fearless. Tricia isn't afraid to take on the tough fights for our benefits and our futures. She has been on the front lines and knows what it takes to win.",
+      quote: "I support Tricia for UAW International President because she’s a fighter, and that’s what we need in this union is a pitbull!",
       author: "Lonnie Scott",
       position: "Local 1588"
     },
     {
-      quote: "We need a leader who actually listens to the floor and understands our daily struggles. Tricia's roots are in Flint, and she has never forgotten where she came from. She is one of us.",
+      quote: "Tricia has always stood for the members. She’s the only one I trust to have our backs.",
       author: "Chuck Snyder",
       position: "Local 1588"
     }
@@ -26,7 +26,7 @@ export function Endorsements() {
           <Quote size={200} />
         </div>
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-display font-black uppercase tracking-tight">Voices from the Floor</h2>
+          <h2 className="text-3xl md:text-5xl font-display font-black uppercase tracking-tight">Voices from the floor</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((t, idx) => (
